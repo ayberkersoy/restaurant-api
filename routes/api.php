@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/companies', 'CompanyController@index');
+Route::get('companies', 'CompanyController@index');
+Route::get('companies/{company}', 'CompanyController@show');
+Route::post('companies', 'CompanyController@store');
