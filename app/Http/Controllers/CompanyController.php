@@ -1,8 +1,8 @@
 <?php
 
-use App\Company;
-
 namespace App\Http\Controllers;
+
+use App\Company;
 
 class CompanyController extends Controller
 {
