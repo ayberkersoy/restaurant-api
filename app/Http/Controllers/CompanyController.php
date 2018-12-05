@@ -1,10 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+use App\Company;
 
-use Illuminate\Http\Request;
+namespace App\Http\Controllers;
 
 class CompanyController extends Controller
 {
-    //
+    public function index()
+    {
+        return response()->json(Company::all());
+    }
 }
