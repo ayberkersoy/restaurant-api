@@ -15,6 +15,11 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->integer('user_contact_id')->references('id')->on('user_contacts')->onDelete('cascade');
+            $table->json('products');
+            $table->integer('status')->default(0);
+            $table->decimal('price', 9, 3)->default(0);
             $table->timestamps();
         });
     }
