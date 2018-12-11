@@ -16,3 +16,9 @@ Route::get('companies/{company}', 'CompanyController@show');
 Route::post('companies', 'CompanyController@store');
 Route::post('companies/{company}', 'CompanyController@update');
 Route::post('companies/{company}/destroy', 'CompanyController@destroy');
+
+Route::get('users', 'UserController@index');
+Route::get('users/{user}', 'UserController@show');
+Route::post('users', 'UserController@store');
+Route::post('users/{user}', 'UserController@update');
+Route::post('users/{user}/destroy', 'UserController@destroy');
