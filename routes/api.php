@@ -22,3 +22,5 @@ Route::get('users/{user}', 'UserController@show');
 Route::post('users', 'UserController@store');
 Route::post('users/{user}', 'UserController@update');
 Route::post('users/{user}/destroy', 'UserController@destroy');
+Route::get('users/{user}/favourites', 'UserController@favourites');
+Route::get('users/{user}/contacts', 'UserController@contacts');

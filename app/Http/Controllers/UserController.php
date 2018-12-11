@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Validator;
 use App\User;
+use App\Product;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -72,5 +73,20 @@ class UserController extends Controller
     {
         $user->delete();
         return response()->json(['status' => true]);
+    }
+
+    public function favourites(User $user)
+    {
+        $favourites = [];
+        foreach ($user->favourites as $favourite) {
+            $product = Product::findOrFail($favourite->product_id);
+            array_push($favourites, $product);
+        }
+        return response()->json($favourites);
+    }
+
+    public function contacts(User $user)
+    {
+        return response()->json($user->contacts);
     }
 }
