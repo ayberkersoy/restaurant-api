@@ -37,3 +37,9 @@ Route::get('campaigns/{campaign}', 'CampaignController@show');
 Route::post('campaigns', 'CampaignController@store');
 Route::post('campaigns/{campaign}', 'CampaignController@update');
 Route::post('campaigns/{campaign}/destroy', 'CampaignController@destroy');
+
+Route::get('categories', 'CategoryController@index');
+Route::get('categories/{category}', 'CategoryController@show');
+Route::post('categories', 'CategoryController@store');
+Route::post('categories/{category}', 'CategoryController@update');
+Route::post('categories/{category}/destroy', 'CategoryController@destroy');
