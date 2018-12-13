@@ -30,3 +30,4 @@ Route::get('products/{product}', 'ProductController@show');
 Route::post('products', 'ProductController@store');
 Route::post('products/{product}', 'ProductController@update');
 Route::post('products/{product}/destroy', 'ProductController@destroy');
+Route::post('getProductsByCategory/{category}', 'ProductController@getProductsByCategory');
