@@ -31,3 +31,9 @@ Route::post('products', 'ProductController@store');
 Route::post('products/{product}', 'ProductController@update');
 Route::post('products/{product}/destroy', 'ProductController@destroy');
 Route::post('getProductsByCategory/{category}', 'ProductController@getProductsByCategory');
+
+Route::get('campaigns', 'CampaignController@index');
+Route::get('campaigns/{campaign}', 'CampaignController@show');
+Route::post('campaigns', 'CampaignController@store');
+Route::post('campaigns/{campaign}', 'CampaignController@update');
+Route::post('campaigns/{campaign}/destroy', 'CampaignController@destroy');

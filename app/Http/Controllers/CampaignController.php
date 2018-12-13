@@ -2,84 +2,57 @@
 
 namespace App\Http\Controllers;
 
+use Validator;
 use App\Campaign;
 use Illuminate\Http\Request;
 
 class CampaignController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        return response()->json(Campaign::all());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $validation = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'image_url' => 'required',
+        ]);
+
+        if ($validation->fails()) {
+            return response()->json($validation->errors()->all());
+        }
+
+        $campaign = Campaign::create($request->all());
+
+        return response()->json($campaign);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Campaign  $campaign
-     * @return \Illuminate\Http\Response
-     */
     public function show(Campaign $campaign)
     {
-        //
+        return response()->json($campaign);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Campaign  $campaign
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Campaign $campaign)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Campaign  $campaign
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Campaign $campaign)
     {
-        //
+        $validation = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'image_url' => 'required',
+        ]);
+
+        if ($validation->fails()) {
+            return response()->json($validation->errors()->all());
+        }
+
+        $campaing->update($request->all());
+
+        return response()->json($campaign);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Campaign  $campaign
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Campaign $campaign)
     {
-        //
+        $campaing->delete();
+        return response()->json(['status' => true]);
     }
 }
