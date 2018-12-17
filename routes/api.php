@@ -44,3 +44,9 @@ Route::get('baskets/{basket}', 'BasketController@show');
 Route::post('baskets', 'BasketController@store');
 Route::post('baskets/{basket}', 'BasketController@update');
 Route::post('baskets/{basket}/destroy', 'BasketController@destroy');
+
+Route::get('comments', 'CommentController@index');
+Route::get('comments/{comment}', 'CommentController@show');
+Route::post('comments', 'CommentController@store');
+Route::post('comments/{comment}', 'CommentController@update');
+Route::post('comments/{comment}/destroy', 'CommentController@destroy');

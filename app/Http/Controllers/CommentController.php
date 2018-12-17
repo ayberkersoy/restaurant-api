@@ -7,79 +7,55 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        return response()->json(Comment::all());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $validation = Validator::make($request->all(), [
+            'user_id' => 'required|exists:users,id',
+            'product_id' => 'required|exists:products,id',
+            'comment' => 'required|max:255|min:6',
+            'stars' => 'required|min:0|max:5'
+        ]);
+
+        if ($validation->fails()) {
+            return response()->json($validation->errors()->all());
+        }
+
+        $comment = Comment::create($request->all());
+
+        return response()->json($comment);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Comment  $comment
-     * @return \Illuminate\Http\Response
-     */
     public function show(Comment $comment)
     {
-        //
+        return response()->json($comment);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Comment  $comment
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Comment $comment)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Comment  $comment
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Comment $comment)
     {
-        //
+        $validation = Validator::make($request->all(), [
+            'user_id' => 'required|exists:users,id',
+            'product_id' => 'required|exists:products,id',
+            'comment' => 'required|max:255|min:6',
+            'stars' => 'required|min:0|max:5'
+        ]);
+
+        if ($validation->fails()) {
+            return response()->json($validation->errors()->all());
+        }
+
+        $comment->update($request->all());
+
+        return response()->json($comment);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Comment  $comment
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Comment $comment)
     {
-        //
+        $comment->delete();
+        return response()->json(['status' => true]);
     }
 }
