@@ -43,3 +43,9 @@ Route::get('categories/{category}', 'CategoryController@show');
 Route::post('categories', 'CategoryController@store');
 Route::post('categories/{category}', 'CategoryController@update');
 Route::post('categories/{category}/destroy', 'CategoryController@destroy');
+
+Route::get('userContacts', 'UserContactController@index');
+Route::get('userContacts/{userContact}', 'UserContactController@show');
+Route::post('userContacts', 'UserContactController@store');
+Route::post('userContacts/{userContact}', 'UserContactController@update');
+Route::post('userContacts/{userContact}/destroy', 'UserContactController@destroy');
