@@ -16,10 +16,10 @@ class CreateBasketsTable extends Migration
         Schema::create('baskets', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order_id')->references('id')->on('orders')->onDelete('cascade');
-            $table->integer('product')->references('id')->on('products')->onDelete('cascade');
+            $table->integer('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->string('product_name');
-            $table->string('description');
-            $table->decimal('price', 9, 3)->default(0);
+            $table->string('description')->nullable();
+            $table->decimal('price', 8, 2)->default(0);
             $table->timestamps();
         });
     }

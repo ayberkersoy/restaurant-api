@@ -19,7 +19,7 @@ class CreateOrdersTable extends Migration
             $table->integer('user_contact_id')->references('id')->on('user_contacts')->onDelete('cascade');
             $table->json('products');
             $table->integer('status')->default(0);
-            $table->decimal('price', 9, 3)->default(0);
+            $table->decimal('price', 8, 2)->default(0);
             $table->timestamps();
         });
     }

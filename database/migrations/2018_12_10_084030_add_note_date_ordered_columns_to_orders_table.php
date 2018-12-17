@@ -15,7 +15,7 @@ class AddNoteDateOrderedColumnsToOrdersTable extends Migration
     {
         Schema::table('orders', function (Blueprint $table) {
             $table->string('note')->nullable();
-            $table->timestamp('date_ordered');
+            $table->timestamp('date_ordered')->nullable();
         });
     }
 
