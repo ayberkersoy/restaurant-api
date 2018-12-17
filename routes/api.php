@@ -56,3 +56,27 @@ Route::get('employees/{employee}', 'EmployeeController@show');
 Route::post('employees', 'EmployeeController@store');
 Route::post('employees/{employee}', 'EmployeeController@update');
 Route::post('employees/{employee}/destroy', 'EmployeeController@destroy');
+
+Route::get('favourites', 'FavouriteController@index');
+Route::get('favourites/{favourite}', 'FavouriteController@show');
+Route::post('favourites', 'FavouriteController@store');
+Route::post('favourites/{favourite}', 'FavouriteController@update');
+Route::post('favourites/{favourite}/destroy', 'FavouriteController@destroy');
+
+Route::get('messages', 'MessageController@index');
+Route::get('messages/{message}', 'MessageController@show');
+Route::post('messages', 'MessageController@store');
+Route::post('messages/{message}', 'MessageController@update');
+Route::post('messages/{message}/destroy', 'MessageController@destroy');
+
+Route::get('orders', 'OrderController@index');
+Route::get('orders/{order}', 'OrderController@show');
+Route::post('orders', 'OrderController@store');
+Route::post('orders/{order}', 'OrderController@update');
+Route::post('orders/{order}/destroy', 'OrderController@destroy');
+
+Route::get('reservations', 'ReservationController@index');
+Route::get('reservations/{reservation}', 'ReservationController@show');
+Route::post('reservations', 'ReservationController@store');
+Route::post('reservations/{reservation}', 'ReservationController@update');
+Route::post('reservations/{reservation}/destroy', 'ReservationController@destroy');
