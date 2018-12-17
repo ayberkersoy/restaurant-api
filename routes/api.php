@@ -1,16 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
-
 Route::get('companies', 'CompanyController@index');
 Route::get('companies/{company}', 'CompanyController@show');
 Route::post('companies', 'CompanyController@store');
@@ -49,3 +38,9 @@ Route::get('userContacts/{userContact}', 'UserContactController@show');
 Route::post('userContacts', 'UserContactController@store');
 Route::post('userContacts/{userContact}', 'UserContactController@update');
 Route::post('userContacts/{userContact}/destroy', 'UserContactController@destroy');
+
+Route::get('baskets', 'BasketController@index');
+Route::get('baskets/{basket}', 'BasketController@show');
+Route::post('baskets', 'BasketController@store');
+Route::post('baskets/{basket}', 'BasketController@update');
+Route::post('baskets/{basket}/destroy', 'BasketController@destroy');
