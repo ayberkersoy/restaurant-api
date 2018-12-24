@@ -12,6 +12,7 @@ image: php:7.2.13
 pipelines:
   default:
     - step:
+        deployment: production
         caches:
           - composer
         script:
