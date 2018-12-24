@@ -39,7 +39,7 @@
 <pre>
  ____________________________
 |                            |
-| Git Deployment Script v0.1 |
+| Git Deployment Script v1 |
 |      github.com/riodw 2017 |
 |____________________________|
 
