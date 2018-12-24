@@ -20,6 +20,7 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         'http://restaurant-api.test/api/*',
-        'https://restaurant-api.test/api/*'
+        'https://restaurant-api.test/api/*',
+        '/deploy',
     ];
 }
