@@ -9,7 +9,7 @@
      */
     // The commands
     $commands = [
-        'echo $PWD',
+        'cd /home/admin/web/api.maycreator.com/public_html',
         'whoami',
         'git reset --hard HEAD',
         'git pull',
