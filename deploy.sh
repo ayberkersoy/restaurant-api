@@ -2,7 +2,7 @@
 # activate maintenance mode
 php artisan down
 # update source code
-git pull
+git pull origin master
 # update PHP dependencies
 composer install --no-interaction --no-dev --prefer-dist
 # --no-interaction Do not ask any interactive question
