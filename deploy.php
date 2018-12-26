@@ -10,6 +10,7 @@
     // The commands
     $commands = [
         'cd /home/admin/web/api.maycreator.com/public_html',
+        'echo $PWD',
         'whoami',
         'git reset --hard HEAD',
         'git pull',
