@@ -20,15 +20,16 @@ class DeployController extends Controller
              */
         // The commands
         $commands = [
-            'cd /home/admin/web/api.maycreator.com/public_html',
-            'echo $PWD',
-            'whoami',
-            'git reset --hard HEAD',
-            'git pull origin master',
-            'git status',
-            'git submodule sync',
-            'git submodule update',
-            'git submodule status',
+            'cd /home/admin/web/api.maycreator.com/public_html && git reset --hard HEAD && git pull origin master 
+            && git status && git submodule sync && git submodule update && git submodule status',
+            // 'echo $PWD',
+            // 'whoami',
+            // 'git reset --hard HEAD',
+            // 'git pull origin master',
+            // 'git status',
+            // 'git submodule sync',
+            // 'git submodule update',
+            // 'git submodule status',
         ];
         // Run the commands for output
         $output = '';
