@@ -23,7 +23,7 @@ class DeployController extends Controller
             'echo $PWD',
             'whoami',
             'git reset --hard HEAD',
-            'git pull',
+            'git pull origin master',
             'git status',
             'git submodule sync',
             'git submodule update',
