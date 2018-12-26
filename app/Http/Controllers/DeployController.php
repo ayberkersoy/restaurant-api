@@ -12,7 +12,6 @@ class DeployController extends Controller
         /**
              * GIT DEPLOYMENT SCRIPT
              *
-             *
              * Used for automatically deploying websites via github or bitbucket, more deets here:
              * https://gist.github.com/riodw/71f6e2244534deae652962b32b7454e2
              * How To Use:
