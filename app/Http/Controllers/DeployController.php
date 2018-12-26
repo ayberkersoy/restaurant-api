@@ -37,7 +37,7 @@ class DeployController extends Controller
             $tmp = shell_exec($command);
             // Output
             $output .= "{$command}\n";
-            // $output .= htmlentities(trim($tmp)) . "\n";
+            $output .= htmlentities(trim($tmp)) . "\n";
             echo $output;
         }
         // Make it pretty for manual user access (and why not?)
