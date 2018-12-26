@@ -38,7 +38,7 @@ class DeployController extends Controller
             // Output
             $output .= "{$command}\n";
             // $output .= htmlentities(trim($tmp)) . "\n";
-            // echo $output;
+            echo $output;
         }
         // Make it pretty for manual user access (and why not?)
         // $root_path = base_path();
