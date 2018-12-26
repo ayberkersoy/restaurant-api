@@ -1,4 +1,6 @@
 #!/bin/sh
+cd /home/admin/web/api.maycreator.com/public_html
+echo '$PWD'
 # activate maintenance mode
 php artisan down
 # update source code
