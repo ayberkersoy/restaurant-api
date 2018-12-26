@@ -91,7 +91,7 @@ return [
 
     'options' => [
         'application' => env('APP_NAME', 'Laravel'),
-        'repository' => 'https://github.com/ayberkersoy/restaurant-api.git',
+        'repository' => 'https://ayberkersoy:Ayberk34!@github.com/ayberkersoy/restaurant-api.git',
     ],
 
     /*
