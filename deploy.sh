@@ -6,6 +6,7 @@ php artisan down
 # update source code
 git pull origin master
 # update PHP dependencies
+composer self-update
 composer install --no-interaction --no-dev --prefer-dist
 # --no-interaction Do not ask any interactive question
 # --no-dev  Disables installation of require-dev packages.
