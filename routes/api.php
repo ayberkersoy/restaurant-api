@@ -80,3 +80,10 @@ Route::get('reservations/{reservation}', 'ReservationController@show');
 Route::post('reservations', 'ReservationController@store');
 Route::post('reservations/{reservation}', 'ReservationController@update');
 Route::post('reservations/{reservation}/destroy', 'ReservationController@destroy');
+
+Route::post('login', 'UserController@login');
+Route::post('register', 'UserController@register');
+
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::get('getUser', 'UserController@getUser');
+});
