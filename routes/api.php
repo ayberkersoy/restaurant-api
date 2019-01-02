@@ -19,7 +19,6 @@ Route::get('products/{product}', 'ProductController@show');
 Route::post('products', 'ProductController@store');
 Route::post('products/{product}', 'ProductController@update');
 Route::post('products/{product}/destroy', 'ProductController@destroy');
-Route::post('getProductsByCategory/{category}', 'ProductController@getProductsByCategory');
 
 Route::get('campaigns', 'CampaignController@index');
 Route::get('campaigns/{campaign}', 'CampaignController@show');
@@ -32,6 +31,7 @@ Route::get('categories/{category}', 'CategoryController@show');
 Route::post('categories', 'CategoryController@store');
 Route::post('categories/{category}', 'CategoryController@update');
 Route::post('categories/{category}/destroy', 'CategoryController@destroy');
+Route::post('getProductsByCategory/{category}', 'CategoryController@getProductsByCategory');
 
 Route::get('userContacts', 'UserContactController@index');
 Route::get('userContacts/{userContact}', 'UserContactController@show');

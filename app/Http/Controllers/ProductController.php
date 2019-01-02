@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Validator;
 use App\Product;
-use App\Category;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -59,10 +58,5 @@ class ProductController extends Controller
     {
         $product->delete();
         return response()->json(['status' => true]);
-    }
-
-    public function getProductsByCategory(Category $category)
-    {
-        return response()->json($category->products);
     }
 }

@@ -60,10 +60,6 @@ class CampaignController extends Controller
     /**
      * Show specific campaign
      * @queryParam id required The id of the campaign.
-     * @bodyParam id int required The id of the campaign. Example: 9
-     * @bodyParam name string required The name of the campaign.
-     * @bodyParam description string required The description of the campaign.
-     * @bodyParam image_url string required The image of the campaign.
      * @response {
      *      "id": 1,
      *      "name": "Bu hafta ürünlerde %10 indirim!",
