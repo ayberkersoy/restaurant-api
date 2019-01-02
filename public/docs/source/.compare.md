@@ -78,7 +78,7 @@ curl -X GET -G "https://api.maycreator.com/api/campaigns/{campaign}"
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "PhhabAZUi77X70FI",
+            "id": "R0ESdCqSto688bpd",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -123,9 +123,9 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/campaigns"     -d "name"="1d7f39gSpct4kJ7J" \
-    -d "description"="AI35UMkHvWJEWORX" \
-    -d "image_url"="sUe8nR3yxbziUBML" 
+curl -X POST "https://api.maycreator.com/api/campaigns"     -d "name"="2VIbWGYn203NX88o" \
+    -d "description"="LbjYSCApdyODMA9Z" \
+    -d "image_url"="mXy1dU0wrbZFzskH" 
 ```
 
 ```javascript
@@ -137,9 +137,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "1d7f39gSpct4kJ7J",
-    "description": "AI35UMkHvWJEWORX",
-    "image_url": "sUe8nR3yxbziUBML",
+    "name": "2VIbWGYn203NX88o",
+    "description": "LbjYSCApdyODMA9Z",
+    "image_url": "mXy1dU0wrbZFzskH",
 })
 
 fetch(url, {
@@ -182,16 +182,16 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}"     -d "id"="9" \
-    -d "name"="LwRHOaapIALQxlMR" \
-    -d "description"="1wJTHlLkjzDCbRqR" \
-    -d "image_url"="p9215i4d1GwwAubr" 
+    -d "name"="WLafEZtyNYWrUcbi" \
+    -d "description"="b3jnKLIGE67cZ7ZK" \
+    -d "image_url"="nxvBIeKjSGEQuNkT" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "fQ3rcen4VPlfjCei",
+            "id": "g0nz9hByGcbbpBsb",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -202,9 +202,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "LwRHOaapIALQxlMR",
-    "description": "1wJTHlLkjzDCbRqR",
-    "image_url": "p9215i4d1GwwAubr",
+    "name": "WLafEZtyNYWrUcbi",
+    "description": "b3jnKLIGE67cZ7ZK",
+    "image_url": "nxvBIeKjSGEQuNkT",
 })
 
 fetch(url, {
@@ -259,7 +259,7 @@ curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}/destroy"
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}/destroy");
 
     let params = {
-            "id": "WCx1xUitewGHzv7Q",
+            "id": "9qdkKeSy3xBWyw61",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -353,7 +353,7 @@ curl -X GET -G "https://api.maycreator.com/api/categories/{category}"
 const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
     let params = {
-            "id": "UwLarRF5ezpsOUzC",
+            "id": "tK4ttZXvnUUFLoUz",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -398,9 +398,9 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/categories"     -d "name"="ZUqWcpDp5YeFZQLY" \
-    -d "description"="aitbqBP2H4HH4OaU" \
-    -d "image_url"="VQDLejxCdY24a7E0" 
+curl -X POST "https://api.maycreator.com/api/categories"     -d "name"="VNJ54zsOjgo1w9dC" \
+    -d "description"="VEWHf7fgYUnDowRi" \
+    -d "image_url"="177MtFsvusUJYyOQ" 
 ```
 
 ```javascript
@@ -412,9 +412,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "ZUqWcpDp5YeFZQLY",
-    "description": "aitbqBP2H4HH4OaU",
-    "image_url": "VQDLejxCdY24a7E0",
+    "name": "VNJ54zsOjgo1w9dC",
+    "description": "VEWHf7fgYUnDowRi",
+    "image_url": "177MtFsvusUJYyOQ",
 })
 
 fetch(url, {
@@ -457,16 +457,16 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/categories/{category}"     -d "id"="9" \
-    -d "name"="lIw2l2PQdU60Ee3g" \
-    -d "description"="JEBn1cdYF4IrsN4v" \
-    -d "image_url"="ngXHgoVhkWtUUtur" 
+    -d "name"="Dg231d42243KGEkW" \
+    -d "description"="z9EbIoQhnmSMG2gL" \
+    -d "image_url"="foTq80icwrGQznS9" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
     let params = {
-            "id": "WVI60znaclkeNhuM",
+            "id": "nG9EcHNU6GdmU8AI",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -477,9 +477,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "lIw2l2PQdU60Ee3g",
-    "description": "JEBn1cdYF4IrsN4v",
-    "image_url": "ngXHgoVhkWtUUtur",
+    "name": "Dg231d42243KGEkW",
+    "description": "z9EbIoQhnmSMG2gL",
+    "image_url": "foTq80icwrGQznS9",
 })
 
 fetch(url, {
@@ -534,7 +534,7 @@ curl -X POST "https://api.maycreator.com/api/categories/{category}/destroy"
 const url = new URL("https://api.maycreator.com/api/categories/{category}/destroy");
 
     let params = {
-            "id": "5f3jdpwaS66jsVYB",
+            "id": "tZsUVoWTdAPS5wWV",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -583,7 +583,7 @@ curl -X POST "https://api.maycreator.com/api/getProductsByCategory/{category}"
 const url = new URL("https://api.maycreator.com/api/getProductsByCategory/{category}");
 
     let params = {
-            "id": "zU3z5aPfpIUiqE7I",
+            "id": "xZxZBVEuGdmVxzcv",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -637,6 +637,267 @@ Parameter | Status | Description
     id |  required  | The id of the category.
 
 <!-- END_4cbc6759466c1248c148bf930d0e8e89 -->
+
+#Comment Management
+
+APIs for managing comments
+<!-- START_38702aa9c6f225b36ff53e89358992ea -->
+## Index all comments
+
+> Example request:
+
+```bash
+curl -X GET -G "https://api.maycreator.com/api/comments" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/comments");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{}
+```
+
+### HTTP Request
+`GET api/comments`
+
+
+<!-- END_38702aa9c6f225b36ff53e89358992ea -->
+
+<!-- START_269ffb3df7dcc5ae9ed5de70f1a30ef3 -->
+## Show specific comment
+
+> Example request:
+
+```bash
+curl -X GET -G "https://api.maycreator.com/api/comments/{comment}" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/comments/{comment}");
+
+    let params = {
+            "id": "lltYWlzhUlHrO7iR",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{}
+```
+
+### HTTP Request
+`GET api/comments/{comment}`
+
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the comment.
+
+<!-- END_269ffb3df7dcc5ae9ed5de70f1a30ef3 -->
+
+<!-- START_6c560cb463cae69ddba197afa896608b -->
+## Create a new comment
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/comments"     -d "user_id"="5" \
+    -d "product_id"="8" \
+    -d "comment"="YAADKZQECXLHEXB1" \
+    -d "stars"="506027.5926" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/comments");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "user_id": "5",
+    "product_id": "8",
+    "comment": "YAADKZQECXLHEXB1",
+    "stars": "506027.5926",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{}
+```
+
+### HTTP Request
+`POST api/comments`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    user_id | integer |  required  | The id of the user.
+    product_id | integer |  required  | The id of the product.
+    comment | string |  required  | The content of the comment.
+    stars | float |  required  | The stars of the comment.
+
+<!-- END_6c560cb463cae69ddba197afa896608b -->
+
+<!-- START_60efda4375ad180bf595162107db4782 -->
+## Update specific comment
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/comments/{comment}"     -d "id"="9" \
+    -d "user_id"="20" \
+    -d "product_id"="12" \
+    -d "comment"="7rYfBHQQruCj7lbr" \
+    -d "stars"="83.2" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/comments/{comment}");
+
+    let params = {
+            "id": "smPcXXhWWnEMSDM1",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "id": "9",
+    "user_id": "20",
+    "product_id": "12",
+    "comment": "7rYfBHQQruCj7lbr",
+    "stars": "83.2",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{}
+```
+
+### HTTP Request
+`POST api/comments/{comment}`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    id | integer |  required  | The id of the category.
+    user_id | integer |  required  | The id of the user.
+    product_id | integer |  required  | The id of the product.
+    comment | string |  required  | The content of the comment.
+    stars | float |  required  | The stars of the comment.
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the comment.
+
+<!-- END_60efda4375ad180bf595162107db4782 -->
+
+<!-- START_a4439bf1997dbcbf12a01b8b83031a2a -->
+## Delete specific comment
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/comments/{comment}/destroy" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/comments/{comment}/destroy");
+
+    let params = {
+            "id": "jAassdxQXQiV7iBk",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "status": true
+}
+```
+
+### HTTP Request
+`POST api/comments/{comment}/destroy`
+
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the comment.
+
+<!-- END_a4439bf1997dbcbf12a01b8b83031a2a -->
 
 #general
 <!-- START_0c068b4037fb2e47e71bd44bd36e3e2a -->
@@ -4052,559 +4313,6 @@ fetch(url, {
 
 
 <!-- END_b656c799b02ccceddbfb3fea4c61ac59 -->
-
-<!-- START_38702aa9c6f225b36ff53e89358992ea -->
-## api/comments
-> Example request:
-
-```bash
-curl -X GET -G "https://api.maycreator.com/api/comments" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/comments");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-[]
-```
-
-### HTTP Request
-`GET api/comments`
-
-
-<!-- END_38702aa9c6f225b36ff53e89358992ea -->
-
-<!-- START_269ffb3df7dcc5ae9ed5de70f1a30ef3 -->
-## api/comments/{comment}
-> Example request:
-
-```bash
-curl -X GET -G "https://api.maycreator.com/api/comments/{comment}" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/comments/{comment}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (404):
-
-```json
-{
-    "message": "No query results for model [App\\Comment].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/vagrant\/code\/restaurant-api\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
-}
-```
-
-### HTTP Request
-`GET api/comments/{comment}`
-
-
-<!-- END_269ffb3df7dcc5ae9ed5de70f1a30ef3 -->
-
-<!-- START_6c560cb463cae69ddba197afa896608b -->
-## api/comments
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/comments" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/comments");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/comments`
-
-
-<!-- END_6c560cb463cae69ddba197afa896608b -->
-
-<!-- START_60efda4375ad180bf595162107db4782 -->
-## api/comments/{comment}
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/comments/{comment}" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/comments/{comment}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/comments/{comment}`
-
-
-<!-- END_60efda4375ad180bf595162107db4782 -->
-
-<!-- START_a4439bf1997dbcbf12a01b8b83031a2a -->
-## api/comments/{comment}/destroy
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/comments/{comment}/destroy" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/comments/{comment}/destroy");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/comments/{comment}/destroy`
-
-
-<!-- END_a4439bf1997dbcbf12a01b8b83031a2a -->
 
 <!-- START_bbf5f53764a43af9eab11504db0c39b5 -->
 ## api/employees
