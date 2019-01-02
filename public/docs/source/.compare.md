@@ -29,11 +29,11 @@ APIs for managing campaigns
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/campaigns" 
+curl -X GET -G "https://api.maycreator.com/api/campaigns" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/campaigns");
+const url = new URL("https://api.maycreator.com/api/campaigns");
 
 let headers = {
     "Accept": "application/json",
@@ -71,17 +71,17 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/campaigns/{campaign}"     -d "id"="9" \
-    -d "name"="UA3gTnnmn9TZNwEt" \
-    -d "description"="Sp6uuZfflcoObD5Z" \
-    -d "image_url"="ZmLB4EcGg4Fq23Q4" 
+curl -X GET -G "https://api.maycreator.com/api/campaigns/{campaign}"     -d "id"="9" \
+    -d "name"="AsK5TUx98YS5KvWH" \
+    -d "description"="RoqicFMZgsxJxmKz" \
+    -d "image_url"="bYxeVsraUt2ITMlE" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/campaigns/{campaign}");
+const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "fXJLaLvzkGFrDF6n",
+            "id": "xw12csTYRfLJejYs",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -92,9 +92,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "UA3gTnnmn9TZNwEt",
-    "description": "Sp6uuZfflcoObD5Z",
-    "image_url": "ZmLB4EcGg4Fq23Q4",
+    "name": "AsK5TUx98YS5KvWH",
+    "description": "RoqicFMZgsxJxmKz",
+    "image_url": "bYxeVsraUt2ITMlE",
 })
 
 fetch(url, {
@@ -142,13 +142,13 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/campaigns"     -d "name"="e0hcyJwdwcRMFwa2" \
-    -d "description"="5h4g6MqxBxiERDPB" \
-    -d "image_url"="Pdrh5LbicpD8bALF" 
+curl -X POST "https://api.maycreator.com/api/campaigns"     -d "name"="hatLkNehN4ImqK0X" \
+    -d "description"="BuXMq3xNjNjIdI4K" \
+    -d "image_url"="wpQKJ3J80c1lORkY" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/campaigns");
+const url = new URL("https://api.maycreator.com/api/campaigns");
 
 let headers = {
     "Accept": "application/json",
@@ -156,9 +156,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "e0hcyJwdwcRMFwa2",
-    "description": "5h4g6MqxBxiERDPB",
-    "image_url": "Pdrh5LbicpD8bALF",
+    "name": "hatLkNehN4ImqK0X",
+    "description": "BuXMq3xNjNjIdI4K",
+    "image_url": "wpQKJ3J80c1lORkY",
 })
 
 fetch(url, {
@@ -200,17 +200,17 @@ Parameter | Type | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/campaigns/{campaign}"     -d "id"="9" \
-    -d "name"="Ug42EkfSr0zKM44r" \
-    -d "description"="TkqgeADiRRld9bMv" \
-    -d "image_url"="IMawP5ET0QPIV23x" 
+curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}"     -d "id"="9" \
+    -d "name"="LT2DHZeqBpZ0eA2z" \
+    -d "description"="N5JBFXo9TNtajuUc" \
+    -d "image_url"="5GJZVNPhmygC7MsO" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/campaigns/{campaign}");
+const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "vhAdlmQz7HkhLGlh",
+            "id": "XdjiAq6jjG21lh4G",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -221,9 +221,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "Ug42EkfSr0zKM44r",
-    "description": "TkqgeADiRRld9bMv",
-    "image_url": "IMawP5ET0QPIV23x",
+    "name": "LT2DHZeqBpZ0eA2z",
+    "description": "N5JBFXo9TNtajuUc",
+    "image_url": "5GJZVNPhmygC7MsO",
 })
 
 fetch(url, {
@@ -271,14 +271,14 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/campaigns/{campaign}/destroy" 
+curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/campaigns/{campaign}/destroy");
+const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}/destroy");
 
     let params = {
-            "id": "4xwV3YOA6Rkbiubd",
+            "id": "Iop2UaR1MoNp6rqm",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -321,11 +321,11 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/oauth/authorize" 
+curl -X GET -G "https://api.maycreator.com/oauth/authorize" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/authorize");
+const url = new URL("https://api.maycreator.com/oauth/authorize");
 
 let headers = {
     "Accept": "application/json",
@@ -360,11 +360,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/oauth/authorize" 
+curl -X POST "https://api.maycreator.com/oauth/authorize" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/authorize");
+const url = new URL("https://api.maycreator.com/oauth/authorize");
 
 let headers = {
     "Accept": "application/json",
@@ -392,11 +392,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X DELETE "http://restaurant.api/oauth/authorize" 
+curl -X DELETE "https://api.maycreator.com/oauth/authorize" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/authorize");
+const url = new URL("https://api.maycreator.com/oauth/authorize");
 
 let headers = {
     "Accept": "application/json",
@@ -424,11 +424,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/oauth/token" 
+curl -X POST "https://api.maycreator.com/oauth/token" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/token");
+const url = new URL("https://api.maycreator.com/oauth/token");
 
 let headers = {
     "Accept": "application/json",
@@ -456,11 +456,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/oauth/tokens" 
+curl -X GET -G "https://api.maycreator.com/oauth/tokens" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/tokens");
+const url = new URL("https://api.maycreator.com/oauth/tokens");
 
 let headers = {
     "Accept": "application/json",
@@ -495,11 +495,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X DELETE "http://restaurant.api/oauth/tokens/{token_id}" 
+curl -X DELETE "https://api.maycreator.com/oauth/tokens/{token_id}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/tokens/{token_id}");
+const url = new URL("https://api.maycreator.com/oauth/tokens/{token_id}");
 
 let headers = {
     "Accept": "application/json",
@@ -527,11 +527,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/oauth/token/refresh" 
+curl -X POST "https://api.maycreator.com/oauth/token/refresh" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/token/refresh");
+const url = new URL("https://api.maycreator.com/oauth/token/refresh");
 
 let headers = {
     "Accept": "application/json",
@@ -559,11 +559,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/oauth/clients" 
+curl -X GET -G "https://api.maycreator.com/oauth/clients" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/clients");
+const url = new URL("https://api.maycreator.com/oauth/clients");
 
 let headers = {
     "Accept": "application/json",
@@ -598,11 +598,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/oauth/clients" 
+curl -X POST "https://api.maycreator.com/oauth/clients" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/clients");
+const url = new URL("https://api.maycreator.com/oauth/clients");
 
 let headers = {
     "Accept": "application/json",
@@ -630,11 +630,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X PUT "http://restaurant.api/oauth/clients/{client_id}" 
+curl -X PUT "https://api.maycreator.com/oauth/clients/{client_id}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/clients/{client_id}");
+const url = new URL("https://api.maycreator.com/oauth/clients/{client_id}");
 
 let headers = {
     "Accept": "application/json",
@@ -662,11 +662,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X DELETE "http://restaurant.api/oauth/clients/{client_id}" 
+curl -X DELETE "https://api.maycreator.com/oauth/clients/{client_id}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/clients/{client_id}");
+const url = new URL("https://api.maycreator.com/oauth/clients/{client_id}");
 
 let headers = {
     "Accept": "application/json",
@@ -694,11 +694,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/oauth/scopes" 
+curl -X GET -G "https://api.maycreator.com/oauth/scopes" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/scopes");
+const url = new URL("https://api.maycreator.com/oauth/scopes");
 
 let headers = {
     "Accept": "application/json",
@@ -733,11 +733,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/oauth/personal-access-tokens" 
+curl -X GET -G "https://api.maycreator.com/oauth/personal-access-tokens" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/personal-access-tokens");
+const url = new URL("https://api.maycreator.com/oauth/personal-access-tokens");
 
 let headers = {
     "Accept": "application/json",
@@ -772,11 +772,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/oauth/personal-access-tokens" 
+curl -X POST "https://api.maycreator.com/oauth/personal-access-tokens" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/personal-access-tokens");
+const url = new URL("https://api.maycreator.com/oauth/personal-access-tokens");
 
 let headers = {
     "Accept": "application/json",
@@ -804,11 +804,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X DELETE "http://restaurant.api/oauth/personal-access-tokens/{token_id}" 
+curl -X DELETE "https://api.maycreator.com/oauth/personal-access-tokens/{token_id}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/oauth/personal-access-tokens/{token_id}");
+const url = new URL("https://api.maycreator.com/oauth/personal-access-tokens/{token_id}");
 
 let headers = {
     "Accept": "application/json",
@@ -835,11 +835,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/companies" 
+curl -X GET -G "https://api.maycreator.com/api/companies" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/companies");
+const url = new URL("https://api.maycreator.com/api/companies");
 
 let headers = {
     "Accept": "application/json",
@@ -871,11 +871,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/companies/{company}" 
+curl -X GET -G "https://api.maycreator.com/api/companies/{company}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/companies/{company}");
+const url = new URL("https://api.maycreator.com/api/companies/{company}");
 
 let headers = {
     "Accept": "application/json",
@@ -1295,11 +1295,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/companies" 
+curl -X POST "https://api.maycreator.com/api/companies" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/companies");
+const url = new URL("https://api.maycreator.com/api/companies");
 
 let headers = {
     "Accept": "application/json",
@@ -1326,11 +1326,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/companies/{company}" 
+curl -X POST "https://api.maycreator.com/api/companies/{company}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/companies/{company}");
+const url = new URL("https://api.maycreator.com/api/companies/{company}");
 
 let headers = {
     "Accept": "application/json",
@@ -1357,11 +1357,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/companies/{company}/destroy" 
+curl -X POST "https://api.maycreator.com/api/companies/{company}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/companies/{company}/destroy");
+const url = new URL("https://api.maycreator.com/api/companies/{company}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -1388,11 +1388,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/users" 
+curl -X GET -G "https://api.maycreator.com/api/users" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/users");
+const url = new URL("https://api.maycreator.com/api/users");
 
 let headers = {
     "Accept": "application/json",
@@ -1436,11 +1436,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/users/{user}" 
+curl -X GET -G "https://api.maycreator.com/api/users/{user}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/users/{user}");
+const url = new URL("https://api.maycreator.com/api/users/{user}");
 
 let headers = {
     "Accept": "application/json",
@@ -1860,11 +1860,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/users" 
+curl -X POST "https://api.maycreator.com/api/users" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/users");
+const url = new URL("https://api.maycreator.com/api/users");
 
 let headers = {
     "Accept": "application/json",
@@ -1891,11 +1891,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/users/{user}" 
+curl -X POST "https://api.maycreator.com/api/users/{user}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/users/{user}");
+const url = new URL("https://api.maycreator.com/api/users/{user}");
 
 let headers = {
     "Accept": "application/json",
@@ -1922,11 +1922,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/users/{user}/destroy" 
+curl -X POST "https://api.maycreator.com/api/users/{user}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/users/{user}/destroy");
+const url = new URL("https://api.maycreator.com/api/users/{user}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -1953,11 +1953,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/users/{user}/favourites" 
+curl -X GET -G "https://api.maycreator.com/api/users/{user}/favourites" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/users/{user}/favourites");
+const url = new URL("https://api.maycreator.com/api/users/{user}/favourites");
 
 let headers = {
     "Accept": "application/json",
@@ -2377,11 +2377,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/users/{user}/contacts" 
+curl -X GET -G "https://api.maycreator.com/api/users/{user}/contacts" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/users/{user}/contacts");
+const url = new URL("https://api.maycreator.com/api/users/{user}/contacts");
 
 let headers = {
     "Accept": "application/json",
@@ -2801,11 +2801,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/products" 
+curl -X GET -G "https://api.maycreator.com/api/products" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/products");
+const url = new URL("https://api.maycreator.com/api/products");
 
 let headers = {
     "Accept": "application/json",
@@ -2848,11 +2848,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/products/{product}" 
+curl -X GET -G "https://api.maycreator.com/api/products/{product}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/products/{product}");
+const url = new URL("https://api.maycreator.com/api/products/{product}");
 
 let headers = {
     "Accept": "application/json",
@@ -2893,11 +2893,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/products" 
+curl -X POST "https://api.maycreator.com/api/products" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/products");
+const url = new URL("https://api.maycreator.com/api/products");
 
 let headers = {
     "Accept": "application/json",
@@ -2924,11 +2924,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/products/{product}" 
+curl -X POST "https://api.maycreator.com/api/products/{product}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/products/{product}");
+const url = new URL("https://api.maycreator.com/api/products/{product}");
 
 let headers = {
     "Accept": "application/json",
@@ -2955,11 +2955,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/products/{product}/destroy" 
+curl -X POST "https://api.maycreator.com/api/products/{product}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/products/{product}/destroy");
+const url = new URL("https://api.maycreator.com/api/products/{product}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -2986,11 +2986,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/getProductsByCategory/{category}" 
+curl -X POST "https://api.maycreator.com/api/getProductsByCategory/{category}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/getProductsByCategory/{category}");
+const url = new URL("https://api.maycreator.com/api/getProductsByCategory/{category}");
 
 let headers = {
     "Accept": "application/json",
@@ -3017,11 +3017,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/categories" 
+curl -X GET -G "https://api.maycreator.com/api/categories" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/categories");
+const url = new URL("https://api.maycreator.com/api/categories");
 
 let headers = {
     "Accept": "application/json",
@@ -3053,11 +3053,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/categories/{category}" 
+curl -X GET -G "https://api.maycreator.com/api/categories/{category}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/categories/{category}");
+const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
 let headers = {
     "Accept": "application/json",
@@ -3477,11 +3477,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/categories" 
+curl -X POST "https://api.maycreator.com/api/categories" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/categories");
+const url = new URL("https://api.maycreator.com/api/categories");
 
 let headers = {
     "Accept": "application/json",
@@ -3508,11 +3508,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/categories/{category}" 
+curl -X POST "https://api.maycreator.com/api/categories/{category}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/categories/{category}");
+const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
 let headers = {
     "Accept": "application/json",
@@ -3539,11 +3539,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/categories/{category}/destroy" 
+curl -X POST "https://api.maycreator.com/api/categories/{category}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/categories/{category}/destroy");
+const url = new URL("https://api.maycreator.com/api/categories/{category}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -3570,11 +3570,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/userContacts" 
+curl -X GET -G "https://api.maycreator.com/api/userContacts" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/userContacts");
+const url = new URL("https://api.maycreator.com/api/userContacts");
 
 let headers = {
     "Accept": "application/json",
@@ -3606,11 +3606,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/userContacts/{userContact}" 
+curl -X GET -G "https://api.maycreator.com/api/userContacts/{userContact}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/userContacts/{userContact}");
+const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}");
 
 let headers = {
     "Accept": "application/json",
@@ -4030,11 +4030,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/userContacts" 
+curl -X POST "https://api.maycreator.com/api/userContacts" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/userContacts");
+const url = new URL("https://api.maycreator.com/api/userContacts");
 
 let headers = {
     "Accept": "application/json",
@@ -4061,11 +4061,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/userContacts/{userContact}" 
+curl -X POST "https://api.maycreator.com/api/userContacts/{userContact}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/userContacts/{userContact}");
+const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}");
 
 let headers = {
     "Accept": "application/json",
@@ -4092,11 +4092,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/userContacts/{userContact}/destroy" 
+curl -X POST "https://api.maycreator.com/api/userContacts/{userContact}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/userContacts/{userContact}/destroy");
+const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -4123,11 +4123,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/baskets" 
+curl -X GET -G "https://api.maycreator.com/api/baskets" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/baskets");
+const url = new URL("https://api.maycreator.com/api/baskets");
 
 let headers = {
     "Accept": "application/json",
@@ -4170,11 +4170,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/baskets/{basket}" 
+curl -X GET -G "https://api.maycreator.com/api/baskets/{basket}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/baskets/{basket}");
+const url = new URL("https://api.maycreator.com/api/baskets/{basket}");
 
 let headers = {
     "Accept": "application/json",
@@ -4215,11 +4215,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/baskets" 
+curl -X POST "https://api.maycreator.com/api/baskets" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/baskets");
+const url = new URL("https://api.maycreator.com/api/baskets");
 
 let headers = {
     "Accept": "application/json",
@@ -4246,11 +4246,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/baskets/{basket}" 
+curl -X POST "https://api.maycreator.com/api/baskets/{basket}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/baskets/{basket}");
+const url = new URL("https://api.maycreator.com/api/baskets/{basket}");
 
 let headers = {
     "Accept": "application/json",
@@ -4277,11 +4277,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/baskets/{basket}/destroy" 
+curl -X POST "https://api.maycreator.com/api/baskets/{basket}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/baskets/{basket}/destroy");
+const url = new URL("https://api.maycreator.com/api/baskets/{basket}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -4308,11 +4308,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/comments" 
+curl -X GET -G "https://api.maycreator.com/api/comments" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/comments");
+const url = new URL("https://api.maycreator.com/api/comments");
 
 let headers = {
     "Accept": "application/json",
@@ -4344,11 +4344,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/comments/{comment}" 
+curl -X GET -G "https://api.maycreator.com/api/comments/{comment}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/comments/{comment}");
+const url = new URL("https://api.maycreator.com/api/comments/{comment}");
 
 let headers = {
     "Accept": "application/json",
@@ -4768,11 +4768,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/comments" 
+curl -X POST "https://api.maycreator.com/api/comments" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/comments");
+const url = new URL("https://api.maycreator.com/api/comments");
 
 let headers = {
     "Accept": "application/json",
@@ -4799,11 +4799,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/comments/{comment}" 
+curl -X POST "https://api.maycreator.com/api/comments/{comment}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/comments/{comment}");
+const url = new URL("https://api.maycreator.com/api/comments/{comment}");
 
 let headers = {
     "Accept": "application/json",
@@ -4830,11 +4830,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/comments/{comment}/destroy" 
+curl -X POST "https://api.maycreator.com/api/comments/{comment}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/comments/{comment}/destroy");
+const url = new URL("https://api.maycreator.com/api/comments/{comment}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -4861,11 +4861,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/employees" 
+curl -X GET -G "https://api.maycreator.com/api/employees" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/employees");
+const url = new URL("https://api.maycreator.com/api/employees");
 
 let headers = {
     "Accept": "application/json",
@@ -4897,11 +4897,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/employees/{employee}" 
+curl -X GET -G "https://api.maycreator.com/api/employees/{employee}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/employees/{employee}");
+const url = new URL("https://api.maycreator.com/api/employees/{employee}");
 
 let headers = {
     "Accept": "application/json",
@@ -5321,11 +5321,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/employees" 
+curl -X POST "https://api.maycreator.com/api/employees" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/employees");
+const url = new URL("https://api.maycreator.com/api/employees");
 
 let headers = {
     "Accept": "application/json",
@@ -5352,11 +5352,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/employees/{employee}" 
+curl -X POST "https://api.maycreator.com/api/employees/{employee}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/employees/{employee}");
+const url = new URL("https://api.maycreator.com/api/employees/{employee}");
 
 let headers = {
     "Accept": "application/json",
@@ -5383,11 +5383,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/employees/{employee}/destroy" 
+curl -X POST "https://api.maycreator.com/api/employees/{employee}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/employees/{employee}/destroy");
+const url = new URL("https://api.maycreator.com/api/employees/{employee}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -5414,11 +5414,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/favourites" 
+curl -X GET -G "https://api.maycreator.com/api/favourites" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/favourites");
+const url = new URL("https://api.maycreator.com/api/favourites");
 
 let headers = {
     "Accept": "application/json",
@@ -5450,11 +5450,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/favourites/{favourite}" 
+curl -X GET -G "https://api.maycreator.com/api/favourites/{favourite}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/favourites/{favourite}");
+const url = new URL("https://api.maycreator.com/api/favourites/{favourite}");
 
 let headers = {
     "Accept": "application/json",
@@ -5874,11 +5874,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/favourites" 
+curl -X POST "https://api.maycreator.com/api/favourites" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/favourites");
+const url = new URL("https://api.maycreator.com/api/favourites");
 
 let headers = {
     "Accept": "application/json",
@@ -5905,11 +5905,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/favourites/{favourite}" 
+curl -X POST "https://api.maycreator.com/api/favourites/{favourite}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/favourites/{favourite}");
+const url = new URL("https://api.maycreator.com/api/favourites/{favourite}");
 
 let headers = {
     "Accept": "application/json",
@@ -5936,11 +5936,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/favourites/{favourite}/destroy" 
+curl -X POST "https://api.maycreator.com/api/favourites/{favourite}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/favourites/{favourite}/destroy");
+const url = new URL("https://api.maycreator.com/api/favourites/{favourite}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -5967,11 +5967,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/messages" 
+curl -X GET -G "https://api.maycreator.com/api/messages" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/messages");
+const url = new URL("https://api.maycreator.com/api/messages");
 
 let headers = {
     "Accept": "application/json",
@@ -6003,11 +6003,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/messages/{message}" 
+curl -X GET -G "https://api.maycreator.com/api/messages/{message}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/messages/{message}");
+const url = new URL("https://api.maycreator.com/api/messages/{message}");
 
 let headers = {
     "Accept": "application/json",
@@ -6427,11 +6427,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/messages" 
+curl -X POST "https://api.maycreator.com/api/messages" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/messages");
+const url = new URL("https://api.maycreator.com/api/messages");
 
 let headers = {
     "Accept": "application/json",
@@ -6458,11 +6458,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/messages/{message}" 
+curl -X POST "https://api.maycreator.com/api/messages/{message}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/messages/{message}");
+const url = new URL("https://api.maycreator.com/api/messages/{message}");
 
 let headers = {
     "Accept": "application/json",
@@ -6489,11 +6489,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/messages/{message}/destroy" 
+curl -X POST "https://api.maycreator.com/api/messages/{message}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/messages/{message}/destroy");
+const url = new URL("https://api.maycreator.com/api/messages/{message}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -6520,11 +6520,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/orders" 
+curl -X GET -G "https://api.maycreator.com/api/orders" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/orders");
+const url = new URL("https://api.maycreator.com/api/orders");
 
 let headers = {
     "Accept": "application/json",
@@ -6568,11 +6568,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/orders/{order}" 
+curl -X GET -G "https://api.maycreator.com/api/orders/{order}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/orders/{order}");
+const url = new URL("https://api.maycreator.com/api/orders/{order}");
 
 let headers = {
     "Accept": "application/json",
@@ -6614,11 +6614,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/orders" 
+curl -X POST "https://api.maycreator.com/api/orders" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/orders");
+const url = new URL("https://api.maycreator.com/api/orders");
 
 let headers = {
     "Accept": "application/json",
@@ -6645,11 +6645,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/orders/{order}" 
+curl -X POST "https://api.maycreator.com/api/orders/{order}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/orders/{order}");
+const url = new URL("https://api.maycreator.com/api/orders/{order}");
 
 let headers = {
     "Accept": "application/json",
@@ -6676,11 +6676,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/orders/{order}/destroy" 
+curl -X POST "https://api.maycreator.com/api/orders/{order}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/orders/{order}/destroy");
+const url = new URL("https://api.maycreator.com/api/orders/{order}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -6707,11 +6707,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/reservations" 
+curl -X GET -G "https://api.maycreator.com/api/reservations" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/reservations");
+const url = new URL("https://api.maycreator.com/api/reservations");
 
 let headers = {
     "Accept": "application/json",
@@ -6743,11 +6743,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/reservations/{reservation}" 
+curl -X GET -G "https://api.maycreator.com/api/reservations/{reservation}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/reservations/{reservation}");
+const url = new URL("https://api.maycreator.com/api/reservations/{reservation}");
 
 let headers = {
     "Accept": "application/json",
@@ -7167,11 +7167,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/reservations" 
+curl -X POST "https://api.maycreator.com/api/reservations" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/reservations");
+const url = new URL("https://api.maycreator.com/api/reservations");
 
 let headers = {
     "Accept": "application/json",
@@ -7198,11 +7198,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/reservations/{reservation}" 
+curl -X POST "https://api.maycreator.com/api/reservations/{reservation}" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/reservations/{reservation}");
+const url = new URL("https://api.maycreator.com/api/reservations/{reservation}");
 
 let headers = {
     "Accept": "application/json",
@@ -7229,11 +7229,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/reservations/{reservation}/destroy" 
+curl -X POST "https://api.maycreator.com/api/reservations/{reservation}/destroy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/reservations/{reservation}/destroy");
+const url = new URL("https://api.maycreator.com/api/reservations/{reservation}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -7260,11 +7260,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/login" 
+curl -X POST "https://api.maycreator.com/api/login" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/login");
+const url = new URL("https://api.maycreator.com/api/login");
 
 let headers = {
     "Accept": "application/json",
@@ -7291,11 +7291,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/api/register" 
+curl -X POST "https://api.maycreator.com/api/register" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/register");
+const url = new URL("https://api.maycreator.com/api/register");
 
 let headers = {
     "Accept": "application/json",
@@ -7322,11 +7322,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X GET -G "http://restaurant.api/api/getUser" 
+curl -X GET -G "https://api.maycreator.com/api/getUser" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/api/getUser");
+const url = new URL("https://api.maycreator.com/api/getUser");
 
 let headers = {
     "Accept": "application/json",
@@ -7360,11 +7360,11 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X POST "http://restaurant.api/deploy" 
+curl -X POST "https://api.maycreator.com/deploy" 
 ```
 
 ```javascript
-const url = new URL("http://restaurant.api/deploy");
+const url = new URL("https://api.maycreator.com/deploy");
 
 let headers = {
     "Accept": "application/json",

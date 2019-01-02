@@ -55,8 +55,8 @@
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/campaigns" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/campaigns");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/campaigns" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/campaigns");
 
 let headers = {
     "Accept": "application/json",
@@ -86,14 +86,14 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/campaigns/{campaign}"     -d "id"="9" \
-    -d "name"="UA3gTnnmn9TZNwEt" \
-    -d "description"="Sp6uuZfflcoObD5Z" \
-    -d "image_url"="ZmLB4EcGg4Fq23Q4" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/campaigns/{campaign}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/campaigns/{campaign}"     -d "id"="9" \
+    -d "name"="AsK5TUx98YS5KvWH" \
+    -d "description"="RoqicFMZgsxJxmKz" \
+    -d "image_url"="bYxeVsraUt2ITMlE" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "fXJLaLvzkGFrDF6n",
+            "id": "xw12csTYRfLJejYs",
         };
     Object.keys(params).forEach(key =&gt; url.searchParams.append(key, params[key]));
 
@@ -104,9 +104,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "UA3gTnnmn9TZNwEt",
-    "description": "Sp6uuZfflcoObD5Z",
-    "image_url": "ZmLB4EcGg4Fq23Q4",
+    "name": "AsK5TUx98YS5KvWH",
+    "description": "RoqicFMZgsxJxmKz",
+    "image_url": "bYxeVsraUt2ITMlE",
 })
 
 fetch(url, {
@@ -187,10 +187,10 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/campaigns"     -d "name"="e0hcyJwdwcRMFwa2" \
-    -d "description"="5h4g6MqxBxiERDPB" \
-    -d "image_url"="Pdrh5LbicpD8bALF" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/campaigns");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/campaigns"     -d "name"="hatLkNehN4ImqK0X" \
+    -d "description"="BuXMq3xNjNjIdI4K" \
+    -d "image_url"="wpQKJ3J80c1lORkY" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/campaigns");
 
 let headers = {
     "Accept": "application/json",
@@ -198,9 +198,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "e0hcyJwdwcRMFwa2",
-    "description": "5h4g6MqxBxiERDPB",
-    "image_url": "Pdrh5LbicpD8bALF",
+    "name": "hatLkNehN4ImqK0X",
+    "description": "BuXMq3xNjNjIdI4K",
+    "image_url": "wpQKJ3J80c1lORkY",
 })
 
 fetch(url, {
@@ -258,14 +258,14 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/campaigns/{campaign}"     -d "id"="9" \
-    -d "name"="Ug42EkfSr0zKM44r" \
-    -d "description"="TkqgeADiRRld9bMv" \
-    -d "image_url"="IMawP5ET0QPIV23x" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/campaigns/{campaign}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}"     -d "id"="9" \
+    -d "name"="LT2DHZeqBpZ0eA2z" \
+    -d "description"="N5JBFXo9TNtajuUc" \
+    -d "image_url"="5GJZVNPhmygC7MsO" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "vhAdlmQz7HkhLGlh",
+            "id": "XdjiAq6jjG21lh4G",
         };
     Object.keys(params).forEach(key =&gt; url.searchParams.append(key, params[key]));
 
@@ -276,9 +276,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "Ug42EkfSr0zKM44r",
-    "description": "TkqgeADiRRld9bMv",
-    "image_url": "IMawP5ET0QPIV23x",
+    "name": "LT2DHZeqBpZ0eA2z",
+    "description": "N5JBFXo9TNtajuUc",
+    "image_url": "5GJZVNPhmygC7MsO",
 })
 
 fetch(url, {
@@ -359,11 +359,11 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/campaigns/{campaign}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/campaigns/{campaign}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}/destroy");
 
     let params = {
-            "id": "4xwV3YOA6Rkbiubd",
+            "id": "Iop2UaR1MoNp6rqm",
         };
     Object.keys(params).forEach(key =&gt; url.searchParams.append(key, params[key]));
 
@@ -410,8 +410,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/oauth/authorize" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/authorize");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/oauth/authorize" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/authorize");
 
 let headers = {
     "Accept": "application/json",
@@ -438,8 +438,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/oauth/authorize" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/authorize");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/oauth/authorize" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/authorize");
 
 let headers = {
     "Accept": "application/json",
@@ -460,8 +460,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X DELETE "http://restaurant.api/oauth/authorize" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/authorize");
+<pre><code class="language-bash">curl -X DELETE "https://api.maycreator.com/oauth/authorize" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/authorize");
 
 let headers = {
     "Accept": "application/json",
@@ -482,8 +482,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/oauth/token" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/token");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/oauth/token" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/token");
 
 let headers = {
     "Accept": "application/json",
@@ -504,8 +504,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/oauth/tokens" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/tokens");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/oauth/tokens" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/tokens");
 
 let headers = {
     "Accept": "application/json",
@@ -532,8 +532,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X DELETE "http://restaurant.api/oauth/tokens/{token_id}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/tokens/{token_id}");
+<pre><code class="language-bash">curl -X DELETE "https://api.maycreator.com/oauth/tokens/{token_id}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/tokens/{token_id}");
 
 let headers = {
     "Accept": "application/json",
@@ -554,8 +554,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/oauth/token/refresh" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/token/refresh");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/oauth/token/refresh" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/token/refresh");
 
 let headers = {
     "Accept": "application/json",
@@ -576,8 +576,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/oauth/clients" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/clients");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/oauth/clients" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/clients");
 
 let headers = {
     "Accept": "application/json",
@@ -604,8 +604,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/oauth/clients" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/clients");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/oauth/clients" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/clients");
 
 let headers = {
     "Accept": "application/json",
@@ -626,8 +626,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X PUT "http://restaurant.api/oauth/clients/{client_id}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/clients/{client_id}");
+<pre><code class="language-bash">curl -X PUT "https://api.maycreator.com/oauth/clients/{client_id}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/clients/{client_id}");
 
 let headers = {
     "Accept": "application/json",
@@ -648,8 +648,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X DELETE "http://restaurant.api/oauth/clients/{client_id}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/clients/{client_id}");
+<pre><code class="language-bash">curl -X DELETE "https://api.maycreator.com/oauth/clients/{client_id}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/clients/{client_id}");
 
 let headers = {
     "Accept": "application/json",
@@ -670,8 +670,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/oauth/scopes" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/scopes");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/oauth/scopes" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/scopes");
 
 let headers = {
     "Accept": "application/json",
@@ -698,8 +698,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/oauth/personal-access-tokens" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/personal-access-tokens");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/oauth/personal-access-tokens" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/personal-access-tokens");
 
 let headers = {
     "Accept": "application/json",
@@ -726,8 +726,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/oauth/personal-access-tokens" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/personal-access-tokens");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/oauth/personal-access-tokens" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/personal-access-tokens");
 
 let headers = {
     "Accept": "application/json",
@@ -748,8 +748,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X DELETE "http://restaurant.api/oauth/personal-access-tokens/{token_id}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/oauth/personal-access-tokens/{token_id}");
+<pre><code class="language-bash">curl -X DELETE "https://api.maycreator.com/oauth/personal-access-tokens/{token_id}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/oauth/personal-access-tokens/{token_id}");
 
 let headers = {
     "Accept": "application/json",
@@ -770,8 +770,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/companies" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/companies");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/companies" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/companies");
 
 let headers = {
     "Accept": "application/json",
@@ -796,8 +796,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/companies/{company}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/companies/{company}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/companies/{company}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/companies/{company}");
 
 let headers = {
     "Accept": "application/json",
@@ -1210,8 +1210,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/companies" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/companies");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/companies" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/companies");
 
 let headers = {
     "Accept": "application/json",
@@ -1232,8 +1232,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/companies/{company}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/companies/{company}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/companies/{company}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/companies/{company}");
 
 let headers = {
     "Accept": "application/json",
@@ -1254,8 +1254,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/companies/{company}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/companies/{company}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/companies/{company}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/companies/{company}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -1276,8 +1276,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/users" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/users");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/users" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/users");
 
 let headers = {
     "Accept": "application/json",
@@ -1314,8 +1314,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/users/{user}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/users/{user}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/users/{user}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/users/{user}");
 
 let headers = {
     "Accept": "application/json",
@@ -1728,8 +1728,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/users" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/users");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/users" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/users");
 
 let headers = {
     "Accept": "application/json",
@@ -1750,8 +1750,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/users/{user}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/users/{user}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/users/{user}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/users/{user}");
 
 let headers = {
     "Accept": "application/json",
@@ -1772,8 +1772,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/users/{user}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/users/{user}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/users/{user}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/users/{user}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -1794,8 +1794,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/users/{user}/favourites" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/users/{user}/favourites");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/users/{user}/favourites" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/users/{user}/favourites");
 
 let headers = {
     "Accept": "application/json",
@@ -2208,8 +2208,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/users/{user}/contacts" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/users/{user}/contacts");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/users/{user}/contacts" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/users/{user}/contacts");
 
 let headers = {
     "Accept": "application/json",
@@ -2622,8 +2622,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/products" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/products");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/products" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/products");
 
 let headers = {
     "Accept": "application/json",
@@ -2659,8 +2659,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/products/{product}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/products/{product}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/products/{product}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/products/{product}");
 
 let headers = {
     "Accept": "application/json",
@@ -2694,8 +2694,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/products" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/products");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/products" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/products");
 
 let headers = {
     "Accept": "application/json",
@@ -2716,8 +2716,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/products/{product}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/products/{product}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/products/{product}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/products/{product}");
 
 let headers = {
     "Accept": "application/json",
@@ -2738,8 +2738,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/products/{product}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/products/{product}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/products/{product}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/products/{product}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -2760,8 +2760,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/getProductsByCategory/{category}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/getProductsByCategory/{category}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/getProductsByCategory/{category}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/getProductsByCategory/{category}");
 
 let headers = {
     "Accept": "application/json",
@@ -2782,8 +2782,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/categories" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/categories");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/categories" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/categories");
 
 let headers = {
     "Accept": "application/json",
@@ -2808,8 +2808,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/categories/{category}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/categories/{category}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/categories/{category}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
 let headers = {
     "Accept": "application/json",
@@ -3222,8 +3222,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/categories" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/categories");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/categories" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/categories");
 
 let headers = {
     "Accept": "application/json",
@@ -3244,8 +3244,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/categories/{category}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/categories/{category}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/categories/{category}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
 let headers = {
     "Accept": "application/json",
@@ -3266,8 +3266,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/categories/{category}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/categories/{category}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/categories/{category}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/categories/{category}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -3288,8 +3288,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/userContacts" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/userContacts");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/userContacts" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/userContacts");
 
 let headers = {
     "Accept": "application/json",
@@ -3314,8 +3314,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/userContacts/{userContact}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/userContacts/{userContact}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/userContacts/{userContact}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}");
 
 let headers = {
     "Accept": "application/json",
@@ -3728,8 +3728,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/userContacts" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/userContacts");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/userContacts" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/userContacts");
 
 let headers = {
     "Accept": "application/json",
@@ -3750,8 +3750,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/userContacts/{userContact}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/userContacts/{userContact}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/userContacts/{userContact}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}");
 
 let headers = {
     "Accept": "application/json",
@@ -3772,8 +3772,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/userContacts/{userContact}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/userContacts/{userContact}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/userContacts/{userContact}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -3794,8 +3794,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/baskets" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/baskets");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/baskets" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/baskets");
 
 let headers = {
     "Accept": "application/json",
@@ -3831,8 +3831,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/baskets/{basket}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/baskets/{basket}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/baskets/{basket}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/baskets/{basket}");
 
 let headers = {
     "Accept": "application/json",
@@ -3866,8 +3866,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/baskets" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/baskets");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/baskets" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/baskets");
 
 let headers = {
     "Accept": "application/json",
@@ -3888,8 +3888,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/baskets/{basket}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/baskets/{basket}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/baskets/{basket}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/baskets/{basket}");
 
 let headers = {
     "Accept": "application/json",
@@ -3910,8 +3910,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/baskets/{basket}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/baskets/{basket}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/baskets/{basket}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/baskets/{basket}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -3932,8 +3932,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/comments" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/comments");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/comments" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/comments");
 
 let headers = {
     "Accept": "application/json",
@@ -3958,8 +3958,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/comments/{comment}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/comments/{comment}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/comments/{comment}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/comments/{comment}");
 
 let headers = {
     "Accept": "application/json",
@@ -4372,8 +4372,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/comments" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/comments");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/comments" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/comments");
 
 let headers = {
     "Accept": "application/json",
@@ -4394,8 +4394,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/comments/{comment}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/comments/{comment}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/comments/{comment}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/comments/{comment}");
 
 let headers = {
     "Accept": "application/json",
@@ -4416,8 +4416,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/comments/{comment}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/comments/{comment}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/comments/{comment}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/comments/{comment}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -4438,8 +4438,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/employees" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/employees");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/employees" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/employees");
 
 let headers = {
     "Accept": "application/json",
@@ -4464,8 +4464,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/employees/{employee}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/employees/{employee}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/employees/{employee}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/employees/{employee}");
 
 let headers = {
     "Accept": "application/json",
@@ -4878,8 +4878,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/employees" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/employees");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/employees" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/employees");
 
 let headers = {
     "Accept": "application/json",
@@ -4900,8 +4900,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/employees/{employee}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/employees/{employee}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/employees/{employee}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/employees/{employee}");
 
 let headers = {
     "Accept": "application/json",
@@ -4922,8 +4922,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/employees/{employee}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/employees/{employee}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/employees/{employee}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/employees/{employee}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -4944,8 +4944,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/favourites" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/favourites");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/favourites" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/favourites");
 
 let headers = {
     "Accept": "application/json",
@@ -4970,8 +4970,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/favourites/{favourite}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/favourites/{favourite}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/favourites/{favourite}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/favourites/{favourite}");
 
 let headers = {
     "Accept": "application/json",
@@ -5384,8 +5384,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/favourites" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/favourites");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/favourites" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/favourites");
 
 let headers = {
     "Accept": "application/json",
@@ -5406,8 +5406,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/favourites/{favourite}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/favourites/{favourite}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/favourites/{favourite}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/favourites/{favourite}");
 
 let headers = {
     "Accept": "application/json",
@@ -5428,8 +5428,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/favourites/{favourite}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/favourites/{favourite}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/favourites/{favourite}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/favourites/{favourite}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -5450,8 +5450,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/messages" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/messages");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/messages" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/messages");
 
 let headers = {
     "Accept": "application/json",
@@ -5476,8 +5476,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/messages/{message}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/messages/{message}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/messages/{message}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/messages/{message}");
 
 let headers = {
     "Accept": "application/json",
@@ -5890,8 +5890,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/messages" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/messages");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/messages" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/messages");
 
 let headers = {
     "Accept": "application/json",
@@ -5912,8 +5912,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/messages/{message}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/messages/{message}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/messages/{message}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/messages/{message}");
 
 let headers = {
     "Accept": "application/json",
@@ -5934,8 +5934,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/messages/{message}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/messages/{message}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/messages/{message}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/messages/{message}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -5956,8 +5956,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/orders" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/orders");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/orders" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/orders");
 
 let headers = {
     "Accept": "application/json",
@@ -5994,8 +5994,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/orders/{order}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/orders/{order}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/orders/{order}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/orders/{order}");
 
 let headers = {
     "Accept": "application/json",
@@ -6030,8 +6030,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/orders" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/orders");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/orders" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/orders");
 
 let headers = {
     "Accept": "application/json",
@@ -6052,8 +6052,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/orders/{order}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/orders/{order}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/orders/{order}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/orders/{order}");
 
 let headers = {
     "Accept": "application/json",
@@ -6074,8 +6074,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/orders/{order}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/orders/{order}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/orders/{order}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/orders/{order}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -6096,8 +6096,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/reservations" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/reservations");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/reservations" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/reservations");
 
 let headers = {
     "Accept": "application/json",
@@ -6122,8 +6122,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/reservations/{reservation}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/reservations/{reservation}");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/reservations/{reservation}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/reservations/{reservation}");
 
 let headers = {
     "Accept": "application/json",
@@ -6536,8 +6536,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/reservations" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/reservations");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/reservations" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/reservations");
 
 let headers = {
     "Accept": "application/json",
@@ -6558,8 +6558,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/reservations/{reservation}" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/reservations/{reservation}");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/reservations/{reservation}" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/reservations/{reservation}");
 
 let headers = {
     "Accept": "application/json",
@@ -6580,8 +6580,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/reservations/{reservation}/destroy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/reservations/{reservation}/destroy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/reservations/{reservation}/destroy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/reservations/{reservation}/destroy");
 
 let headers = {
     "Accept": "application/json",
@@ -6602,8 +6602,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/login" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/login");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/login" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/login");
 
 let headers = {
     "Accept": "application/json",
@@ -6624,8 +6624,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/api/register" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/register");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/api/register" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/register");
 
 let headers = {
     "Accept": "application/json",
@@ -6646,8 +6646,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET -G "http://restaurant.api/api/getUser" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/api/getUser");
+<pre><code class="language-bash">curl -X GET -G "https://api.maycreator.com/api/getUser" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/api/getUser");
 
 let headers = {
     "Accept": "application/json",
@@ -6674,8 +6674,8 @@ fetch(url, {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://restaurant.api/deploy" </code></pre>
-<pre><code class="language-javascript">const url = new URL("http://restaurant.api/deploy");
+<pre><code class="language-bash">curl -X POST "https://api.maycreator.com/deploy" </code></pre>
+<pre><code class="language-javascript">const url = new URL("https://api.maycreator.com/deploy");
 
 let headers = {
     "Accept": "application/json",
