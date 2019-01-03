@@ -23,7 +23,8 @@ class OrderController extends Controller
      *      "price": "15.00",
      *      "note": "Lütfen çatal bıçak koymayın."
      *      "date_ordered": "2018-12-17 10:06:40",
-     *      "currency": "TL"
+     *      "currency": "TL",
+     *      "payment_type_id": "1"
      * }
      */
     public function index()
@@ -38,8 +39,10 @@ class OrderController extends Controller
      * @bodyParam user_contact_id int required The contact id of the user.
      * @bodyParam status int required The status of the order.
      * @bodyParam price decimal required The price of the order.
-     * @bodyParam note string required The note of the message.
-     * @bodyParam date_ordered timestamp required The date_ordered of the message.
+     * @bodyParam note string required The note of the order.
+     * @bodyParam date_ordered timestamp required The date_ordered of the order.
+     * @bodyParam currency string required The currency of the order.
+     * @bodyParam payment_type_id int required The payment type of the order.
      *
      * @response {
      *      "id": 1,
@@ -49,7 +52,8 @@ class OrderController extends Controller
      *      "price": "15.00",
      *      "note": "Lütfen çatal bıçak koymayın."
      *      "date_ordered": "2018-12-17 10:06:40",
-     *      "currency": "TL"
+     *      "currency": "TL",
+     *      "payment_type_id": "1"
      * }
      */
     public function store(Request $request)
@@ -58,7 +62,9 @@ class OrderController extends Controller
             'user_id' => 'required|exists:users,id',
             'user_contact_id' => 'required|exists:user_contacts,id',
             'status' => 'required',
-            'price' => 'required'
+            'price' => 'required',
+            'currency' => 'required',
+            'payment_type_id' => 'required'
         ]);
 
         if ($validation->fails()) {
@@ -83,7 +89,8 @@ class OrderController extends Controller
      *      "price": "15.00",
      *      "note": "Lütfen çatal bıçak koymayın."
      *      "date_ordered": "2018-12-17 10:06:40",
-     *      "currency": "TL"
+     *      "currency": "TL",
+     *      "payment_type_id": "1"
      * }
      */
     public function show(Order $order)
@@ -100,8 +107,10 @@ class OrderController extends Controller
      * @bodyParam user_contact_id int required The contact id of the user.
      * @bodyParam status int required The status of the order.
      * @bodyParam price decimal required The price of the order.
-     * @bodyParam note string required The note of the message.
-     * @bodyParam date_ordered timestamp required The date_ordered of the message.
+     * @bodyParam note string required The note of the order.
+     * @bodyParam date_ordered timestamp required The date_ordered of the order.
+     * @bodyParam currency string required The currency of the order.
+     * @bodyParam payment_type_id int required The payment type of the order.
      *
      * @response {
      *      "id": 9,
@@ -111,7 +120,8 @@ class OrderController extends Controller
      *      "price": "15.00",
      *      "note": "Lütfen çatal bıçak koymayın."
      *      "date_ordered": "2018-12-17 10:06:40",
-     *      "currency": "TL"
+     *      "currency": "TL",
+     *      "payment_type_id": "1"
      * }
      */
     public function update(Request $request, Order $order)
@@ -120,7 +130,9 @@ class OrderController extends Controller
             'user_id' => 'required|exists:users,id',
             'user_contact_id' => 'required|exists:user_contacts,id',
             'status' => 'required',
-            'price' => 'required'
+            'price' => 'required',
+            'currency' => 'required',
+            'payment_type_id' => 'required'
         ]);
 
         if ($validation->fails()) {
