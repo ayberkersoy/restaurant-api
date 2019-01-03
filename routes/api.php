@@ -19,6 +19,7 @@ Route::get('products/{product}', 'ProductController@show');
 Route::post('products', 'ProductController@store');
 Route::post('products/{product}', 'ProductController@update');
 Route::post('products/{product}/destroy', 'ProductController@destroy');
+Route::get('products/{product}/comments', 'ProductController@getComments');
 
 Route::get('campaigns', 'CampaignController@index');
 Route::get('campaigns/{campaign}', 'CampaignController@show');

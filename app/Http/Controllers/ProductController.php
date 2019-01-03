@@ -136,4 +136,10 @@ class ProductController extends Controller
         $product->delete();
         return response()->json(['status' => true]);
     }
+
+    public function getComments(Product $product)
+    {
+        $comments = $product->comments()->with('user')->get();
+        return response()->json($comments);
+    }
 }
