@@ -57,10 +57,10 @@ Route::post('employees', 'EmployeeController@store');
 Route::post('employees/{employee}', 'EmployeeController@update');
 Route::post('employees/{employee}/destroy', 'EmployeeController@destroy');
 
-Route::get('favourites', 'FavouriteController@index');
-Route::get('favourites/{favourite}', 'FavouriteController@show');
+Route::get('favourites', 'FavouriteController@index')->name('indexFavourites');
+Route::get('favourites/{favourite}', 'FavouriteController@show')->name('showFavourite');
 Route::post('favourites', 'FavouriteController@store');
-Route::post('favourites/{favourite}', 'FavouriteController@update');
+Route::post('favourites/{favourite}', 'FavouriteController@update')->name('updateFavourite');
 Route::post('favourites/{favourite}/destroy', 'FavouriteController@destroy');
 
 Route::get('messages', 'MessageController@index');
