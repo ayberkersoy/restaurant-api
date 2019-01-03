@@ -22,7 +22,8 @@ class OrderController extends Controller
      *      "status": "1",
      *      "price": "15.00",
      *      "note": "Lütfen çatal bıçak koymayın."
-     *      "date_ordered": "2018-12-17 10:06:40"
+     *      "date_ordered": "2018-12-17 10:06:40",
+     *      "currency": "TL"
      * }
      */
     public function index()
@@ -47,7 +48,8 @@ class OrderController extends Controller
      *      "status": "1",
      *      "price": "15.00",
      *      "note": "Lütfen çatal bıçak koymayın."
-     *      "date_ordered": "2018-12-17 10:06:40"
+     *      "date_ordered": "2018-12-17 10:06:40",
+     *      "currency": "TL"
      * }
      */
     public function store(Request $request)
@@ -80,7 +82,8 @@ class OrderController extends Controller
      *      "status": "1",
      *      "price": "15.00",
      *      "note": "Lütfen çatal bıçak koymayın."
-     *      "date_ordered": "2018-12-17 10:06:40"
+     *      "date_ordered": "2018-12-17 10:06:40",
+     *      "currency": "TL"
      * }
      */
     public function show(Order $order)
@@ -107,7 +110,8 @@ class OrderController extends Controller
      *      "status": "1",
      *      "price": "15.00",
      *      "note": "Lütfen çatal bıçak koymayın."
-     *      "date_ordered": "2018-12-17 10:06:40"
+     *      "date_ordered": "2018-12-17 10:06:40",
+     *      "currency": "TL"
      * }
      */
     public function update(Request $request, Order $order)

@@ -21,7 +21,8 @@ class ProductController extends Controller
      *      "description": "Bildiğimiz makarna",
      *      "image_url": "https://via.placeholder.com/500x300",
      *      "category_id": 1,
-     *      "price": "10.00"
+     *      "price": "10.00",
+     *      "currency": "TL"
      * }
      */
     public function index()
@@ -44,7 +45,8 @@ class ProductController extends Controller
      *      "description": "Bildiğimiz makarna",
      *      "image_url": "https://via.placeholder.com/500x300",
      *      "category_id": 1,
-     *      "price": "10.00"
+     *      "price": "10.00",
+     *      "currency": "TL"
      * }
      */
     public function store(Request $request)
@@ -76,7 +78,8 @@ class ProductController extends Controller
      *      "description": "Bildiğimiz makarna",
      *      "image_url": "https://via.placeholder.com/500x300",
      *      "category_id": 1,
-     *      "price": "10.00"
+     *      "price": "10.00",
+     *      "currency": "TL"
      * }
      */
     public function show(Product $product)
@@ -101,7 +104,8 @@ class ProductController extends Controller
      *      "description": "Bildiğimiz makarna",
      *      "image_url": "https://via.placeholder.com/500x300",
      *      "category_id": 1,
-     *      "price": "10.00"
+     *      "price": "10.00",
+     *      "currency": "TL"
      * }
      */
     public function update(Request $request, Product $product)
