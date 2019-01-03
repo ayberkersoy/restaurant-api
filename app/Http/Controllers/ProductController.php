@@ -137,6 +137,34 @@ class ProductController extends Controller
         return response()->json(['status' => true]);
     }
 
+    /**
+     * List product's comments
+     *
+     * @queryParam id required The id of the product.
+     *
+     * @response [
+     * {
+     *   "id": 1,
+     *   "user_id": 2,
+     *   "product_id": 1,
+     *   "comment": "Makarna çok güzeldi.",
+     *   "stars": 5,
+     *   "created_at": "2019-01-03 11:16:01",
+     *   "updated_at": "2019-01-03 11:16:01",
+     *   "user": {
+     *       "id": 2,
+     *       "name": "Ayberk",
+     *       "surname": "Ersoy",
+     *       "email": "ayberkersoy@gmail.com",
+     *       "email_verified_at": null,
+     *       "avatar": null,
+     *       "status": "user",
+     *       "created_at": "2018-12-27 11:00:17",
+     *       "updated_at": "2018-12-27 11:00:17"
+     *   }
+     * }
+     * ]
+     */
     public function getComments(Product $product)
     {
         $comments = $product->comments()->with('user')->get();
