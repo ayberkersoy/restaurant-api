@@ -79,7 +79,7 @@ class CategoryController extends Controller
      * @bodyParam description string required The description of the category.
      * @bodyParam image_url file required The image of the category.
      * @response {
-     *      "id": 1,
+     *      "id": 9,
      *      "name": "Tatlılar",
      *      "description": "Birbirinden lezzetli tatlılarımız",
      *      "image_url": "https://via.placeholder.com/500x300"

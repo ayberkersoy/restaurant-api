@@ -87,7 +87,7 @@ class CommentController extends Controller
      * @bodyParam comment string required The content of the comment.
      * @bodyParam stars double required The stars of the comment.
      * @response {
-     *      "id": 1,
+     *      "id": 9,
      *      "user_id": 1,
      *      "product_id": 1,
      *      "comment": "Yemekler, hizmet her şey harikaydı.",

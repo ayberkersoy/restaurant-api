@@ -80,7 +80,7 @@ class CampaignController extends Controller
      * @bodyParam description string required The description of the campaign.
      * @bodyParam image_url file required The image of the campaign.
      * @response {
-     *      "id": 1,
+     *      "id": 9,
      *      "name": "Bu hafta ürünlerde %10 indirim!",
      *      "description": "Haftanın her günü 13:00-15:00 arası ana yemek kategorisindeki bütün ürünler %10 indirimli!",
      *      "image_url": "https://via.placeholder.com/500x300"

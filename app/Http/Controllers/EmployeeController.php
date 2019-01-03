@@ -86,7 +86,7 @@ class EmployeeController extends Controller
      * @bodyParam image_url file required The image of the employee.
      *
      * @response {
-     *      "id": 1,
+     *      "id": 9,
      *      "name": "Ali",
      *      "surname": "Usta",
      *      "description": "Dünya mutfağında uzman şefimiz.",

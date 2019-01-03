@@ -90,7 +90,7 @@ class MessageController extends Controller
      * @bodyParam phone string required The phone of the message.
      *
      * @response {
-     *      "id": 1,
+     *      "id": 9,
      *      "name": "Ahmet Mehmet",
      *      "about": "Öneri",
      *      "message": "Güzel bir platform olmuş."

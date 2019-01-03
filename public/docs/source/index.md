@@ -78,7 +78,7 @@ curl -X GET -G "https://api.maycreator.com/api/campaigns/{campaign}"
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "sXXfw3utkbcK8ttF",
+            "id": "wxKQzWnG5Yyj5s0o",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -123,9 +123,9 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/campaigns"     -d "name"="5yL0vwLNnxUkQhfu" \
-    -d "description"="Ja4PEmlxJ9HmBJgd" \
-    -d "image_url"="SaOQhe6caEJycpmT" 
+curl -X POST "https://api.maycreator.com/api/campaigns"     -d "name"="3Ed08nHyuzPzooGy" \
+    -d "description"="OHTMiz650sEEAAw9" \
+    -d "image_url"="rHFUgWnebbq9rnP7" 
 ```
 
 ```javascript
@@ -137,9 +137,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "5yL0vwLNnxUkQhfu",
-    "description": "Ja4PEmlxJ9HmBJgd",
-    "image_url": "SaOQhe6caEJycpmT",
+    "name": "3Ed08nHyuzPzooGy",
+    "description": "OHTMiz650sEEAAw9",
+    "image_url": "rHFUgWnebbq9rnP7",
 })
 
 fetch(url, {
@@ -182,16 +182,16 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}"     -d "id"="9" \
-    -d "name"="O0a1TuYoPyoZhu1W" \
-    -d "description"="CQs3qNv8MAqj3wnt" \
-    -d "image_url"="OsJ1tv8fPZHdTBgo" 
+    -d "name"="JyqixqXIKUAeSgSg" \
+    -d "description"="ZRm25DBfAwPJtt2G" \
+    -d "image_url"="5aNLZq5tSc2ZkrP4" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "Q92Yx48Miz2zg3MO",
+            "id": "Bn7g8IcFza0BWnXe",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -202,9 +202,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "O0a1TuYoPyoZhu1W",
-    "description": "CQs3qNv8MAqj3wnt",
-    "image_url": "OsJ1tv8fPZHdTBgo",
+    "name": "JyqixqXIKUAeSgSg",
+    "description": "ZRm25DBfAwPJtt2G",
+    "image_url": "5aNLZq5tSc2ZkrP4",
 })
 
 fetch(url, {
@@ -220,7 +220,7 @@ fetch(url, {
 
 ```json
 {
-    "id": 1,
+    "id": 9,
     "name": "Bu hafta ürünlerde %10 indirim!",
     "description": "Haftanın her günü 13:00-15:00 arası ana yemek kategorisindeki bütün ürünler %10 indirimli!",
     "image_url": "https:\/\/via.placeholder.com\/500x300"
@@ -259,7 +259,7 @@ curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}/destroy"
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}/destroy");
 
     let params = {
-            "id": "cLstYJ0pcz5AEYbe",
+            "id": "GyEsaa9GKOgnhpLd",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -353,7 +353,7 @@ curl -X GET -G "https://api.maycreator.com/api/categories/{category}"
 const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
     let params = {
-            "id": "76SsRLjK8m6lZgKx",
+            "id": "UffCD6U4wl22uong",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -398,9 +398,9 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/categories"     -d "name"="8w1Vd8ohQWs1klCM" \
-    -d "description"="MX2yrpavIx7OHmxp" \
-    -d "image_url"="zJ4n5ZEAld3Tz4v8" 
+curl -X POST "https://api.maycreator.com/api/categories"     -d "name"="HhJm6m7Q7dgBxF8I" \
+    -d "description"="6QTOVtoYt2jHuhV9" \
+    -d "image_url"="AoXaIwYEmKCYRY5c" 
 ```
 
 ```javascript
@@ -412,9 +412,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "8w1Vd8ohQWs1klCM",
-    "description": "MX2yrpavIx7OHmxp",
-    "image_url": "zJ4n5ZEAld3Tz4v8",
+    "name": "HhJm6m7Q7dgBxF8I",
+    "description": "6QTOVtoYt2jHuhV9",
+    "image_url": "AoXaIwYEmKCYRY5c",
 })
 
 fetch(url, {
@@ -457,16 +457,16 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/categories/{category}"     -d "id"="9" \
-    -d "name"="ODyGOG8nZQ8oFTpO" \
-    -d "description"="W9s1Tu67BQk2sBdU" \
-    -d "image_url"="f7uq5V6t2E6BIYot" 
+    -d "name"="xwEUFjomMnx0cTy9" \
+    -d "description"="E9qJjpYdVzB2zmG8" \
+    -d "image_url"="9XPGaeLtmAqpGQUp" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
     let params = {
-            "id": "veGrB5MYjAa5HkAi",
+            "id": "p8JMb8QHELr6gCqN",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -477,9 +477,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "ODyGOG8nZQ8oFTpO",
-    "description": "W9s1Tu67BQk2sBdU",
-    "image_url": "f7uq5V6t2E6BIYot",
+    "name": "xwEUFjomMnx0cTy9",
+    "description": "E9qJjpYdVzB2zmG8",
+    "image_url": "9XPGaeLtmAqpGQUp",
 })
 
 fetch(url, {
@@ -495,7 +495,7 @@ fetch(url, {
 
 ```json
 {
-    "id": 1,
+    "id": 9,
     "name": "Tatlılar",
     "description": "Birbirinden lezzetli tatlılarımız",
     "image_url": "https:\/\/via.placeholder.com\/500x300"
@@ -534,7 +534,7 @@ curl -X POST "https://api.maycreator.com/api/categories/{category}/destroy"
 const url = new URL("https://api.maycreator.com/api/categories/{category}/destroy");
 
     let params = {
-            "id": "fSgeHiJuvPhoWNTa",
+            "id": "lT4sbo3wl9hJXfqE",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -583,7 +583,7 @@ curl -X POST "https://api.maycreator.com/api/getProductsByCategory/{category}"
 const url = new URL("https://api.maycreator.com/api/getProductsByCategory/{category}");
 
     let params = {
-            "id": "othbDGVPeIQ6iT1I",
+            "id": "TtQfMAPY265hEDiE",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -691,7 +691,7 @@ curl -X GET -G "https://api.maycreator.com/api/comments/{comment}"
 const url = new URL("https://api.maycreator.com/api/comments/{comment}");
 
     let params = {
-            "id": "xtq8HzXJnEAt0F0r",
+            "id": "XRgkpAo2bIWqVTCG",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -731,10 +731,10 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/comments"     -d "user_id"="20" \
-    -d "product_id"="4" \
-    -d "comment"="5dkp7ZfCXhsuOZ2T" \
-    -d "stars"="330643" 
+curl -X POST "https://api.maycreator.com/api/comments"     -d "user_id"="9" \
+    -d "product_id"="10" \
+    -d "comment"="McVRVgK8PnOrz0J9" \
+    -d "stars"="1277.9697374" 
 ```
 
 ```javascript
@@ -746,10 +746,10 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "user_id": "20",
-    "product_id": "4",
-    "comment": "5dkp7ZfCXhsuOZ2T",
-    "stars": "330643",
+    "user_id": "9",
+    "product_id": "10",
+    "comment": "McVRVgK8PnOrz0J9",
+    "stars": "1277.9697374",
 })
 
 fetch(url, {
@@ -788,17 +788,17 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/comments/{comment}"     -d "id"="9" \
-    -d "user_id"="16" \
-    -d "product_id"="6" \
-    -d "comment"="zEOW7Jy8OjBxFQYE" \
-    -d "stars"="3125718.458761" 
+    -d "user_id"="5" \
+    -d "product_id"="20" \
+    -d "comment"="XCuKj2NccmDvLpxG" \
+    -d "stars"="3111.7" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/comments/{comment}");
 
     let params = {
-            "id": "y0WoSjaVOiEfqfoX",
+            "id": "Gdi5FWBAQJvv9Y3D",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -809,10 +809,10 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "user_id": "16",
-    "product_id": "6",
-    "comment": "zEOW7Jy8OjBxFQYE",
-    "stars": "3125718.458761",
+    "user_id": "5",
+    "product_id": "20",
+    "comment": "XCuKj2NccmDvLpxG",
+    "stars": "3111.7",
 })
 
 fetch(url, {
@@ -863,7 +863,7 @@ curl -X POST "https://api.maycreator.com/api/comments/{comment}/destroy"
 const url = new URL("https://api.maycreator.com/api/comments/{comment}/destroy");
 
     let params = {
-            "id": "kplce63qGfYUravj",
+            "id": "K9zxgK2uixxg64YF",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -968,7 +968,7 @@ curl -X GET -G "https://api.maycreator.com/api/companies/{company}"
 const url = new URL("https://api.maycreator.com/api/companies/{company}");
 
     let params = {
-            "id": "b7O4NGO2RbV9VhB3",
+            "id": "IOKbe06aKcQDG71F",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1024,19 +1024,19 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/companies"     -d "name"="69ikw7pO3Etx9p5A" \
-    -d "address"="ZKZaNreW3ejtCxyI" \
-    -d "phone"="tNjRzlJrvxkSIfq6" \
-    -d "logo"="vGl0zPsDqOstKJLK" \
-    -d "working_hours_day"="YZD7yuVoE7PH5GVu" \
-    -d "working_hours_night"="Qg8lIDWIZsdKXx5R" \
-    -d "facebook"="xUHIBoIoGD9fdRzP" \
-    -d "twitter"="aqjmci7gjK7wDzTe" \
-    -d "instagram"="QjF8h6wUIvPBge1v" \
-    -d "about_text"="cjcpde2WHltTbOpt" \
-    -d "about_image"="FHMAy56b6KRTuzaT" \
-    -d "locationy"="A9WTnrGzXn6uv69K" \
-    -d "locationx"="MXRZd7Fkc0Ri9xZ5" 
+curl -X POST "https://api.maycreator.com/api/companies"     -d "name"="COufIXSF3C0YfwHK" \
+    -d "address"="3TB5nIbt3WaBVQfF" \
+    -d "phone"="6blNRofOFpIpumN2" \
+    -d "logo"="rbijK55j8QTvQqDR" \
+    -d "working_hours_day"="J39EFh9teEZf1Heh" \
+    -d "working_hours_night"="OS8kXbDp2gMHqKUV" \
+    -d "facebook"="YqkMUG8GyDy8Oa6Z" \
+    -d "twitter"="gAH946hUuFWpYl5X" \
+    -d "instagram"="V9WYrKuVvvIfVy6Y" \
+    -d "about_text"="Iu3med2V27qLYc6Y" \
+    -d "about_image"="mWzes27emVUyqEq9" \
+    -d "locationy"="GOd8rR9Io95FUoc7" \
+    -d "locationx"="UpcJ2BUMMKs8L9Js" 
 ```
 
 ```javascript
@@ -1048,19 +1048,19 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "69ikw7pO3Etx9p5A",
-    "address": "ZKZaNreW3ejtCxyI",
-    "phone": "tNjRzlJrvxkSIfq6",
-    "logo": "vGl0zPsDqOstKJLK",
-    "working_hours_day": "YZD7yuVoE7PH5GVu",
-    "working_hours_night": "Qg8lIDWIZsdKXx5R",
-    "facebook": "xUHIBoIoGD9fdRzP",
-    "twitter": "aqjmci7gjK7wDzTe",
-    "instagram": "QjF8h6wUIvPBge1v",
-    "about_text": "cjcpde2WHltTbOpt",
-    "about_image": "FHMAy56b6KRTuzaT",
-    "locationy": "A9WTnrGzXn6uv69K",
-    "locationx": "MXRZd7Fkc0Ri9xZ5",
+    "name": "COufIXSF3C0YfwHK",
+    "address": "3TB5nIbt3WaBVQfF",
+    "phone": "6blNRofOFpIpumN2",
+    "logo": "rbijK55j8QTvQqDR",
+    "working_hours_day": "J39EFh9teEZf1Heh",
+    "working_hours_night": "OS8kXbDp2gMHqKUV",
+    "facebook": "YqkMUG8GyDy8Oa6Z",
+    "twitter": "gAH946hUuFWpYl5X",
+    "instagram": "V9WYrKuVvvIfVy6Y",
+    "about_text": "Iu3med2V27qLYc6Y",
+    "about_image": "mWzes27emVUyqEq9",
+    "locationy": "GOd8rR9Io95FUoc7",
+    "locationx": "UpcJ2BUMMKs8L9Js",
 })
 
 fetch(url, {
@@ -1123,26 +1123,26 @@ Parameter | Type | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/companies/{company}"     -d "name"="ptKYcUSrvio8W3b7" \
-    -d "address"="wNJaNqD5w26745xK" \
-    -d "phone"="A5BANiMlSRFk8rcg" \
-    -d "logo"="k5DLoZkC4DobNQ4s" \
-    -d "working_hours_day"="4w01x9ywwtpSFHFk" \
-    -d "working_hours_night"="gLAViA2JqynJN1tr" \
-    -d "facebook"="IeifqA25zPBL0cW5" \
-    -d "twitter"="iwcsodhHCLxB0ADq" \
-    -d "instagram"="61FieuVtPYJsyeEL" \
-    -d "about_text"="NaVItha1YYkyzEzk" \
-    -d "about_image"="NNRkCyCj4ZqASBP8" \
-    -d "locationy"="GvO6NcSgdOnD3r3h" \
-    -d "locationx"="Aze6JePWDztIvGpj" 
+curl -X POST "https://api.maycreator.com/api/companies/{company}"     -d "name"="yPs9IvvpRvgg5AqO" \
+    -d "address"="hriwcRxbRu05x9sE" \
+    -d "phone"="3NA40Bqb3wkjYz5C" \
+    -d "logo"="LWZFzzar8AgYctta" \
+    -d "working_hours_day"="MDBrzmD6DIEtVddt" \
+    -d "working_hours_night"="0fFkxj8ROrHLwHpP" \
+    -d "facebook"="4PD7FOU8YSXM9W7H" \
+    -d "twitter"="1PMONs94J1kc5VDs" \
+    -d "instagram"="oqw8eUiFP0J9HGPE" \
+    -d "about_text"="rHr1O4DAZZy7dQme" \
+    -d "about_image"="OuazqmtP8S7gdrxr" \
+    -d "locationy"="c3m9TKTiRH9d2NNq" \
+    -d "locationx"="XGzsspNgyQsfm8t7" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/companies/{company}");
 
     let params = {
-            "id": "5LPdp8Bt1hqnkx8y",
+            "id": "UTQ44ijL5vLCj2zO",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1152,19 +1152,19 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "ptKYcUSrvio8W3b7",
-    "address": "wNJaNqD5w26745xK",
-    "phone": "A5BANiMlSRFk8rcg",
-    "logo": "k5DLoZkC4DobNQ4s",
-    "working_hours_day": "4w01x9ywwtpSFHFk",
-    "working_hours_night": "gLAViA2JqynJN1tr",
-    "facebook": "IeifqA25zPBL0cW5",
-    "twitter": "iwcsodhHCLxB0ADq",
-    "instagram": "61FieuVtPYJsyeEL",
-    "about_text": "NaVItha1YYkyzEzk",
-    "about_image": "NNRkCyCj4ZqASBP8",
-    "locationy": "GvO6NcSgdOnD3r3h",
-    "locationx": "Aze6JePWDztIvGpj",
+    "name": "yPs9IvvpRvgg5AqO",
+    "address": "hriwcRxbRu05x9sE",
+    "phone": "3NA40Bqb3wkjYz5C",
+    "logo": "LWZFzzar8AgYctta",
+    "working_hours_day": "MDBrzmD6DIEtVddt",
+    "working_hours_night": "0fFkxj8ROrHLwHpP",
+    "facebook": "4PD7FOU8YSXM9W7H",
+    "twitter": "1PMONs94J1kc5VDs",
+    "instagram": "oqw8eUiFP0J9HGPE",
+    "about_text": "rHr1O4DAZZy7dQme",
+    "about_image": "OuazqmtP8S7gdrxr",
+    "locationy": "c3m9TKTiRH9d2NNq",
+    "locationx": "XGzsspNgyQsfm8t7",
 })
 
 fetch(url, {
@@ -1239,7 +1239,7 @@ curl -X POST "https://api.maycreator.com/api/companies/{company}/destroy"
 const url = new URL("https://api.maycreator.com/api/companies/{company}/destroy");
 
     let params = {
-            "id": "wWFhYsAtcGiSd5Ck",
+            "id": "SmV4tFN7eJSPN8nA",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1334,7 +1334,7 @@ curl -X GET -G "https://api.maycreator.com/api/employees/{employee}"
 const url = new URL("https://api.maycreator.com/api/employees/{employee}");
 
     let params = {
-            "id": "dElmHQGXLmpEIo9W",
+            "id": "WcMpb6PYKIev1OAQ",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1380,10 +1380,10 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/employees"     -d "name"="zTt3yg3p3TNGgVef" \
-    -d "surname"="Dc6YnAGs9hUBoQu0" \
-    -d "description"="VTzh63E2Accrq6ut" \
-    -d "image_url"="eEYAQf6yPU3sRQMV" 
+curl -X POST "https://api.maycreator.com/api/employees"     -d "name"="ksIclF2TXWS5cZsd" \
+    -d "surname"="N49wUJ5qgGceLNtj" \
+    -d "description"="h9x2YPH8LRB3DBH4" \
+    -d "image_url"="PgjV2XnO4y1usrfz" 
 ```
 
 ```javascript
@@ -1395,10 +1395,10 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "zTt3yg3p3TNGgVef",
-    "surname": "Dc6YnAGs9hUBoQu0",
-    "description": "VTzh63E2Accrq6ut",
-    "image_url": "eEYAQf6yPU3sRQMV",
+    "name": "ksIclF2TXWS5cZsd",
+    "surname": "N49wUJ5qgGceLNtj",
+    "description": "h9x2YPH8LRB3DBH4",
+    "image_url": "PgjV2XnO4y1usrfz",
 })
 
 fetch(url, {
@@ -1443,17 +1443,17 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/employees/{employee}"     -d "id"="9" \
-    -d "name"="oSdNtHCGVIHqSq4U" \
-    -d "surname"="OfOQz0szE5DfJpiH" \
-    -d "description"="wNXnbknt9x0LdX2M" \
-    -d "image_url"="BZXn6GOhIU4sijuX" 
+    -d "name"="5YTmSB65BwyYzsIb" \
+    -d "surname"="86ZnfcGgvw8chcHp" \
+    -d "description"="6oquYxwiChH0riuJ" \
+    -d "image_url"="G8IFngWiGLhjNpp9" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/employees/{employee}");
 
     let params = {
-            "id": "epZiiELZnE0ijGci",
+            "id": "U8UmrrVkSuk5j4gc",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1464,10 +1464,10 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "oSdNtHCGVIHqSq4U",
-    "surname": "OfOQz0szE5DfJpiH",
-    "description": "wNXnbknt9x0LdX2M",
-    "image_url": "BZXn6GOhIU4sijuX",
+    "name": "5YTmSB65BwyYzsIb",
+    "surname": "86ZnfcGgvw8chcHp",
+    "description": "6oquYxwiChH0riuJ",
+    "image_url": "G8IFngWiGLhjNpp9",
 })
 
 fetch(url, {
@@ -1483,7 +1483,7 @@ fetch(url, {
 
 ```json
 {
-    "id": 1,
+    "id": 9,
     "name": "Ali",
     "surname": "Usta",
     "description": "Dünya mutfağında uzman şefimiz.",
@@ -1524,7 +1524,7 @@ curl -X POST "https://api.maycreator.com/api/employees/{employee}/destroy"
 const url = new URL("https://api.maycreator.com/api/employees/{employee}/destroy");
 
     let params = {
-            "id": "J5HkgV3JlHuuIBQ4",
+            "id": "0ulBU5FJD0m9UkJh",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1569,8 +1569,8 @@ APIs for managing favourites
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/favourites"     -d "user_id"="18" \
-    -d "product_id"="1" 
+curl -X POST "https://api.maycreator.com/api/favourites"     -d "user_id"="14" \
+    -d "product_id"="11" 
 ```
 
 ```javascript
@@ -1582,8 +1582,8 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "user_id": "18",
-    "product_id": "1",
+    "user_id": "14",
+    "product_id": "11",
 })
 
 fetch(url, {
@@ -1628,7 +1628,7 @@ curl -X POST "https://api.maycreator.com/api/favourites/{favourite}/destroy"
 const url = new URL("https://api.maycreator.com/api/favourites/{favourite}/destroy");
 
     let params = {
-            "id": "n527Peax3YY2IZUI",
+            "id": "CoMYxSim8GDguZ7u",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1717,7 +1717,7 @@ curl -X GET -G "https://api.maycreator.com/api/messages/{message}"
 const url = new URL("https://api.maycreator.com/api/messages/{message}");
 
     let params = {
-            "id": "VKsZ7u83vtI3anSu",
+            "id": "Jloch92eYCSnQrNe",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1757,10 +1757,10 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/messages"     -d "name"="rRaPgIPM8J1l5HGj" \
-    -d "about"="KvnAXGfnmyhxeNV1" \
-    -d "message"="QeuLmxorY2XPrEbe" \
-    -d "phone"="8DM9d5FaTplnhqhH" 
+curl -X POST "https://api.maycreator.com/api/messages"     -d "name"="CWkXLjJsC5O9J9cs" \
+    -d "about"="mAYNSdueRgoTxP2Y" \
+    -d "message"="DWJ6Q7kERIwabDAo" \
+    -d "phone"="BJGNR4umEETZ9WoM" 
 ```
 
 ```javascript
@@ -1772,10 +1772,10 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "rRaPgIPM8J1l5HGj",
-    "about": "KvnAXGfnmyhxeNV1",
-    "message": "QeuLmxorY2XPrEbe",
-    "phone": "8DM9d5FaTplnhqhH",
+    "name": "CWkXLjJsC5O9J9cs",
+    "about": "mAYNSdueRgoTxP2Y",
+    "message": "DWJ6Q7kERIwabDAo",
+    "phone": "BJGNR4umEETZ9WoM",
 })
 
 fetch(url, {
@@ -1814,17 +1814,17 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/messages/{message}"     -d "id"="9" \
-    -d "name"="5MEWQJSSrpwWP19D" \
-    -d "about"="Qez5nuhokxWLQUe9" \
-    -d "message"="r5wOoT1i3etyw5u9" \
-    -d "phone"="Yr6OAzoFVB2mKIX8" 
+    -d "name"="b9m1xEA4LiTjaC2m" \
+    -d "about"="RVu6HgDVkibuSfDE" \
+    -d "message"="510jgVaF1wwx4mTT" \
+    -d "phone"="QBtkFXmzdv3pwKf2" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/messages/{message}");
 
     let params = {
-            "id": "PAYRIVQFNhbGIKcf",
+            "id": "b0WudSKL35lx1IUE",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1835,10 +1835,10 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "5MEWQJSSrpwWP19D",
-    "about": "Qez5nuhokxWLQUe9",
-    "message": "r5wOoT1i3etyw5u9",
-    "phone": "Yr6OAzoFVB2mKIX8",
+    "name": "b9m1xEA4LiTjaC2m",
+    "about": "RVu6HgDVkibuSfDE",
+    "message": "510jgVaF1wwx4mTT",
+    "phone": "QBtkFXmzdv3pwKf2",
 })
 
 fetch(url, {
@@ -1889,7 +1889,7 @@ curl -X POST "https://api.maycreator.com/api/messages/{message}/destroy"
 const url = new URL("https://api.maycreator.com/api/messages/{message}/destroy");
 
     let params = {
-            "id": "mbcki0INsaLG1dCl",
+            "id": "oIfE6dRzvAavOZAk",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1924,6 +1924,574 @@ Parameter | Status | Description
     id |  required  | The id of the message.
 
 <!-- END_8482fbb65ea13134d6870c69b27b71a9 -->
+
+#Order Management
+
+APIs for managing orders
+<!-- START_f9301c03a9281c0847565f96e6f723de -->
+## Index all orders
+
+> Example request:
+
+```bash
+curl -X GET -G "https://api.maycreator.com/api/orders" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/orders");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{}
+```
+
+### HTTP Request
+`GET api/orders`
+
+
+<!-- END_f9301c03a9281c0847565f96e6f723de -->
+
+<!-- START_7e6be1b9dd04564a7b1298dd260f3183 -->
+## Show specific order
+
+> Example request:
+
+```bash
+curl -X GET -G "https://api.maycreator.com/api/orders/{order}" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/orders/{order}");
+
+    let params = {
+            "id": "7Vw9YasVn6kgs9iG",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{}
+```
+
+### HTTP Request
+`GET api/orders/{order}`
+
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the order.
+
+<!-- END_7e6be1b9dd04564a7b1298dd260f3183 -->
+
+<!-- START_285c87403b6cfdebe26bc357f22e870f -->
+## Create a new order
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/orders"     -d "user_id"="12" \
+    -d "user_contact_id"="11" \
+    -d "status"="17" \
+    -d "price"="Yvvej5DMzNzVFbqH" \
+    -d "note"="ZEFtdR0CIEfK8UEb" \
+    -d "date_ordered"="FRJci6QHp8QyrGi7" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/orders");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "user_id": "12",
+    "user_contact_id": "11",
+    "status": "17",
+    "price": "Yvvej5DMzNzVFbqH",
+    "note": "ZEFtdR0CIEfK8UEb",
+    "date_ordered": "FRJci6QHp8QyrGi7",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{}
+```
+
+### HTTP Request
+`POST api/orders`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    user_id | integer |  required  | The id of the user.
+    user_contact_id | integer |  required  | The contact id of the user.
+    status | integer |  required  | The status of the order.
+    price | decimal |  required  | The price of the order.
+    note | string |  required  | The note of the message.
+    date_ordered | timestamp |  required  | The date_ordered of the message.
+
+<!-- END_285c87403b6cfdebe26bc357f22e870f -->
+
+<!-- START_c45b79b58650b1cae1e64b6b47428534 -->
+## Update specific order
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/orders/{order}"     -d "id"="9" \
+    -d "user_id"="6" \
+    -d "user_contact_id"="6" \
+    -d "status"="20" \
+    -d "price"="jtELudYwnqmmCaVH" \
+    -d "note"="vTaN5YbXvEPZyK05" \
+    -d "date_ordered"="HVWs7Uktt0Ci6asx" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/orders/{order}");
+
+    let params = {
+            "id": "EkgjjB0ScVWhjgNx",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "id": "9",
+    "user_id": "6",
+    "user_contact_id": "6",
+    "status": "20",
+    "price": "jtELudYwnqmmCaVH",
+    "note": "vTaN5YbXvEPZyK05",
+    "date_ordered": "HVWs7Uktt0Ci6asx",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{}
+```
+
+### HTTP Request
+`POST api/orders/{order}`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    id | integer |  required  | The id of the order.
+    user_id | integer |  required  | The id of the user.
+    user_contact_id | integer |  required  | The contact id of the user.
+    status | integer |  required  | The status of the order.
+    price | decimal |  required  | The price of the order.
+    note | string |  required  | The note of the message.
+    date_ordered | timestamp |  required  | The date_ordered of the message.
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the order.
+
+<!-- END_c45b79b58650b1cae1e64b6b47428534 -->
+
+<!-- START_cd5dbb35cb196bae94c3c19cc4f9cb01 -->
+## Delete specific order
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/orders/{order}/destroy" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/orders/{order}/destroy");
+
+    let params = {
+            "id": "trpsVvD5bz7MUWyh",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "status": true
+}
+```
+
+### HTTP Request
+`POST api/orders/{order}/destroy`
+
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the order.
+
+<!-- END_cd5dbb35cb196bae94c3c19cc4f9cb01 -->
+
+#Product Management
+
+APIs for managing products
+<!-- START_86e0ac5d4f8ce9853bc22fd08f2a0109 -->
+## Index all products
+
+> Example request:
+
+```bash
+curl -X GET -G "https://api.maycreator.com/api/products" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/products");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "id": 1,
+    "name": "Makarna",
+    "description": "Bildiğimiz makarna",
+    "image_url": "https:\/\/via.placeholder.com\/500x300",
+    "category_id": 1,
+    "price": "10.00"
+}
+```
+
+### HTTP Request
+`GET api/products`
+
+
+<!-- END_86e0ac5d4f8ce9853bc22fd08f2a0109 -->
+
+<!-- START_a285e63bc2d1a5b9428ae9aed745c779 -->
+## Show specific product
+
+> Example request:
+
+```bash
+curl -X GET -G "https://api.maycreator.com/api/products/{product}" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/products/{product}");
+
+    let params = {
+            "id": "fmyMXA2ezqgdb87r",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "id": 1,
+    "name": "Makarna",
+    "description": "Bildiğimiz makarna",
+    "image_url": "https:\/\/via.placeholder.com\/500x300",
+    "category_id": 1,
+    "price": "10.00"
+}
+```
+
+### HTTP Request
+`GET api/products/{product}`
+
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the product.
+
+<!-- END_a285e63bc2d1a5b9428ae9aed745c779 -->
+
+<!-- START_05b4383f00fd57c4828a831e7057e920 -->
+## Create a new product
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/products"     -d "name"="Oh2YiUWWqjhRExJH" \
+    -d "description"="iY5eWiP9EOIdhKhI" \
+    -d "image_url"="jkjcZwMIMTHVKKJ0" \
+    -d "category_id"="20" \
+    -d "price"="ChBhGhRpLrXm1OSZ" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/products");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "name": "Oh2YiUWWqjhRExJH",
+    "description": "iY5eWiP9EOIdhKhI",
+    "image_url": "jkjcZwMIMTHVKKJ0",
+    "category_id": "20",
+    "price": "ChBhGhRpLrXm1OSZ",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "id": 1,
+    "name": "Makarna",
+    "description": "Bildiğimiz makarna",
+    "image_url": "https:\/\/via.placeholder.com\/500x300",
+    "category_id": 1,
+    "price": "10.00"
+}
+```
+
+### HTTP Request
+`POST api/products`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | The name of the product.
+    description | string |  optional  | optional The description of the product.
+    image_url | file |  required  | The message of the product.
+    category_id | integer |  required  | The category id of the product.
+    price | decimal |  required  | The price of the product.
+
+<!-- END_05b4383f00fd57c4828a831e7057e920 -->
+
+<!-- START_7ad6b2dbfbd58a7c201ba85e185e0eb4 -->
+## Update specific product
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/products/{product}"     -d "id"="9" \
+    -d "name"="7q91J2NBgfIxQzCb" \
+    -d "description"="sp1cxqwWYm6TZYlK" \
+    -d "image_url"="fCbu3XmMZrlhB3UA" \
+    -d "category_id"="18" \
+    -d "price"="mHIdZOtJ6GsdBKpA" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/products/{product}");
+
+    let params = {
+            "id": "PEBbVgjXQ2sf8fYy",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "id": "9",
+    "name": "7q91J2NBgfIxQzCb",
+    "description": "sp1cxqwWYm6TZYlK",
+    "image_url": "fCbu3XmMZrlhB3UA",
+    "category_id": "18",
+    "price": "mHIdZOtJ6GsdBKpA",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "id": 9,
+    "name": "Makarna",
+    "description": "Bildiğimiz makarna",
+    "image_url": "https:\/\/via.placeholder.com\/500x300",
+    "category_id": 1,
+    "price": "10.00"
+}
+```
+
+### HTTP Request
+`POST api/products/{product}`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    id | integer |  required  | The id of the category.
+    name | string |  required  | The name of the product.
+    description | string |  optional  | optional The description of the product.
+    image_url | file |  required  | The message of the product.
+    category_id | integer |  required  | The category id of the product.
+    price | decimal |  required  | The price of the product.
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the product.
+
+<!-- END_7ad6b2dbfbd58a7c201ba85e185e0eb4 -->
+
+<!-- START_ef3deea77f02137e38819a252b4579db -->
+## Delete specific product
+
+> Example request:
+
+```bash
+curl -X POST "https://api.maycreator.com/api/products/{product}/destroy" 
+```
+
+```javascript
+const url = new URL("https://api.maycreator.com/api/products/{product}/destroy");
+
+    let params = {
+            "id": "1FPynOjVw0RaDtKt",
+        };
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "status": true
+}
+```
+
+### HTTP Request
+`POST api/products/{product}/destroy`
+
+#### Query Parameters
+
+Parameter | Status | Description
+--------- | ------- | ------- | -----------
+    id |  required  | The id of the product.
+
+<!-- END_ef3deea77f02137e38819a252b4579db -->
 
 #general
 <!-- START_0c068b4037fb2e47e71bd44bd36e3e2a -->
@@ -3854,201 +4422,6 @@ fetch(url, {
 
 <!-- END_31239443db5563ca121cf9f1dfdb2f6e -->
 
-<!-- START_86e0ac5d4f8ce9853bc22fd08f2a0109 -->
-## api/products
-> Example request:
-
-```bash
-curl -X GET -G "https://api.maycreator.com/api/products" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/products");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-[
-    {
-        "id": 1,
-        "name": "Makarna",
-        "description": null,
-        "image_url": "https:\/\/via.placeholder.com\/500x300",
-        "category_id": 1,
-        "created_at": "2018-12-17 10:06:59",
-        "updated_at": "2018-12-17 10:06:59",
-        "price": "10.00"
-    },
-    {
-        "id": 2,
-        "name": "Tavuklu Makarna",
-        "description": null,
-        "image_url": "https:\/\/via.placeholder.com\/500x300",
-        "category_id": 1,
-        "created_at": "2018-12-17 10:06:59",
-        "updated_at": "2018-12-17 10:06:59",
-        "price": "10.00"
-    }
-]
-```
-
-### HTTP Request
-`GET api/products`
-
-
-<!-- END_86e0ac5d4f8ce9853bc22fd08f2a0109 -->
-
-<!-- START_a285e63bc2d1a5b9428ae9aed745c779 -->
-## api/products/{product}
-> Example request:
-
-```bash
-curl -X GET -G "https://api.maycreator.com/api/products/{product}" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/products/{product}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "id": 1,
-    "name": "Makarna",
-    "description": null,
-    "image_url": "https:\/\/via.placeholder.com\/500x300",
-    "category_id": 1,
-    "created_at": "2018-12-17 10:06:59",
-    "updated_at": "2018-12-17 10:06:59",
-    "price": "10.00"
-}
-```
-
-### HTTP Request
-`GET api/products/{product}`
-
-
-<!-- END_a285e63bc2d1a5b9428ae9aed745c779 -->
-
-<!-- START_05b4383f00fd57c4828a831e7057e920 -->
-## api/products
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/products" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/products");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/products`
-
-
-<!-- END_05b4383f00fd57c4828a831e7057e920 -->
-
-<!-- START_7ad6b2dbfbd58a7c201ba85e185e0eb4 -->
-## api/products/{product}
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/products/{product}" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/products/{product}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/products/{product}`
-
-
-<!-- END_7ad6b2dbfbd58a7c201ba85e185e0eb4 -->
-
-<!-- START_ef3deea77f02137e38819a252b4579db -->
-## api/products/{product}/destroy
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/products/{product}/destroy" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/products/{product}/destroy");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/products/{product}/destroy`
-
-
-<!-- END_ef3deea77f02137e38819a252b4579db -->
-
 <!-- START_bc8ae8fa53cdd3241b1de68aaea44a1a -->
 ## api/userContacts
 > Example request:
@@ -4786,193 +5159,6 @@ fetch(url, {
 
 
 <!-- END_b656c799b02ccceddbfb3fea4c61ac59 -->
-
-<!-- START_f9301c03a9281c0847565f96e6f723de -->
-## api/orders
-> Example request:
-
-```bash
-curl -X GET -G "https://api.maycreator.com/api/orders" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/orders");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-[
-    {
-        "id": 1,
-        "user_id": 1,
-        "user_contact_id": 1,
-        "status": 1,
-        "price": "10.00",
-        "created_at": "2018-12-17 10:06:40",
-        "updated_at": "2018-12-17 10:06:40",
-        "note": null,
-        "date_ordered": "2018-12-17 10:06:40"
-    }
-]
-```
-
-### HTTP Request
-`GET api/orders`
-
-
-<!-- END_f9301c03a9281c0847565f96e6f723de -->
-
-<!-- START_7e6be1b9dd04564a7b1298dd260f3183 -->
-## api/orders/{order}
-> Example request:
-
-```bash
-curl -X GET -G "https://api.maycreator.com/api/orders/{order}" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/orders/{order}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "id": 1,
-    "user_id": 1,
-    "user_contact_id": 1,
-    "status": 1,
-    "price": "10.00",
-    "created_at": "2018-12-17 10:06:40",
-    "updated_at": "2018-12-17 10:06:40",
-    "note": null,
-    "date_ordered": "2018-12-17 10:06:40"
-}
-```
-
-### HTTP Request
-`GET api/orders/{order}`
-
-
-<!-- END_7e6be1b9dd04564a7b1298dd260f3183 -->
-
-<!-- START_285c87403b6cfdebe26bc357f22e870f -->
-## api/orders
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/orders" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/orders");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/orders`
-
-
-<!-- END_285c87403b6cfdebe26bc357f22e870f -->
-
-<!-- START_c45b79b58650b1cae1e64b6b47428534 -->
-## api/orders/{order}
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/orders/{order}" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/orders/{order}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/orders/{order}`
-
-
-<!-- END_c45b79b58650b1cae1e64b6b47428534 -->
-
-<!-- START_cd5dbb35cb196bae94c3c19cc4f9cb01 -->
-## api/orders/{order}/destroy
-> Example request:
-
-```bash
-curl -X POST "https://api.maycreator.com/api/orders/{order}/destroy" 
-```
-
-```javascript
-const url = new URL("https://api.maycreator.com/api/orders/{order}/destroy");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/orders/{order}/destroy`
-
-
-<!-- END_cd5dbb35cb196bae94c3c19cc4f9cb01 -->
 
 <!-- START_bd35db24aeed3fefde86cc3a7f7cbe16 -->
 ## api/reservations
