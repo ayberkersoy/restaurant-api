@@ -126,4 +126,31 @@ class CommentController extends Controller
         $comment->delete();
         return response()->json(['status' => true]);
     }
+
+    /**
+     * Homepage reviews
+     * @response {
+     *      "id": 1,
+     *      "user_id": 1,
+     *      "product_id": 1,
+     *      "comment": "Yemekler, hizmet her şey harikaydı.",
+     *      "stars": "4",
+     *      "user": {
+     *          "id": 1,
+     *          "name": "Ayberk",
+     *          "surname": "Ersoy",
+     *          "email": "ayberkersoy@gmail.com",
+     *          "email_verified_at": null,
+     *          "avatar": "https://via.placeholder.com/300x300",
+     *          "status": "user",
+     *          "created_at": "2018-12-27 11:18:38",
+     *          "updated_at": "2018-12-27 11:18:38"
+     *      }
+     * }
+     */
+    public function getReviews()
+    {
+        $comments = Comment::with('user')->where('stars', 5)->take(5)->get();
+        return response()->json($comments);
+    }
 }

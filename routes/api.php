@@ -52,6 +52,7 @@ Route::get('comments/{comment}', 'CommentController@show');
 Route::post('comments', 'CommentController@store');
 Route::post('comments/{comment}', 'CommentController@update');
 Route::post('comments/{comment}/destroy', 'CommentController@destroy');
+Route::get('getReviews', 'CommentController@getReviews');
 
 Route::get('employees', 'EmployeeController@index');
 Route::get('employees/{employee}', 'EmployeeController@show');
