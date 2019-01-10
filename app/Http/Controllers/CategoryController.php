@@ -115,34 +115,4 @@ class CategoryController extends Controller
         $category->delete();
         return response()->json(['status' => true]);
     }
-
-    /**
-     * Show specific products by category
-     * @queryParam id required The id of the category.
-     * @response [{
-     *   "id": 1,
-     *   "name": "Makarna",
-     *   "description": null,
-     *   "image_url": "https://via.placeholder.com/500x300",
-     *   "category_id": 1,
-     *   "created_at": "2018-12-17 10:06:59",
-     *   "updated_at": "2018-12-17 10:06:59",
-     *   "price": "10.00"
-     * },
-     * {
-     *   "id": 2,
-     *   "name": "Tavuklu Makarna",
-     *   "description": null,
-     *   "image_url": "https://via.placeholder.com/500x300",
-     *   "category_id": 1,
-     *   "created_at": "2018-12-17 10:06:59",
-     *   "updated_at": "2018-12-17 10:06:59",
-     *   "price": "10.00"
-     * }]
-     *
-     */
-    public function getProductsByCategory(Category $category)
-    {
-        return response()->json($category->products);
-    }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Validator;
 use App\Product;
+use App\Category;
 use Illuminate\Http\Request;
 
 /**
@@ -173,5 +174,66 @@ class ProductController extends Controller
     {
         $comments = $product->comments()->with('user')->get();
         return response()->json($comments);
+    }
+
+    /**
+     * Show specific products by category
+     * @queryParam id required The id of the category.
+     * @response [{
+     *   "id": 1,
+     *   "name": "Makarna",
+     *   "description": null,
+     *   "image_url": "https://via.placeholder.com/500x300",
+     *   "category_id": 1,
+     *   "created_at": "2018-12-17 10:06:59",
+     *   "updated_at": "2018-12-17 10:06:59",
+     *   "price": "10.00"
+     * },
+     * {
+     *   "id": 2,
+     *   "name": "Tavuklu Makarna",
+     *   "description": null,
+     *   "image_url": "https://via.placeholder.com/500x300",
+     *   "category_id": 1,
+     *   "created_at": "2018-12-17 10:06:59",
+     *   "updated_at": "2018-12-17 10:06:59",
+     *   "price": "10.00"
+     * }]
+     *
+     */
+    public function getProductsByCategory(Category $category)
+    {
+        return response()->json($category->products);
+    }
+
+    /**
+     * Show specific featured products by category
+     * @queryParam id required The id of the category.
+     * @response [{
+     *   "id": 1,
+     *   "name": "Makarna",
+     *   "description": null,
+     *   "image_url": "https://via.placeholder.com/500x300",
+     *   "category_id": 1,
+     *   "created_at": "2018-12-17 10:06:59",
+     *   "updated_at": "2018-12-17 10:06:59",
+     *   "price": "10.00"
+     * },
+     * {
+     *   "id": 2,
+     *   "name": "Tavuklu Makarna",
+     *   "description": null,
+     *   "image_url": "https://via.placeholder.com/500x300",
+     *   "category_id": 1,
+     *   "created_at": "2018-12-17 10:06:59",
+     *   "updated_at": "2018-12-17 10:06:59",
+     *   "price": "10.00"
+     * }]
+     *
+     */
+    public function getFeaturedProductsByCategory(Category $category)
+    {
+        $products = $category->products()->where('isFeatured', 1)->get();
+        return response()->json($products);
     }
 }
