@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use DB;
+use Auth;
 use Validator;
 use App\Product;
 use App\Category;
 use Illuminate\Http\Request;
+use App\Favourite;
 
 /**
  * @group Product Management
@@ -82,19 +84,31 @@ class ProductController extends Controller
      *      "category_id": 1,
      *      "price": "10.00",
      *      "currency": "TL",
-     *      "isFeatured": "1",
-     *      "stars": 5
+     *      "isFeatured": 1,
+     *      "stars": 3.5,
+     *      "favourite": true
      * }
      */
     public function show(Product $product)
     {
+        $favourite = false;
+        if (auth('api')->check()) {
+            $user = auth('api')->user();
+            $favourite = Favourite::where('product_id', $product->id)
+                            ->where('user_id', $user->id)->first();
+            if ($favourite) {
+                $favourite = true;
+            }
+        }
         $product = $product->select(
             'products.*',
             DB::raw('avg(comments.stars) AS stars')
         )
+            ->where('products.id', $product->id)
             ->join('comments', 'comments.product_id', '=', 'products.id')
             ->groupBy('comments.product_id')
-            ->get();
+            ->first();
+        $product = array_merge($product->toArray(), ['favourite' => $favourite]);
         return response()->json($product);
     }
 
