@@ -238,7 +238,10 @@ class ProductController extends Controller
      */
     public function getFeaturedProductsByCategory(Category $category)
     {
-        $products = Product::select('products.*', DB::raw('avg(comments.stars) AS stars'))
+        $products = $category->products()->select(
+            'products.*',
+            DB::raw('avg(comments.stars) AS stars')
+        )
             ->join('comments', 'comments.product_id', '=', 'products.id')
             ->groupBy('comments.product_id')
             ->get();
