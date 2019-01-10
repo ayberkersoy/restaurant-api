@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Validator;
 use App\Product;
 use App\Category;
@@ -217,7 +218,9 @@ class ProductController extends Controller
      *   "category_id": 1,
      *   "created_at": "2018-12-17 10:06:59",
      *   "updated_at": "2018-12-17 10:06:59",
-     *   "price": "10.00"
+     *   "price": "10.00",
+     *   "isFeatured": "1",
+     *   "stars": 5
      * },
      * {
      *   "id": 2,
@@ -227,13 +230,18 @@ class ProductController extends Controller
      *   "category_id": 1,
      *   "created_at": "2018-12-17 10:06:59",
      *   "updated_at": "2018-12-17 10:06:59",
-     *   "price": "10.00"
+     *   "price": "10.00",
+     *   "isFeatured": "1",
+     *   "stars": 5
      * }]
      *
      */
     public function getFeaturedProductsByCategory(Category $category)
     {
-        $products = $category->products()->where('isFeatured', 1)->get();
+        $products = Product::select('products.*', DB::raw('avg(comments.stars) AS stars'))
+            ->join('comments', 'comments.product_id', '=', 'products.id')
+            ->groupBy('comments.product_id')
+            ->get();
         return response()->json($products);
     }
 }
