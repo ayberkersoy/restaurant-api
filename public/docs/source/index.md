@@ -78,7 +78,7 @@ curl -X GET -G "https://api.maycreator.com/api/campaigns/{campaign}"
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "OQXfMrmzOgaBpnO3",
+            "id": "tx6nK1zKEsB0jZKm",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -123,9 +123,9 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/campaigns"     -d "name"="ZCufZ3jPiTrBI7vW" \
-    -d "description"="XtVOu1jr6ZuAfDfV" \
-    -d "image_url"="aDSKlENSK0RBbleU" 
+curl -X POST "https://api.maycreator.com/api/campaigns"     -d "name"="EUzy0G3oq2aspCmd" \
+    -d "description"="pXVV5rU98vKR5eqe" \
+    -d "image_url"="M3iIzEovKyCEPGxQ" 
 ```
 
 ```javascript
@@ -137,9 +137,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "ZCufZ3jPiTrBI7vW",
-    "description": "XtVOu1jr6ZuAfDfV",
-    "image_url": "aDSKlENSK0RBbleU",
+    "name": "EUzy0G3oq2aspCmd",
+    "description": "pXVV5rU98vKR5eqe",
+    "image_url": "M3iIzEovKyCEPGxQ",
 })
 
 fetch(url, {
@@ -182,16 +182,16 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}"     -d "id"="9" \
-    -d "name"="dk10sMz1fX2X8DzQ" \
-    -d "description"="RETKkhj3VeoIIxUt" \
-    -d "image_url"="03t2g01uQBVVNUay" 
+    -d "name"="pqU2HmW8Bcskq77M" \
+    -d "description"="qu3NyP630Aj97NUt" \
+    -d "image_url"="ztnby7G5VWeB59Xa" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}");
 
     let params = {
-            "id": "0ytYzY8y6BzHwp3c",
+            "id": "XjO37WM8lfaqaHRU",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -202,9 +202,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "dk10sMz1fX2X8DzQ",
-    "description": "RETKkhj3VeoIIxUt",
-    "image_url": "03t2g01uQBVVNUay",
+    "name": "pqU2HmW8Bcskq77M",
+    "description": "qu3NyP630Aj97NUt",
+    "image_url": "ztnby7G5VWeB59Xa",
 })
 
 fetch(url, {
@@ -259,7 +259,7 @@ curl -X POST "https://api.maycreator.com/api/campaigns/{campaign}/destroy"
 const url = new URL("https://api.maycreator.com/api/campaigns/{campaign}/destroy");
 
     let params = {
-            "id": "QGg8iILDmaTgjehI",
+            "id": "cwr8yf9NPR98fEuD",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -353,7 +353,7 @@ curl -X GET -G "https://api.maycreator.com/api/categories/{category}"
 const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
     let params = {
-            "id": "2tygUJT0EEg1DY8y",
+            "id": "YHH4064gPvJhqSrW",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -398,9 +398,9 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/categories"     -d "name"="kNjXf7ibRrKXYmal" \
-    -d "description"="mBioi8bQhfh0vMDY" \
-    -d "image_url"="I2swtWKjdylXMhD0" 
+curl -X POST "https://api.maycreator.com/api/categories"     -d "name"="oOAbbfUS860xR9zN" \
+    -d "description"="GSwTz3WRHWHIPLZJ" \
+    -d "image_url"="nGuoFRbazQfHga67" 
 ```
 
 ```javascript
@@ -412,9 +412,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "kNjXf7ibRrKXYmal",
-    "description": "mBioi8bQhfh0vMDY",
-    "image_url": "I2swtWKjdylXMhD0",
+    "name": "oOAbbfUS860xR9zN",
+    "description": "GSwTz3WRHWHIPLZJ",
+    "image_url": "nGuoFRbazQfHga67",
 })
 
 fetch(url, {
@@ -457,16 +457,16 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/categories/{category}"     -d "id"="9" \
-    -d "name"="yDFbx8IQd0pd6iWh" \
-    -d "description"="jzPT2hTtJuwjdM55" \
-    -d "image_url"="xYU9cUpr0g6B6q6X" 
+    -d "name"="qpRLwrIOSobWiYjc" \
+    -d "description"="wuThpkWcafR9iAGy" \
+    -d "image_url"="EoChbk8Nh24YWbk1" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/categories/{category}");
 
     let params = {
-            "id": "yErBQbZSvyTWvlN6",
+            "id": "BbDXud94cjNDbsvj",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -477,9 +477,9 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "yDFbx8IQd0pd6iWh",
-    "description": "jzPT2hTtJuwjdM55",
-    "image_url": "xYU9cUpr0g6B6q6X",
+    "name": "qpRLwrIOSobWiYjc",
+    "description": "wuThpkWcafR9iAGy",
+    "image_url": "EoChbk8Nh24YWbk1",
 })
 
 fetch(url, {
@@ -534,7 +534,7 @@ curl -X POST "https://api.maycreator.com/api/categories/{category}/destroy"
 const url = new URL("https://api.maycreator.com/api/categories/{category}/destroy");
 
     let params = {
-            "id": "DT0qwsuPJwmpC0PA",
+            "id": "0HUQXFc7OrAcKVLm",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -623,7 +623,7 @@ curl -X GET -G "https://api.maycreator.com/api/comments/{comment}"
 const url = new URL("https://api.maycreator.com/api/comments/{comment}");
 
     let params = {
-            "id": "X7jnUWSsVf2SEaUp",
+            "id": "wyMFIHqnC9i4yj2l",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -663,10 +663,10 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/comments"     -d "user_id"="6" \
+curl -X POST "https://api.maycreator.com/api/comments"     -d "user_id"="14" \
     -d "product_id"="18" \
-    -d "comment"="xb3YYE1ykgwTuvld" \
-    -d "stars"="129249212.1" 
+    -d "comment"="pqnqV3WR7sEZX6Un" \
+    -d "stars"="14935459.587494" 
 ```
 
 ```javascript
@@ -678,10 +678,10 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "user_id": "6",
+    "user_id": "14",
     "product_id": "18",
-    "comment": "xb3YYE1ykgwTuvld",
-    "stars": "129249212.1",
+    "comment": "pqnqV3WR7sEZX6Un",
+    "stars": "14935459.587494",
 })
 
 fetch(url, {
@@ -720,17 +720,17 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/comments/{comment}"     -d "id"="9" \
-    -d "user_id"="20" \
-    -d "product_id"="6" \
-    -d "comment"="0Krmas2wu3Cv3jAk" \
-    -d "stars"="2468793.6564" 
+    -d "user_id"="11" \
+    -d "product_id"="15" \
+    -d "comment"="cCLLXuE0NMQ5fhXb" \
+    -d "stars"="0" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/comments/{comment}");
 
     let params = {
-            "id": "Deg1eTMQHRWFEbrp",
+            "id": "mh6SOt4xW3hGEbL4",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -741,10 +741,10 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "user_id": "20",
-    "product_id": "6",
-    "comment": "0Krmas2wu3Cv3jAk",
-    "stars": "2468793.6564",
+    "user_id": "11",
+    "product_id": "15",
+    "comment": "cCLLXuE0NMQ5fhXb",
+    "stars": "0",
 })
 
 fetch(url, {
@@ -795,7 +795,7 @@ curl -X POST "https://api.maycreator.com/api/comments/{comment}/destroy"
 const url = new URL("https://api.maycreator.com/api/comments/{comment}/destroy");
 
     let params = {
-            "id": "xVGJBFvdR1cRT8qH",
+            "id": "yrMkzFv5IAjFan8N",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -900,7 +900,7 @@ curl -X GET -G "https://api.maycreator.com/api/companies/{company}"
 const url = new URL("https://api.maycreator.com/api/companies/{company}");
 
     let params = {
-            "id": "d31DmOnUF5CtJbAU",
+            "id": "v73s8AzVc7LwqTuI",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -956,19 +956,19 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/companies"     -d "name"="032gdjQlSBO15PoS" \
-    -d "address"="XVxNctR7wbO1VGZP" \
-    -d "phone"="OQKmk1qJcnr1e6aT" \
-    -d "logo"="pX7PZaGYzKsI1Aan" \
-    -d "working_hours_day"="EM3aMboTQHbM4aqM" \
-    -d "working_hours_night"="gCKA49UcjZ35m36j" \
-    -d "facebook"="L9HAlKzfYtfwnIhg" \
-    -d "twitter"="NeeEZOyyyXKwGXNA" \
-    -d "instagram"="iWlm6eosl34RePeQ" \
-    -d "about_text"="8TXFUu38dyIEHxB8" \
-    -d "about_image"="cKFoRAflL4xdlyc1" \
-    -d "locationy"="AXqHVVeIuv08n0A8" \
-    -d "locationx"="IBV5BjkGkg9qXjkP" 
+curl -X POST "https://api.maycreator.com/api/companies"     -d "name"="iZ0kdEzLI0DuFQzp" \
+    -d "address"="slCOqPRfH3zMGt9J" \
+    -d "phone"="0lM0NDC6EeuIVoLC" \
+    -d "logo"="iBW49M4dMsYS26is" \
+    -d "working_hours_day"="KOG2Tg2ut3C1LbVI" \
+    -d "working_hours_night"="1WWaiof6sAWPMBAq" \
+    -d "facebook"="9xRsbEfP7flFrGEY" \
+    -d "twitter"="AuB76EToS3wed6UE" \
+    -d "instagram"="RshP7R8P8r8bqO8V" \
+    -d "about_text"="h58Dt7gATLicv6bJ" \
+    -d "about_image"="S643sCjeyU4O2Wgf" \
+    -d "locationy"="xDpUARYdpNzxFaPx" \
+    -d "locationx"="i3cslMvw7iMlZORw" 
 ```
 
 ```javascript
@@ -980,19 +980,19 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "032gdjQlSBO15PoS",
-    "address": "XVxNctR7wbO1VGZP",
-    "phone": "OQKmk1qJcnr1e6aT",
-    "logo": "pX7PZaGYzKsI1Aan",
-    "working_hours_day": "EM3aMboTQHbM4aqM",
-    "working_hours_night": "gCKA49UcjZ35m36j",
-    "facebook": "L9HAlKzfYtfwnIhg",
-    "twitter": "NeeEZOyyyXKwGXNA",
-    "instagram": "iWlm6eosl34RePeQ",
-    "about_text": "8TXFUu38dyIEHxB8",
-    "about_image": "cKFoRAflL4xdlyc1",
-    "locationy": "AXqHVVeIuv08n0A8",
-    "locationx": "IBV5BjkGkg9qXjkP",
+    "name": "iZ0kdEzLI0DuFQzp",
+    "address": "slCOqPRfH3zMGt9J",
+    "phone": "0lM0NDC6EeuIVoLC",
+    "logo": "iBW49M4dMsYS26is",
+    "working_hours_day": "KOG2Tg2ut3C1LbVI",
+    "working_hours_night": "1WWaiof6sAWPMBAq",
+    "facebook": "9xRsbEfP7flFrGEY",
+    "twitter": "AuB76EToS3wed6UE",
+    "instagram": "RshP7R8P8r8bqO8V",
+    "about_text": "h58Dt7gATLicv6bJ",
+    "about_image": "S643sCjeyU4O2Wgf",
+    "locationy": "xDpUARYdpNzxFaPx",
+    "locationx": "i3cslMvw7iMlZORw",
 })
 
 fetch(url, {
@@ -1055,26 +1055,26 @@ Parameter | Type | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/companies/{company}"     -d "name"="HJTlaHMvKv0JDhIu" \
-    -d "address"="beAwB9s05TXe5WqP" \
-    -d "phone"="uzPgHHbG2xyQdknu" \
-    -d "logo"="VkcHJDl2Fbtq1OB4" \
-    -d "working_hours_day"="EL4BBUp9qZYswvNq" \
-    -d "working_hours_night"="5C7Dfk8Qlk6bNRDH" \
-    -d "facebook"="EsWQW2UXXxclVo4t" \
-    -d "twitter"="fdAecLGTpU0lwZ8L" \
-    -d "instagram"="cI19uiTQlIbfdpI8" \
-    -d "about_text"="NUQQ7XqTCttREe9G" \
-    -d "about_image"="Xvi1DCIG4EXGqBPr" \
-    -d "locationy"="t3TPei1vZyDueCUB" \
-    -d "locationx"="ctWWROR7D1v6NORZ" 
+curl -X POST "https://api.maycreator.com/api/companies/{company}"     -d "name"="RJRlvR4Fagvg0BNG" \
+    -d "address"="hfAEpW6JzBI8rhji" \
+    -d "phone"="YjrJehHzvDPls8l0" \
+    -d "logo"="zTRfJYVhF1GNgGV7" \
+    -d "working_hours_day"="zopAzWeocF2VH5w6" \
+    -d "working_hours_night"="kOwgE8E62XhtVhdy" \
+    -d "facebook"="At2UORijQ73CVKkf" \
+    -d "twitter"="jThDs00sGFKSuKau" \
+    -d "instagram"="P8uRSPnY4unUjQ10" \
+    -d "about_text"="g4DLfFcS0Sn5Ba5i" \
+    -d "about_image"="XfOe4Hunu8XHxlAj" \
+    -d "locationy"="npXgD9VgMJb9ji9w" \
+    -d "locationx"="ZOwHyZVCBG1xHJPU" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/companies/{company}");
 
     let params = {
-            "id": "iWy10fJPuvkADGCs",
+            "id": "h8prRkuHPs6m33hW",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1084,19 +1084,19 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "HJTlaHMvKv0JDhIu",
-    "address": "beAwB9s05TXe5WqP",
-    "phone": "uzPgHHbG2xyQdknu",
-    "logo": "VkcHJDl2Fbtq1OB4",
-    "working_hours_day": "EL4BBUp9qZYswvNq",
-    "working_hours_night": "5C7Dfk8Qlk6bNRDH",
-    "facebook": "EsWQW2UXXxclVo4t",
-    "twitter": "fdAecLGTpU0lwZ8L",
-    "instagram": "cI19uiTQlIbfdpI8",
-    "about_text": "NUQQ7XqTCttREe9G",
-    "about_image": "Xvi1DCIG4EXGqBPr",
-    "locationy": "t3TPei1vZyDueCUB",
-    "locationx": "ctWWROR7D1v6NORZ",
+    "name": "RJRlvR4Fagvg0BNG",
+    "address": "hfAEpW6JzBI8rhji",
+    "phone": "YjrJehHzvDPls8l0",
+    "logo": "zTRfJYVhF1GNgGV7",
+    "working_hours_day": "zopAzWeocF2VH5w6",
+    "working_hours_night": "kOwgE8E62XhtVhdy",
+    "facebook": "At2UORijQ73CVKkf",
+    "twitter": "jThDs00sGFKSuKau",
+    "instagram": "P8uRSPnY4unUjQ10",
+    "about_text": "g4DLfFcS0Sn5Ba5i",
+    "about_image": "XfOe4Hunu8XHxlAj",
+    "locationy": "npXgD9VgMJb9ji9w",
+    "locationx": "ZOwHyZVCBG1xHJPU",
 })
 
 fetch(url, {
@@ -1171,7 +1171,7 @@ curl -X POST "https://api.maycreator.com/api/companies/{company}/destroy"
 const url = new URL("https://api.maycreator.com/api/companies/{company}/destroy");
 
     let params = {
-            "id": "iOfBOac9kSRkRUmT",
+            "id": "9TjNb0MsVHfJcccp",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1266,7 +1266,7 @@ curl -X GET -G "https://api.maycreator.com/api/employees/{employee}"
 const url = new URL("https://api.maycreator.com/api/employees/{employee}");
 
     let params = {
-            "id": "Zmk2mF7AcUhEWt27",
+            "id": "9Ig4FEsbek8gIiuw",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1312,10 +1312,10 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/employees"     -d "name"="b4qMKGyVWJdwU6Nt" \
-    -d "surname"="9U3TEpLg6zq8GoJm" \
-    -d "description"="Wmj9iwAzqwFzSRRa" \
-    -d "image_url"="PkwQKBO4gkz8dPdo" 
+curl -X POST "https://api.maycreator.com/api/employees"     -d "name"="ZJ2xCQVjKMzREk3U" \
+    -d "surname"="dDrQUtc9TislTXD9" \
+    -d "description"="Ttzasx7WuY5GTJIE" \
+    -d "image_url"="zFyxussJQkoHQ0hn" 
 ```
 
 ```javascript
@@ -1327,10 +1327,10 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "b4qMKGyVWJdwU6Nt",
-    "surname": "9U3TEpLg6zq8GoJm",
-    "description": "Wmj9iwAzqwFzSRRa",
-    "image_url": "PkwQKBO4gkz8dPdo",
+    "name": "ZJ2xCQVjKMzREk3U",
+    "surname": "dDrQUtc9TislTXD9",
+    "description": "Ttzasx7WuY5GTJIE",
+    "image_url": "zFyxussJQkoHQ0hn",
 })
 
 fetch(url, {
@@ -1375,17 +1375,17 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/employees/{employee}"     -d "id"="9" \
-    -d "name"="orWi84x6mEC1F3cz" \
-    -d "surname"="eIs9yStP76uRC3NB" \
-    -d "description"="FAInwPBvLMKPLnYD" \
-    -d "image_url"="4xjO8Vub04gmbB54" 
+    -d "name"="TDkfmaUehxzmiUiF" \
+    -d "surname"="H0j1On4elFKxqXTT" \
+    -d "description"="AmQW8eD57Ouknvhx" \
+    -d "image_url"="ufwgaxe2e2JFvAkx" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/employees/{employee}");
 
     let params = {
-            "id": "rALft3H4vNubcloG",
+            "id": "c1C5uO06trrskmIM",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1396,10 +1396,10 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "orWi84x6mEC1F3cz",
-    "surname": "eIs9yStP76uRC3NB",
-    "description": "FAInwPBvLMKPLnYD",
-    "image_url": "4xjO8Vub04gmbB54",
+    "name": "TDkfmaUehxzmiUiF",
+    "surname": "H0j1On4elFKxqXTT",
+    "description": "AmQW8eD57Ouknvhx",
+    "image_url": "ufwgaxe2e2JFvAkx",
 })
 
 fetch(url, {
@@ -1456,7 +1456,7 @@ curl -X POST "https://api.maycreator.com/api/employees/{employee}/destroy"
 const url = new URL("https://api.maycreator.com/api/employees/{employee}/destroy");
 
     let params = {
-            "id": "pADDgOLhwZVQZCjd",
+            "id": "Pu8q5t9TIxnimhTv",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1501,8 +1501,8 @@ APIs for managing favourites
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/favourites"     -d "user_id"="15" \
-    -d "product_id"="11" 
+curl -X POST "https://api.maycreator.com/api/favourites"     -d "user_id"="6" \
+    -d "product_id"="19" 
 ```
 
 ```javascript
@@ -1514,8 +1514,8 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "user_id": "15",
-    "product_id": "11",
+    "user_id": "6",
+    "product_id": "19",
 })
 
 fetch(url, {
@@ -1560,7 +1560,7 @@ curl -X POST "https://api.maycreator.com/api/favourites/{favourite}/destroy"
 const url = new URL("https://api.maycreator.com/api/favourites/{favourite}/destroy");
 
     let params = {
-            "id": "JdnLvp9qXUbrw7up",
+            "id": "2e6bWkPQACLCgmWJ",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1649,7 +1649,7 @@ curl -X GET -G "https://api.maycreator.com/api/messages/{message}"
 const url = new URL("https://api.maycreator.com/api/messages/{message}");
 
     let params = {
-            "id": "bWqiwTO8jBIymKRh",
+            "id": "kLvXp71nz9WRJOmr",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1689,10 +1689,10 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/messages"     -d "name"="NdY8qHdssMeiCpXP" \
-    -d "about"="6AeGozRDQ2lUusrb" \
-    -d "message"="u8iPGOXiTjCi623Z" \
-    -d "phone"="0jyaBfBO4aWSICPF" 
+curl -X POST "https://api.maycreator.com/api/messages"     -d "name"="XBaRNOYp8QOjoKE4" \
+    -d "about"="C1GHV6TPGGJc7jWH" \
+    -d "message"="utx7PXdxvPcQbaLW" \
+    -d "phone"="kWcPpSjAnYu7uHQX" 
 ```
 
 ```javascript
@@ -1704,10 +1704,10 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "NdY8qHdssMeiCpXP",
-    "about": "6AeGozRDQ2lUusrb",
-    "message": "u8iPGOXiTjCi623Z",
-    "phone": "0jyaBfBO4aWSICPF",
+    "name": "XBaRNOYp8QOjoKE4",
+    "about": "C1GHV6TPGGJc7jWH",
+    "message": "utx7PXdxvPcQbaLW",
+    "phone": "kWcPpSjAnYu7uHQX",
 })
 
 fetch(url, {
@@ -1746,17 +1746,17 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/messages/{message}"     -d "id"="9" \
-    -d "name"="ZTOZBApsDRyNCgFr" \
-    -d "about"="VoiZTaEtdyfSV64c" \
-    -d "message"="8Q7WRRhANVicKhLu" \
-    -d "phone"="dVFthYLGx2k0gLc8" 
+    -d "name"="wX0HJqhISrh4wEQt" \
+    -d "about"="W0e2GddoB0SlmeXI" \
+    -d "message"="jw3IO8nq54wNfZU4" \
+    -d "phone"="Lbxf4iTekKonKmRP" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/messages/{message}");
 
     let params = {
-            "id": "UyHvdAynnodH8K37",
+            "id": "MBjdOsKAMphnOnYm",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1767,10 +1767,10 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "ZTOZBApsDRyNCgFr",
-    "about": "VoiZTaEtdyfSV64c",
-    "message": "8Q7WRRhANVicKhLu",
-    "phone": "dVFthYLGx2k0gLc8",
+    "name": "wX0HJqhISrh4wEQt",
+    "about": "W0e2GddoB0SlmeXI",
+    "message": "jw3IO8nq54wNfZU4",
+    "phone": "Lbxf4iTekKonKmRP",
 })
 
 fetch(url, {
@@ -1821,7 +1821,7 @@ curl -X POST "https://api.maycreator.com/api/messages/{message}/destroy"
 const url = new URL("https://api.maycreator.com/api/messages/{message}/destroy");
 
     let params = {
-            "id": "ARJSTNHexcKZH3li",
+            "id": "vO3cgYi21A6wHW89",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1910,7 +1910,7 @@ curl -X GET -G "https://api.maycreator.com/api/orders/{order}"
 const url = new URL("https://api.maycreator.com/api/orders/{order}");
 
     let params = {
-            "id": "RzoYYw5Kv3u2XAsZ",
+            "id": "r8faVl62DTOqPGKZ",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -1950,13 +1950,13 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/orders"     -d "user_id"="10" \
-    -d "user_contact_id"="10" \
-    -d "status"="4" \
-    -d "price"="tLQGka1IaieJTz4P" \
-    -d "note"="PcQfThfJ0o1pECl3" \
-    -d "date_ordered"="KWnI0EfDRxZBPR9f" \
-    -d "currency"="8C8PINmZyqqe4G3d" \
+curl -X POST "https://api.maycreator.com/api/orders"     -d "user_id"="14" \
+    -d "user_contact_id"="2" \
+    -d "status"="12" \
+    -d "price"="Wr6J3Q25Q7leBNA2" \
+    -d "note"="ymbagXBJFcQCd5ND" \
+    -d "date_ordered"="Fd2C7y1mLrY1n2MF" \
+    -d "currency"="63t3olGn4FFZ3S8Z" \
     -d "payment_type_id"="18" 
 ```
 
@@ -1969,13 +1969,13 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "user_id": "10",
-    "user_contact_id": "10",
-    "status": "4",
-    "price": "tLQGka1IaieJTz4P",
-    "note": "PcQfThfJ0o1pECl3",
-    "date_ordered": "KWnI0EfDRxZBPR9f",
-    "currency": "8C8PINmZyqqe4G3d",
+    "user_id": "14",
+    "user_contact_id": "2",
+    "status": "12",
+    "price": "Wr6J3Q25Q7leBNA2",
+    "note": "ymbagXBJFcQCd5ND",
+    "date_ordered": "Fd2C7y1mLrY1n2MF",
+    "currency": "63t3olGn4FFZ3S8Z",
     "payment_type_id": "18",
 })
 
@@ -2019,21 +2019,21 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/orders/{order}"     -d "id"="9" \
-    -d "user_id"="10" \
-    -d "user_contact_id"="1" \
-    -d "status"="13" \
-    -d "price"="CTvrYOBQRw3vs3Iq" \
-    -d "note"="4QhWlx4uuuOaMnOa" \
-    -d "date_ordered"="fULexre1TmRjz4J2" \
-    -d "currency"="LnEyNX3nBE0JB0ir" \
-    -d "payment_type_id"="17" 
+    -d "user_id"="20" \
+    -d "user_contact_id"="20" \
+    -d "status"="8" \
+    -d "price"="csEekRzjtfMM0EHe" \
+    -d "note"="Ywcp6YJk4py05CPx" \
+    -d "date_ordered"="sbQLu7GtVHPTXYlF" \
+    -d "currency"="dAUV31YLuFdUTOwA" \
+    -d "payment_type_id"="4" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/orders/{order}");
 
     let params = {
-            "id": "8i2wNTi7X2dkHFza",
+            "id": "KuHvve9UW5XXTTPW",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2044,14 +2044,14 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "user_id": "10",
-    "user_contact_id": "1",
-    "status": "13",
-    "price": "CTvrYOBQRw3vs3Iq",
-    "note": "4QhWlx4uuuOaMnOa",
-    "date_ordered": "fULexre1TmRjz4J2",
-    "currency": "LnEyNX3nBE0JB0ir",
-    "payment_type_id": "17",
+    "user_id": "20",
+    "user_contact_id": "20",
+    "status": "8",
+    "price": "csEekRzjtfMM0EHe",
+    "note": "Ywcp6YJk4py05CPx",
+    "date_ordered": "sbQLu7GtVHPTXYlF",
+    "currency": "dAUV31YLuFdUTOwA",
+    "payment_type_id": "4",
 })
 
 fetch(url, {
@@ -2106,7 +2106,7 @@ curl -X POST "https://api.maycreator.com/api/orders/{order}/destroy"
 const url = new URL("https://api.maycreator.com/api/orders/{order}/destroy");
 
     let params = {
-            "id": "hBoJwMSIMGx9WQZd",
+            "id": "VSfy7JwgabrtqzWI",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2203,7 +2203,7 @@ curl -X GET -G "https://api.maycreator.com/api/products/{product}"
 const url = new URL("https://api.maycreator.com/api/products/{product}");
 
     let params = {
-            "id": "8R6KLGR00NCePpoU",
+            "id": "NowPBE6xA140wLJz",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2251,11 +2251,11 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/products"     -d "name"="XokJwSRmPX9pg6eC" \
-    -d "description"="0IErdgg9x9GqnQpM" \
-    -d "image_url"="AmJ3Own3MXwT870o" \
-    -d "category_id"="15" \
-    -d "price"="x9uWC3v6SynQMBjM" 
+curl -X POST "https://api.maycreator.com/api/products"     -d "name"="SJFtB9W1YNm9rIsG" \
+    -d "description"="nWvzRVwyPgcK3Rpe" \
+    -d "image_url"="ExDd3lLn2nBxVK0o" \
+    -d "category_id"="10" \
+    -d "price"="4dxuIjCXARN5gJZC" 
 ```
 
 ```javascript
@@ -2267,11 +2267,11 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "XokJwSRmPX9pg6eC",
-    "description": "0IErdgg9x9GqnQpM",
-    "image_url": "AmJ3Own3MXwT870o",
-    "category_id": "15",
-    "price": "x9uWC3v6SynQMBjM",
+    "name": "SJFtB9W1YNm9rIsG",
+    "description": "nWvzRVwyPgcK3Rpe",
+    "image_url": "ExDd3lLn2nBxVK0o",
+    "category_id": "10",
+    "price": "4dxuIjCXARN5gJZC",
 })
 
 fetch(url, {
@@ -2319,18 +2319,18 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/products/{product}"     -d "id"="9" \
-    -d "name"="bwZ6o2cJfF1C4B1p" \
-    -d "description"="SqI5CHV5BrM5Yzpe" \
-    -d "image_url"="fHDzI06CVnlDzdtr" \
-    -d "category_id"="7" \
-    -d "price"="JJrjehTz1a8ITHAX" 
+    -d "name"="gIxldIVULAJd5SOA" \
+    -d "description"="eYPGyQ4YtWCami1o" \
+    -d "image_url"="JcXKNXnUraYh2tuh" \
+    -d "category_id"="2" \
+    -d "price"="KLvwKfchpU8Olo3d" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/products/{product}");
 
     let params = {
-            "id": "blpNafwwrU15nI5h",
+            "id": "f0r7J69OfKODBzdA",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2341,11 +2341,11 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "bwZ6o2cJfF1C4B1p",
-    "description": "SqI5CHV5BrM5Yzpe",
-    "image_url": "fHDzI06CVnlDzdtr",
-    "category_id": "7",
-    "price": "JJrjehTz1a8ITHAX",
+    "name": "gIxldIVULAJd5SOA",
+    "description": "eYPGyQ4YtWCami1o",
+    "image_url": "JcXKNXnUraYh2tuh",
+    "category_id": "2",
+    "price": "KLvwKfchpU8Olo3d",
 })
 
 fetch(url, {
@@ -2405,7 +2405,7 @@ curl -X POST "https://api.maycreator.com/api/products/{product}/destroy"
 const url = new URL("https://api.maycreator.com/api/products/{product}/destroy");
 
     let params = {
-            "id": "unULhO4aY0kLwyZQ",
+            "id": "npKr0VmuAfy6hJhw",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2454,7 +2454,7 @@ curl -X GET -G "https://api.maycreator.com/api/products/{product}/comments"
 const url = new URL("https://api.maycreator.com/api/products/{product}/comments");
 
     let params = {
-            "id": "AohKCKDGEYsJv1T9",
+            "id": "EQ9burf6ddANTBLC",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2522,7 +2522,7 @@ curl -X GET -G "https://api.maycreator.com/api/getProductsByCategory/{category}"
 const url = new URL("https://api.maycreator.com/api/getProductsByCategory/{category}");
 
     let params = {
-            "id": "PtIgYHPetKkjN0aX",
+            "id": "zN8JgP663rJpPwZW",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2590,7 +2590,7 @@ curl -X GET -G "https://api.maycreator.com/api/getFavouriteProductsByCategory/{c
 const url = new URL("https://api.maycreator.com/api/getFavouriteProductsByCategory/{category}");
 
     let params = {
-            "id": "O2non6ddEP3ZlRox",
+            "id": "wsYGti52yLbiCMS9",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2619,7 +2619,9 @@ fetch(url, {
         "category_id": 1,
         "created_at": "2018-12-17 10:06:59",
         "updated_at": "2018-12-17 10:06:59",
-        "price": "10.00"
+        "price": "10.00",
+        "isFeatured": "1",
+        "stars": 5
     },
     {
         "id": 2,
@@ -2629,7 +2631,9 @@ fetch(url, {
         "category_id": 1,
         "created_at": "2018-12-17 10:06:59",
         "updated_at": "2018-12-17 10:06:59",
-        "price": "10.00"
+        "price": "10.00",
+        "isFeatured": "1",
+        "stars": 5
     }
 ]
 ```
@@ -2707,7 +2711,7 @@ curl -X GET -G "https://api.maycreator.com/api/reservations/{reservation}"
 const url = new URL("https://api.maycreator.com/api/reservations/{reservation}");
 
     let params = {
-            "id": "O8tyKePosvpItuOq",
+            "id": "o4z3fFEtzAfyciCG",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2756,13 +2760,13 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/reservations"     -d "reservation_date"="DXbquEmXwRoXYHRZ" \
-    -d "reservation_hour"="W4RtqMj1wSZHlR9g" \
-    -d "people_count"="1" \
-    -d "name"="KU0OjylnxwFRg1jj" \
-    -d "surname"="82G1o4PhYvdZfdEm" \
-    -d "phone"="zu9XpGTjCz2lQzDS" \
-    -d "note"="MTRxtFLbez4xZyoS" 
+curl -X POST "https://api.maycreator.com/api/reservations"     -d "reservation_date"="M8q2u293H4WFsnQe" \
+    -d "reservation_hour"="DEpQhUaQ8JLH9FhY" \
+    -d "people_count"="13" \
+    -d "name"="EAl2q9QBxraDPIW1" \
+    -d "surname"="XD5CZqD75ejGFvgE" \
+    -d "phone"="7H5TmAkBSKn1OQly" \
+    -d "note"="kkpc72EZpyafrX38" 
 ```
 
 ```javascript
@@ -2774,13 +2778,13 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "reservation_date": "DXbquEmXwRoXYHRZ",
-    "reservation_hour": "W4RtqMj1wSZHlR9g",
-    "people_count": "1",
-    "name": "KU0OjylnxwFRg1jj",
-    "surname": "82G1o4PhYvdZfdEm",
-    "phone": "zu9XpGTjCz2lQzDS",
-    "note": "MTRxtFLbez4xZyoS",
+    "reservation_date": "M8q2u293H4WFsnQe",
+    "reservation_hour": "DEpQhUaQ8JLH9FhY",
+    "people_count": "13",
+    "name": "EAl2q9QBxraDPIW1",
+    "surname": "XD5CZqD75ejGFvgE",
+    "phone": "7H5TmAkBSKn1OQly",
+    "note": "kkpc72EZpyafrX38",
 })
 
 fetch(url, {
@@ -2831,20 +2835,20 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/reservations/{reservation}"     -d "id"="9" \
-    -d "reservation_date"="3TJ8qzNqQlCQpBsV" \
-    -d "reservation_hour"="vz5fvUE5LC4ODk5W" \
+    -d "reservation_date"="XVfDQYS3cS3bWoK8" \
+    -d "reservation_hour"="wl98ZzcBKnICk0hR" \
     -d "people_count"="10" \
-    -d "name"="n9xFnTgINCfkeQPo" \
-    -d "surname"="YfnE7TbYIhnYHxzy" \
-    -d "phone"="B5KJ2Y1Kuo3OUH5k" \
-    -d "note"="JSffv4WlhRVIpxiP" 
+    -d "name"="8Nq8yXu2ZpVNWluc" \
+    -d "surname"="M6FRRAknqoMORXCq" \
+    -d "phone"="94ZORL5y7OpKGqBH" \
+    -d "note"="pcqZUmQpVzzNJZbr" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/reservations/{reservation}");
 
     let params = {
-            "id": "qbjNQKgfMXn3zsBl",
+            "id": "kWtbaolUlrc3NEI5",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -2855,13 +2859,13 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "reservation_date": "3TJ8qzNqQlCQpBsV",
-    "reservation_hour": "vz5fvUE5LC4ODk5W",
+    "reservation_date": "XVfDQYS3cS3bWoK8",
+    "reservation_hour": "wl98ZzcBKnICk0hR",
     "people_count": "10",
-    "name": "n9xFnTgINCfkeQPo",
-    "surname": "YfnE7TbYIhnYHxzy",
-    "phone": "B5KJ2Y1Kuo3OUH5k",
-    "note": "JSffv4WlhRVIpxiP",
+    "name": "8Nq8yXu2ZpVNWluc",
+    "surname": "M6FRRAknqoMORXCq",
+    "phone": "94ZORL5y7OpKGqBH",
+    "note": "pcqZUmQpVzzNJZbr",
 })
 
 fetch(url, {
@@ -2924,7 +2928,7 @@ curl -X POST "https://api.maycreator.com/api/reservations/{reservation}/destroy"
 const url = new URL("https://api.maycreator.com/api/reservations/{reservation}/destroy");
 
     let params = {
-            "id": "h32dM9st5ESraIvv",
+            "id": "WL4sDlPI4khbhZnf",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3019,7 +3023,7 @@ curl -X GET -G "https://api.maycreator.com/api/userContacts/{userContact}"
 const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}");
 
     let params = {
-            "id": "9F597hIF719aS7iL",
+            "id": "V4DRdafSv7hSrkPY",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3065,10 +3069,10 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/userContacts"     -d "user_id"="2" \
-    -d "name"="OVdYfZeK9miLOqy2" \
-    -d "phone"="4MfJtMQ6uWv4WCv4" \
-    -d "address"="vTQttpJmHUUsBavD" 
+curl -X POST "https://api.maycreator.com/api/userContacts"     -d "user_id"="4" \
+    -d "name"="PA5hdfJeNzdjiA3x" \
+    -d "phone"="mbgHyurUGjd3x1AQ" \
+    -d "address"="qcRf6TIUlsJL2YG4" 
 ```
 
 ```javascript
@@ -3080,10 +3084,10 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "user_id": "2",
-    "name": "OVdYfZeK9miLOqy2",
-    "phone": "4MfJtMQ6uWv4WCv4",
-    "address": "vTQttpJmHUUsBavD",
+    "user_id": "4",
+    "name": "PA5hdfJeNzdjiA3x",
+    "phone": "mbgHyurUGjd3x1AQ",
+    "address": "qcRf6TIUlsJL2YG4",
 })
 
 fetch(url, {
@@ -3128,17 +3132,17 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/userContacts/{userContact}"     -d "id"="9" \
-    -d "user_id"="4" \
-    -d "name"="cdYpZPLmk9Kn21WY" \
-    -d "phone"="1av1jeqqE0qx24LV" \
-    -d "address"="VQOEfU4VLTBHNBSM" 
+    -d "user_id"="1" \
+    -d "name"="0usudc28kUj88pMQ" \
+    -d "phone"="nUPGbkikvxYPc4xG" \
+    -d "address"="9Eta16eWc56ztNxR" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}");
 
     let params = {
-            "id": "86QDE9RgrnsjcLen",
+            "id": "6HpEVSSiCSFbQ4K8",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3149,10 +3153,10 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "user_id": "4",
-    "name": "cdYpZPLmk9Kn21WY",
-    "phone": "1av1jeqqE0qx24LV",
-    "address": "VQOEfU4VLTBHNBSM",
+    "user_id": "1",
+    "name": "0usudc28kUj88pMQ",
+    "phone": "nUPGbkikvxYPc4xG",
+    "address": "9Eta16eWc56ztNxR",
 })
 
 fetch(url, {
@@ -3209,7 +3213,7 @@ curl -X POST "https://api.maycreator.com/api/userContacts/{userContact}/destroy"
 const url = new URL("https://api.maycreator.com/api/userContacts/{userContact}/destroy");
 
     let params = {
-            "id": "Rd33QuHLIhLpJwWD",
+            "id": "wyrizOwR2GGwZkAh",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3305,7 +3309,7 @@ curl -X GET -G "https://api.maycreator.com/api/users/{user}"
 const url = new URL("https://api.maycreator.com/api/users/{user}");
 
     let params = {
-            "id": "nmKR3Ove0tnfujei",
+            "id": "AFywUzareBCSX5e3",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3352,12 +3356,12 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/users"     -d "name"="BH78jwjBct0VaHr8" \
-    -d "surname"="VBNhuImVduMGeH7c" \
-    -d "email"="qmeGzWSBZI9IXYqF" \
-    -d "password"="i7CZ2HLS4kDA8bdI" \
-    -d "password_confirmation"="O6pAVFmhHBR4EMWO" \
-    -d "status"="1eU3naJYxsgz1UqA" 
+curl -X POST "https://api.maycreator.com/api/users"     -d "name"="8XYwQTQjrSJslS33" \
+    -d "surname"="2UXcihsR6a8rtgwW" \
+    -d "email"="wwfe7XBjRtM4XoJz" \
+    -d "password"="CcdaWUKfCBRrMZSP" \
+    -d "password_confirmation"="ontIE1ZMV714fgDd" \
+    -d "status"="cX2OIvhlI00tLNME" 
 ```
 
 ```javascript
@@ -3369,12 +3373,12 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "BH78jwjBct0VaHr8",
-    "surname": "VBNhuImVduMGeH7c",
-    "email": "qmeGzWSBZI9IXYqF",
-    "password": "i7CZ2HLS4kDA8bdI",
-    "password_confirmation": "O6pAVFmhHBR4EMWO",
-    "status": "1eU3naJYxsgz1UqA",
+    "name": "8XYwQTQjrSJslS33",
+    "surname": "2UXcihsR6a8rtgwW",
+    "email": "wwfe7XBjRtM4XoJz",
+    "password": "CcdaWUKfCBRrMZSP",
+    "password_confirmation": "ontIE1ZMV714fgDd",
+    "status": "cX2OIvhlI00tLNME",
 })
 
 fetch(url, {
@@ -3422,19 +3426,19 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST "https://api.maycreator.com/api/users/{user}"     -d "id"="9" \
-    -d "name"="O5LTntN5uS6iGUL5" \
-    -d "surname"="xeKlxsCnxPcLaEE2" \
-    -d "email"="TiJjH0vuMubhMxkr" \
-    -d "password"="nZhPeYi7jBQZ7BAH" \
-    -d "password_confirmation"="g1KAEsP3wbNoG2OL" \
-    -d "status"="7GVRAZa4QC25q4Fk" 
+    -d "name"="p5yZ1O2rPprdz4Z1" \
+    -d "surname"="V0zaydrvAQCsxcxN" \
+    -d "email"="I8mEnvitDLqLRfHt" \
+    -d "password"="QkTugmmKCq53LTPM" \
+    -d "password_confirmation"="ztvajUgA8MX7HEmE" \
+    -d "status"="8WoYJw7FcRo9Ast4" 
 ```
 
 ```javascript
 const url = new URL("https://api.maycreator.com/api/users/{user}");
 
     let params = {
-            "id": "7oBoNh1s9Voo0bLd",
+            "id": "vY5Yih8VZ4Zr0raS",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3445,12 +3449,12 @@ let headers = {
 
 let body = JSON.stringify({
     "id": "9",
-    "name": "O5LTntN5uS6iGUL5",
-    "surname": "xeKlxsCnxPcLaEE2",
-    "email": "TiJjH0vuMubhMxkr",
-    "password": "nZhPeYi7jBQZ7BAH",
-    "password_confirmation": "g1KAEsP3wbNoG2OL",
-    "status": "7GVRAZa4QC25q4Fk",
+    "name": "p5yZ1O2rPprdz4Z1",
+    "surname": "V0zaydrvAQCsxcxN",
+    "email": "I8mEnvitDLqLRfHt",
+    "password": "QkTugmmKCq53LTPM",
+    "password_confirmation": "ztvajUgA8MX7HEmE",
+    "status": "8WoYJw7FcRo9Ast4",
 })
 
 fetch(url, {
@@ -3510,7 +3514,7 @@ curl -X POST "https://api.maycreator.com/api/users/{user}/destroy"
 const url = new URL("https://api.maycreator.com/api/users/{user}/destroy");
 
     let params = {
-            "id": "qFSbbOidCzOZQyub",
+            "id": "sJKLyeJmNOf89eSh",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3559,7 +3563,7 @@ curl -X GET -G "https://api.maycreator.com/api/users/{user}/favourites"
 const url = new URL("https://api.maycreator.com/api/users/{user}/favourites");
 
     let params = {
-            "id": "mYPErGvDbA2H0vbZ",
+            "id": "rRSgcMNP4AkxS6mh",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3627,7 +3631,7 @@ curl -X GET -G "https://api.maycreator.com/api/users/{user}/contacts"
 const url = new URL("https://api.maycreator.com/api/users/{user}/contacts");
 
     let params = {
-            "id": "WycSQpIJbd5N3Ui7",
+            "id": "qzRaoDOtgy60Q9VT",
         };
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
 
@@ -3686,8 +3690,8 @@ Parameter | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/login"     -d "email"="rKTyctXLYUaoJgPB" \
-    -d "password"="davhEJecmnuhwVIb" 
+curl -X POST "https://api.maycreator.com/api/login"     -d "email"="5KcNwbd4jWGLBrIn" \
+    -d "password"="FDxHV8j5H7BpbpS7" 
 ```
 
 ```javascript
@@ -3699,8 +3703,8 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "email": "rKTyctXLYUaoJgPB",
-    "password": "davhEJecmnuhwVIb",
+    "email": "5KcNwbd4jWGLBrIn",
+    "password": "FDxHV8j5H7BpbpS7",
 })
 
 fetch(url, {
@@ -3740,11 +3744,11 @@ Parameter | Type | Status | Description
 > Example request:
 
 ```bash
-curl -X POST "https://api.maycreator.com/api/register"     -d "name"="qCL6UNDoEtvDhcX6" \
-    -d "surname"="lZQdGqDQYZCE8t5D" \
-    -d "email"="q6MX6CAuSkaERAw2" \
-    -d "password"="UHOxeERnTpYH9gXh" \
-    -d "password_confirmation"="90tXDBIRNLtNtdzt" 
+curl -X POST "https://api.maycreator.com/api/register"     -d "name"="EdFYmqJwJn1G6L9E" \
+    -d "surname"="UGLqaMESFmTUnPwq" \
+    -d "email"="b8007WtTgER9A7KZ" \
+    -d "password"="ypgtxZA38GH9XEHl" \
+    -d "password_confirmation"="cfLj4DTqgEdWNLrw" 
 ```
 
 ```javascript
@@ -3756,11 +3760,11 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "name": "qCL6UNDoEtvDhcX6",
-    "surname": "lZQdGqDQYZCE8t5D",
-    "email": "q6MX6CAuSkaERAw2",
-    "password": "UHOxeERnTpYH9gXh",
-    "password_confirmation": "90tXDBIRNLtNtdzt",
+    "name": "EdFYmqJwJn1G6L9E",
+    "surname": "UGLqaMESFmTUnPwq",
+    "email": "b8007WtTgER9A7KZ",
+    "password": "ypgtxZA38GH9XEHl",
+    "password_confirmation": "cfLj4DTqgEdWNLrw",
 })
 
 fetch(url, {
@@ -4387,18 +4391,7 @@ fetch(url, {
 > Example response (200):
 
 ```json
-[
-    {
-        "id": 1,
-        "order_id": 1,
-        "product_id": 1,
-        "product_name": "Makarna",
-        "description": null,
-        "price": "10.00",
-        "created_at": "2018-12-17 10:07:25",
-        "updated_at": "2018-12-17 10:07:25"
-    }
-]
+[]
 ```
 
 ### HTTP Request
@@ -4431,18 +4424,418 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (200):
+> Example response (404):
 
 ```json
 {
-    "id": 1,
-    "order_id": 1,
-    "product_id": 1,
-    "product_name": "Makarna",
-    "description": null,
-    "price": "10.00",
-    "created_at": "2018-12-17 10:07:25",
-    "updated_at": "2018-12-17 10:07:25"
+    "message": "No query results for model [App\\Basket].",
+    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
+    "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
+    "line": 200,
+    "trace": [
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
+            "line": 176,
+            "function": "prepareException",
+            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/app\/Exceptions\/Handler.php",
+            "line": 49,
+            "function": "render",
+            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
+            "line": 68,
+            "function": "render",
+            "class": "App\\Exceptions\\Handler",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 83,
+            "function": "render",
+            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 55,
+            "function": "handleException",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
+            "line": 58,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 104,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 684,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 659,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 625,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 614,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 176,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 30,
+            "function": "Illuminate\\Foundation\\Http\\{closure}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/barryvdh\/laravel-cors\/src\/HandleCors.php",
+            "line": 36,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Barryvdh\\Cors\\HandleCors",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
+            "line": 57,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Fideloper\\Proxy\\TrustProxies",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "line": 31,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "line": 31,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
+            "line": 27,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
+            "line": 62,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 104,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 151,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 116,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
+            "line": 272,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
+            "line": 256,
+            "function": "callLaravelRoute",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
+            "line": 33,
+            "function": "makeApiCall",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
+            "line": 49,
+            "function": "__invoke",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
+            "line": 68,
+            "function": "resolve",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
+            "line": 54,
+            "function": "getResponse",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
+            "line": 196,
+            "function": "processRoute",
+            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
+            "line": 57,
+            "function": "processRoutes",
+            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
+            "type": "->"
+        },
+        {
+            "function": "handle",
+            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 29,
+            "function": "call_user_func_array"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 87,
+            "function": "Illuminate\\Container\\{closure}",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 31,
+            "function": "callBoundMethod",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
+            "line": 572,
+            "function": "call",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "line": 183,
+            "function": "call",
+            "class": "Illuminate\\Container\\Container",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/symfony\/console\/Command\/Command.php",
+            "line": 255,
+            "function": "execute",
+            "class": "Illuminate\\Console\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "line": 170,
+            "function": "run",
+            "class": "Symfony\\Component\\Console\\Command\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/symfony\/console\/Application.php",
+            "line": 901,
+            "function": "run",
+            "class": "Illuminate\\Console\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/symfony\/console\/Application.php",
+            "line": 262,
+            "function": "doRunCommand",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/symfony\/console\/Application.php",
+            "line": 145,
+            "function": "doRun",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
+            "line": 89,
+            "function": "run",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
+            "line": 122,
+            "function": "run",
+            "class": "Illuminate\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/vagrant\/code\/restaurant-api\/artisan",
+            "line": 37,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Console\\Kernel",
+            "type": "->"
+        }
+    ]
 }
 ```
 
