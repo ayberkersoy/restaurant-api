@@ -5,6 +5,7 @@ Route::get('companies/{company}', 'CompanyController@show');
 Route::post('companies', 'CompanyController@store');
 Route::post('companies/{company}', 'CompanyController@update');
 Route::post('companies/{company}/destroy', 'CompanyController@destroy');
+Route::get('getCompany', 'CompanyController@getCompany');
 
 Route::get('users', 'UserController@index');
 Route::get('users/{user}', 'UserController@show');

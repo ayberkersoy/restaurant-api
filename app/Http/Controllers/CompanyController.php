@@ -189,4 +189,30 @@ class CompanyController extends Controller
         $company->delete();
         return response()->json(['status' => true]);
     }
+
+    /**
+     * Get company
+     *
+     * @response {
+     *      "id": 1,
+     *      "name": "Bosphorus Tech",
+     *      "slug": "bosphorus-tech",
+     *      "address": "Yenisehir mah. Osmanli blv. No: 5/B Arwen Ofis D: 51 Pendik/Istanbul",
+     *      "phone": "2164823125",
+     *      "logo": "https://via.placeholder.com/300x100",
+     *      "working_hours_day": "10:00",
+     *      "working_hours_night": "23:00",
+     *      "facebook": "https://facebook.com/bosphorus-tech",
+     *      "twitter": "https://twitter.com/bosphorustech",
+     *      "instagram": "https://instagram.com/bosphorustech",
+     *      "about_text": "ABOUT US",
+     *      "about_image": "https://via.placeholder.com/500x300",
+     *      "locationx": "40.928010",
+     *      "locationy": "29.309073"
+     * }
+     */
+    public function getCompany()
+    {
+        return response()->json(Company::first());
+    }
 }
