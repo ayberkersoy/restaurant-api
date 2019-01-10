@@ -81,11 +81,20 @@ class ProductController extends Controller
      *      "image_url": "https://via.placeholder.com/500x300",
      *      "category_id": 1,
      *      "price": "10.00",
-     *      "currency": "TL"
+     *      "currency": "TL",
+     *      "isFeatured": "1",
+     *      "stars": 5
      * }
      */
     public function show(Product $product)
     {
+        $product = $product->select(
+            'products.*',
+            DB::raw('avg(comments.stars) AS stars')
+        )
+            ->join('comments', 'comments.product_id', '=', 'products.id')
+            ->groupBy('comments.product_id')
+            ->get();
         return response()->json($product);
     }
 
@@ -188,7 +197,10 @@ class ProductController extends Controller
      *   "category_id": 1,
      *   "created_at": "2018-12-17 10:06:59",
      *   "updated_at": "2018-12-17 10:06:59",
-     *   "price": "10.00"
+     *   "price": "10.00",
+     *   "currency": "TL",
+     *   "isFeatured": "1",
+     *   "stars": 5
      * },
      * {
      *   "id": 2,
@@ -198,13 +210,23 @@ class ProductController extends Controller
      *   "category_id": 1,
      *   "created_at": "2018-12-17 10:06:59",
      *   "updated_at": "2018-12-17 10:06:59",
-     *   "price": "10.00"
+     *   "price": "10.00",
+     *   "currency": "TL",
+     *   "isFeatured": "1",
+     *   "stars": 5
      * }]
      *
      */
     public function getProductsByCategory(Category $category)
     {
-        return response()->json($category->products);
+        $products = $category->products()->select(
+            'products.*',
+            DB::raw('avg(comments.stars) AS stars')
+        )
+            ->join('comments', 'comments.product_id', '=', 'products.id')
+            ->groupBy('comments.product_id')
+            ->get();
+        return response()->json($products);
     }
 
     /**
@@ -219,6 +241,7 @@ class ProductController extends Controller
      *   "created_at": "2018-12-17 10:06:59",
      *   "updated_at": "2018-12-17 10:06:59",
      *   "price": "10.00",
+     *   "currency": "TL",
      *   "isFeatured": "1",
      *   "stars": 5
      * },
@@ -231,6 +254,7 @@ class ProductController extends Controller
      *   "created_at": "2018-12-17 10:06:59",
      *   "updated_at": "2018-12-17 10:06:59",
      *   "price": "10.00",
+     *   "currency": "TL",
      *   "isFeatured": "1",
      *   "stars": 5
      * }]
