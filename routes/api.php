@@ -66,7 +66,7 @@ Route::get('favourites', 'FavouriteController@index')->name('indexFavourites');
 Route::get('favourites/{favourite}', 'FavouriteController@show')->name('showFavourite');
 Route::post('favourites', 'FavouriteController@store');
 Route::post('favourites/{favourite}', 'FavouriteController@update')->name('updateFavourite');
-Route::post('favourites/{favourite}/destroy', 'FavouriteController@destroy');
+Route::post('favourites/{product}/{user}/destroy', 'FavouriteController@destroy');
 
 Route::get('messages', 'MessageController@index');
 Route::get('messages/{message}', 'MessageController@show');

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Validator;
 use App\Favourite;
 use Illuminate\Http\Request;
+use App\Product;
+use App\User;
 
 /**
  * @group Favourite Management
@@ -68,14 +70,18 @@ class FavouriteController extends Controller
     /**
      * Delete specific favourite
      *
-     * @queryParam id required The id of the favourite.
+     * @queryParam product_id required The id of the product.
+     * @queryParam user_id required The id of the user.
      *
      * @response {
      *      "status": true
      * }
      */
-    public function destroy(Favourite $favourite)
+    public function destroy(Product $product, User $user)
     {
+        $favourite = Favourite::where('product_id', $product->id)
+                    ->where('user_id', $user->id)
+                    ->firstOrFail();
         $favourite->delete();
         return response()->json(['status' => true]);
     }
