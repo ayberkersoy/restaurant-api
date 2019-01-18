@@ -224,6 +224,36 @@ class UserController extends Controller
     }
 
     /**
+     * List user's comments
+     *
+     * @queryParam id required The id of the user.
+     *
+     * @response {
+     *      "id": 1,
+     *      "user_id": 1,
+     *      "product_id": 1,
+     *      "comment": "Yemekler, hizmet her şey harikaydı.",
+     *      "stars": "4",
+     *         "product": {
+     *         "id": 1,
+     *         "name": "Makarna",
+     *         "description": "Bildiğimiz makarna.",
+     *         "image_url": "https://via.placeholder.com/1280x720",
+     *         "category_id": 3,
+     *         "created_at": "2018-12-28 09:43:10",
+     *         "updated_at": "2018-12-28 09:43:10",
+     *         "price": "10.00",
+     *         "currency": "TL",
+     *         "isFeatured": 1
+     *   }
+     * }
+     */
+    public function comments(User $user)
+    {
+        return response()->json($user->comments()->with('product')->get());
+    }
+
+    /**
      * Register a user
      *
      * @bodyParam name string required The name of the user.

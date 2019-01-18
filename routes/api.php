@@ -14,6 +14,7 @@ Route::post('users/{user}', 'UserController@update');
 Route::post('users/{user}/destroy', 'UserController@destroy');
 Route::get('users/{user}/favourites', 'UserController@favourites');
 Route::get('users/{user}/contacts', 'UserController@contacts');
+Route::get('users/{user}/comments', 'UserController@comments');
 
 Route::get('products', 'ProductController@index');
 Route::get('products/{product}', 'ProductController@show');
