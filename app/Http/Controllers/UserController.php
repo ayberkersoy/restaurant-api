@@ -254,6 +254,39 @@ class UserController extends Controller
     }
 
     /**
+     * List user's orders
+     *
+     * @queryParam id required The id of the user.
+     *
+     * @response {
+     *   "id": 1,
+     *   "user_id": 1,
+     *   "user_contact_id": 1,
+     *   "status": 1,
+     *   "price": "50.00",
+     *   "created_at": "2019-01-23 11:55:28",
+     *   "updated_at": "2019-01-23 11:55:28",
+     *   "note": null,
+     *   "date_ordered": "2019-01-23 11:55:28",
+     *   "currency": "TL",
+     *   "payment_type_id": 1,
+     *   "user_contact": {
+     *       "id": 1,
+     *       "user_id": 1,
+     *       "name": "Ev",
+     *       "phone": "5304783400",
+     *       "address": "Sapanbağları mah.",
+     *       "created_at": "2019-01-03 13:29:09",
+     *       "updated_at": "2019-01-03 13:29:09"
+     *   }
+     * }
+     */
+    public function orders(User $user)
+    {
+        return response()->json($user->orders()->with('userContact')->get());
+    }
+
+    /**
      * Register a user
      *
      * @bodyParam name string required The name of the user.
