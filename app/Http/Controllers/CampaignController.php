@@ -113,7 +113,7 @@ class CampaignController extends Controller
      */
     public function destroy(Campaign $campaign)
     {
-        $campaing->delete();
+        $campaign->delete();
         return response()->json(['status' => true]);
     }
 }
