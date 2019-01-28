@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Validator;
 use App\Order;
+use App\Product;
+use App\Basket;
 use Illuminate\Http\Request;
 
 /**
@@ -43,6 +45,7 @@ class OrderController extends Controller
      * @bodyParam date_ordered timestamp required The date_ordered of the order.
      * @bodyParam currency string required The currency of the order.
      * @bodyParam payment_type_id int required The payment type of the order.
+     * @bodyParam products json required The product's ids.
      *
      * @response {
      *      "id": 1,
@@ -50,10 +53,16 @@ class OrderController extends Controller
      *      "user_contact_id": 1,
      *      "status": "1",
      *      "price": "15.00",
-     *      "note": "Lütfen çatal bıçak koymayın."
+     *      "note": "Lütfen çatal bıçak koymayın.",
      *      "date_ordered": "2018-12-17 10:06:40",
      *      "currency": "TL",
-     *      "payment_type_id": "1"
+     *      "payment_type_id": 1,
+     *      "products": [{
+     *          "id": 1
+     *      },
+     *      {
+     *          "id": 2
+     *      }]
      * }
      */
     public function store(Request $request)
@@ -71,7 +80,17 @@ class OrderController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $order = Order::create($request->all());
+        $order = Order::create($request->except('products'));
+        foreach ($request->products as $item) {
+            $product = Product::findOrFail($item['id']);
+            $basket = Basket::create([
+                'product_id' => $product->id,
+                'order_id' => $order->id,
+                'product_name' => $product->name,
+                'description' => $product->description,
+                'price' => $product->price
+            ]);
+        }
 
         return response()->json($order);
     }
