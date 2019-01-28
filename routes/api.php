@@ -87,6 +87,12 @@ Route::post('reservations', 'ReservationController@store');
 Route::post('reservations/{reservation}', 'ReservationController@update');
 Route::post('reservations/{reservation}/destroy', 'ReservationController@destroy');
 
+Route::get('paymentTypes', 'PaymentTypeController@index');
+Route::get('paymentTypes/{paymentType}', 'PaymentTypeController@show');
+Route::post('paymentTypes', 'PaymentTypeController@store');
+Route::post('paymentTypes/{paymentType}', 'PaymentTypeController@update');
+Route::post('paymentTypes/{paymentType}/destroy', 'PaymentTypeController@destroy');
+
 Route::post('login', 'UserController@login');
 Route::post('register', 'UserController@register');
 
