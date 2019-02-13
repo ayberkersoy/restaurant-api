@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Auth;
+use Mail;
 use Validator;
 use App\User;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Message;
+use Illuminate\Support\Facades\Password;
 
 /**
  * @group User Management
@@ -152,6 +155,23 @@ class UserController extends Controller
     {
         $user->delete();
         return response()->json(['status' => true]);
+    }
+
+    public function sendEmail(Request $request)
+    {
+        $user = User::where('email', $request->email)->first();
+        $token = Password::getRepository()->create($user);
+
+        Mail::send(['text' => 'emails.password'], ['token' => $token], function (Message $message) use ($user) {
+            $message->subject(config('app.name') . ' Password Reset Link');
+            $message->to($user->email);
+        });
+
+        if(Mail::failures()) {
+            return response()->json(['status' => false], 401);
+        }
+
+        return response()->json(['status' => true], $this->successStatus);
     }
 
     /**
