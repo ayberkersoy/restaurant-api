@@ -46,6 +46,7 @@ class OrderController extends Controller
      * @bodyParam currency string required The currency of the order.
      * @bodyParam payment_type_id int required The payment type of the order.
      * @bodyParam products json required The product's ids.
+     * @bodyParam piece int required The product's piece.
      *
      * @response {
      *      "id": 1,
@@ -58,10 +59,12 @@ class OrderController extends Controller
      *      "currency": "TL",
      *      "payment_type_id": 1,
      *      "products": [{
-     *          "id": 1
+     *          "id": 1,
+     *          "piece": 2
      *      },
      *      {
-     *          "id": 2
+     *          "id": 2,
+     *          "piece": 1
      *      }]
      * }
      */
@@ -88,7 +91,8 @@ class OrderController extends Controller
                 'order_id' => $order->id,
                 'product_name' => $product->name,
                 'description' => $product->description,
-                'price' => $product->price
+                'price' => $product->price,
+                'piece' => $item['piece']
             ]);
         }
 
