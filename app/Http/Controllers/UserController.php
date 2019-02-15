@@ -71,7 +71,10 @@ class UserController extends Controller
         $user = User::create(
             array_merge(
                 array_except($request->all(), ['password']),
-                ['password' => bcrypt($request->password)]
+                [
+                    'password' => bcrypt($request->password),
+                    'avatar' => 'https://api.maycreator.com/img/user-default.png'
+                ]
             )
         );
 
