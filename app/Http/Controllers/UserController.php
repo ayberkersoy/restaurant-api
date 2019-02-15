@@ -157,6 +157,14 @@ class UserController extends Controller
         return response()->json(['status' => true]);
     }
 
+    /**
+     * Send password recovery email
+     * @queryParam email required The email of the user.
+     *
+     * @response {
+     *      "status": true
+     * }
+     */
     public function sendEmail(Request $request)
     {
         $user = User::where('email', $request->email)->first();
@@ -167,7 +175,7 @@ class UserController extends Controller
             $message->to($user->email);
         });
 
-        if(Mail::failures()) {
+        if (Mail::failures()) {
             return response()->json(['status' => false], 401);
         }
 
