@@ -318,6 +318,27 @@ class UserController extends Controller
     }
 
     /**
+     * List user's reservations
+     *
+     * @queryParam id required The id of the user.
+     *
+     * @response {
+     *      "id": 1,
+     *      "reservation_date": "2019-01-05",
+     *      "reservation_hour": "17:00:00",
+     *      "people_count": 4,
+     *      "name": "Ahmet",
+     *      "surname": "Mehmet",
+     *      "phone": "5304783400",
+     *      "note": "Manzaralı masa olursa güzel olur."
+     * }
+     */
+    public function reservations(User $user)
+    {
+        return response()->json($user->reservations);
+    }
+
+    /**
      * Register a user
      *
      * @bodyParam name string required The name of the user.

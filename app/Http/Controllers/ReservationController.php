@@ -23,7 +23,8 @@ class ReservationController extends Controller
      *      "name": "Ahmet",
      *      "surname": "Mehmet",
      *      "phone": "5304783400",
-     *      "note": "Manzaralı masa olursa güzel olur."
+     *      "note": "Manzaralı masa olursa güzel olur.",
+     *      "user_id": 1
      * }
      */
     public function index()
@@ -41,6 +42,7 @@ class ReservationController extends Controller
      * @bodyParam surname string required The surname of the person.
      * @bodyParam phone string required The phone of the person.
      * @bodyParam note string optional The note of the reservation.
+     * @bodyParam user_id integer optional The id of the user.
      *
      * @response {
      *      "id": 1,
@@ -50,7 +52,8 @@ class ReservationController extends Controller
      *      "name": "Ahmet",
      *      "surname": "Mehmet",
      *      "phone": "5304783400",
-     *      "note": "Manzaralı masa olursa güzel olur."
+     *      "note": "Manzaralı masa olursa güzel olur.",
+     *      "user_id": 1
      * }
      */
     public function store(Request $request)
@@ -86,7 +89,8 @@ class ReservationController extends Controller
      *      "name": "Ahmet",
      *      "surname": "Mehmet",
      *      "phone": "5304783400",
-     *      "note": "Manzaralı masa olursa güzel olur."
+     *      "note": "Manzaralı masa olursa güzel olur.",
+     *      "user_id": 1
      * }
      */
     public function show(Reservation $reservation)
@@ -106,6 +110,7 @@ class ReservationController extends Controller
      * @bodyParam surname string required The surname of the person.
      * @bodyParam phone string required The phone of the person.
      * @bodyParam note string optional The note of the reservation.
+     * @bodyParam user_id integer optional The id of the user.
      *
      * @response {
      *      "id": 9,
@@ -115,7 +120,8 @@ class ReservationController extends Controller
      *      "name": "Ahmet",
      *      "surname": "Mehmet",
      *      "phone": "5304783400",
-     *      "note": "Manzaralı masa olursa güzel olur."
+     *      "note": "Manzaralı masa olursa güzel olur.",
+     *      "user_id": 1
      * }
      */
     public function update(Request $request, Reservation $reservation)

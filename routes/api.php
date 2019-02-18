@@ -16,6 +16,7 @@ Route::get('users/{user}/favourites', 'UserController@favourites');
 Route::get('users/{user}/contacts', 'UserController@contacts');
 Route::get('users/{user}/comments', 'UserController@comments');
 Route::get('users/{user}/orders', 'UserController@orders');
+Route::get('users/{user}/reservations', 'UserController@reservations');
 Route::post('resetPass', 'UserController@sendEmail');
 
 Route::get('products', 'ProductController@index');
