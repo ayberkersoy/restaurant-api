@@ -124,23 +124,26 @@ class UserController extends Controller
             'name' => 'required|max:255',
             'surname' => 'required|max:255',
             'email' => 'required|email|max:255',
-            'password' => 'sometimes|required|min:6|max:255'
+            'password' => 'sometimes|required|min:6|max:255|confirmed'
         ]);
 
         if ($validation->fails()) {
             return response()->json($validation->errors()->all());
         }
 
-        if ($request->has('password')) {
-            $user->update(
-                array_merge(
-                    array_except($request->all(), ['password']),
-                    ['password' => bcrypt($request->password)]
-                )
-            );
-        } else {
-            $user->update($request->all());
+        if($request->hasFile('avatar')){
+            $avatar = $request->avatar->store('avatars');
+            $user->avatar = env('APP_URL') . '/' . $avatar;
         }
+
+        if ($request->has('password')) {
+            $user->password = bcrypt($request->password);
+        }
+
+        $user->name = $request->name;
+        $user->surname = $request->surname;
+        $user->email = $request->email;
+        $user->save();
 
         return response()->json($user);
     }
