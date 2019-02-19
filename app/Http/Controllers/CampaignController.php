@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Image;
 use Validator;
 use App\Campaign;
 use Illuminate\Http\Request;
@@ -52,7 +53,18 @@ class CampaignController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $campaign = Campaign::create($request->all());
+        if($request->hasFile('image_url')) {
+            $image = $request->image_url->store('img/campaigns');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $campaign = Campaign::create([
+            'name' => $request->name,
+            'description' => $request->description,
+            'image_url' => $image,
+        ]);
 
         return response()->json($campaign);
     }
@@ -97,7 +109,18 @@ class CampaignController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $campaing->update($request->all());
+        if($request->hasFile('image_url')) {
+            $image = $request->image_url->store('img/campaigns');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+            $campaign->image_url = $image;
+        }
+
+        $campaign->name = $request->name;
+        $campaign->description = $request->description;
+
+        $campaign->save();
 
         return response()->json($campaign);
     }
