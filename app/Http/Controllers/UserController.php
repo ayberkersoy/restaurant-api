@@ -131,7 +131,7 @@ class UserController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        if($request->hasFile('avatar')){
+        if ($request->hasFile('avatar')) {
             $avatar = $request->avatar->store('avatars');
             $user->avatar = env('APP_URL') . '/' . $avatar;
         }
@@ -369,6 +369,7 @@ class UserController extends Controller
         }
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);
+        $input['avatar'] = 'https://api.maycreator.com/img/user-default.png';
         $user = User::create($input);
         $success['token'] = $user->createToken('AppName')->accessToken;
         return response()->json(['success' => $success], $this->successStatus);
