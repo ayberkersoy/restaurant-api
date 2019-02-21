@@ -55,7 +55,16 @@ class EmployeeController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $employee = Employee::create($request->all());
+        if($request->hasFile('image_url')) {
+            $image = $request->image_url->store('img/employees');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $employee = $request->all();
+        $employee['image_url'] = $image;
+        $employee = Employee::create($employee);
 
         return response()->json($employee);
     }
@@ -104,7 +113,17 @@ class EmployeeController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $employee->update($request->all());
+        if($request->hasFile('image_url')) {
+            $image = $request->image_url->store('img/employees');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $employeeArr = $request->all();
+        $employeeArr['image_url'] = $image;
+
+        $employee->update($employeeArr);
 
         return response()->json($employee);
     }

@@ -66,7 +66,17 @@ class ProductController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $product = Product::create($request->all());
+        if($request->hasFile('image_url')) {
+            $image = $request->image_url->store('img/products');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $product = $request->all();
+        $product['logo'] = $image;
+
+        $product = Product::create($product);
 
         return response()->json($product);
     }
@@ -137,7 +147,6 @@ class ProductController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
-            'image_url' => 'required',
             'category_id' => 'required',
             'price' => 'required'
         ]);
@@ -146,7 +155,17 @@ class ProductController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $product->update($request->all());
+        if($request->hasFile('image_url')) {
+            $image = $request->image_url->store('img/products');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $productArr = $request->all();
+        $productArr['logo'] = $image;
+
+        $product->update($productArr);
 
         return response()->json($product);
     }

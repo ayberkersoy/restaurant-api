@@ -111,8 +111,17 @@ class CompanyController extends Controller
             return response()->json($validation->errors()->all());
         }
 
+        if($request->hasFile('logo')) {
+            $image = $request->image_url->store('img/companies');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $company = $request->all();
+        $company['logo'] = $image;
         $company = Company::create(
-            array_merge($request->all(), [
+            array_merge($company, [
                 'slug' => str_slug($request->name)
             ])
         );
@@ -159,16 +168,25 @@ class CompanyController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255|min:6',
-            'phone' => 'required|max:255|min:6',
-            'logo' => 'required'
+            'phone' => 'required|max:255|min:6'
         ]);
 
         if ($validation->fails()) {
             return response()->json($validation->errors()->all());
         }
 
+        if($request->hasFile('logo')) {
+            $image = $request->image_url->store('img/companies');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $companyArr = $request->all();
+        $companyArr['logo'] = $image;
+
         $company->update(
-            array_merge($request->all(), [
+            array_merge($companyArr, [
                 'slug' => str_slug($request->name)
             ])
         );

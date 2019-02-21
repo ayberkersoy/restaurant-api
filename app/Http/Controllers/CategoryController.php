@@ -51,7 +51,16 @@ class CategoryController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $category = Category::create($request->all());
+        if($request->hasFile('image_url')) {
+            $image = $request->image_url->store('img/categories');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $category = $request->all();
+        $category['image_url'] = $image;
+        $category = Category::create($category);
 
         return response()->json($category);
     }
@@ -96,7 +105,17 @@ class CategoryController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        $category->update($request->all());
+        if($request->hasFile('image_url')) {
+            $image = $request->image_url->store('img/categories');
+            $img = Image::make(public_path($image));
+            $img->fit(1280, 720);
+            $img->save(public_path($image));
+        }
+
+        $categoryArr = $request->all();
+        $categoryArr['image_url'] = $image;
+
+        $category->update($categoryArr);
 
         return response()->json($category);
     }
