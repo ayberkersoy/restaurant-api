@@ -104,20 +104,62 @@ class OrderController extends Controller
      *
      * @queryParam id required The id of the order.
      *
-     * @response {
-     *      "id": 1,
-     *      "user_id": 1,
-     *      "user_contact_id": 1,
-     *      "status": "1",
-     *      "price": "15.00",
-     *      "note": "Lütfen çatal bıçak koymayın."
-     *      "date_ordered": "2018-12-17 10:06:40",
-     *      "currency": "TL",
-     *      "payment_type_id": "1"
+     * @response
+     *[
+     *   {
+     *   "id": 1,
+     *   "user_id": 1,
+     *   "user_contact_id": 1,
+     *   "status": 1,
+     *   "price": "50.00",
+     *   "created_at": "2019-01-23 11:55:28",
+     *   "updated_at": "2019-01-23 11:55:28",
+     *   "note": null,
+     *   "date_ordered": "2019-01-23 11:55:28",
+     *   "currency": "TL",
+     *   "payment_type_id": 1,
+     *   "baskets": [
+     *       {
+     *           "id": 1,
+     *           "order_id": 1,
+     *           "product_id": 1,
+     *           "product_name": "Makarna",
+     *           "description": "Bildiğimiz makarna.",
+     *           "price": "10.00",
+     *           "created_at": "2019-01-28 08:40:53",
+     *           "updated_at": "2019-01-28 08:40:53",
+     *           "piece": 0
+     *       },
+     *       {
+     *           "id": 2,
+     *           "order_id": 1,
+     *           "product_id": 2,
+     *           "product_name": "Tavuklu Makarna",
+     *           "description": "Bildiğimiz tavuklu makarna.",
+     *           "price": "10.00",
+     *           "created_at": "2019-01-28 08:40:53",
+     *           "updated_at": "2019-01-28 08:40:53",
+     *           "piece": 0
+     *       }
+     *   ],
+     *   "user_contact": {
+     *       "id": 1,
+     *       "user_id": 1,
+     *       "name": "Ev",
+     *       "phone": "5304783400",
+     *       "address": "Sapanbağları mah.",
+     *       "created_at": "2019-01-03 13:29:09",
+     *       "updated_at": "2019-01-03 13:29:09"
+     *   }
      * }
+     * ]
+     *
      */
     public function show(Order $order)
     {
+        // $products = $order->baskets->toArray();
+        $order = $order->with('baskets')->with('userContact')->where('id', $order->id)->get();
+        // $order = array_merge($order, $products);
         return response()->json($order);
     }
 
