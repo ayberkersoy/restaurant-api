@@ -14,6 +14,21 @@ use Illuminate\Http\Request;
  */
 class CampaignController extends Controller
 {
+    public function indexView()
+    {
+        return view('admin.campaigns.index');
+    }
+
+    public function createView()
+    {
+        return view('admin.campaigns.create');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.campaigns.edit', compact('id'));
+    }
+
     /**
      * Index all campaigns
      * @response {
@@ -53,7 +68,7 @@ class CampaignController extends Controller
             return response()->json($validation->errors()->all());
         }
 
-        if($request->hasFile('image_url')) {
+        if ($request->hasFile('image_url')) {
             $image = $request->image_url->store('img/campaigns');
             $img = Image::make(public_path($image));
             $img->fit(1280, 720);
@@ -102,14 +117,13 @@ class CampaignController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
-            'image_url' => 'required',
         ]);
 
         if ($validation->fails()) {
             return response()->json($validation->errors()->all());
         }
 
-        if($request->hasFile('image_url')) {
+        if ($request->hasFile('image_url')) {
             $image = $request->image_url->store('img/campaigns');
             $img = Image::make(public_path($image));
             $img->fit(1280, 720);

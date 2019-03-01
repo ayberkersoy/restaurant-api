@@ -11,7 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+
+Route::middleware('auth')->group(function () {
+    Route::get('/', 'HomeController@index')->name('home');
+
+    Route::get('/campaigns', 'CampaignController@indexView');
+    Route::get('/campaigns/create', 'CampaignController@createView');
+    Route::get('/campaigns/{id}/edit', 'CampaignController@editView');
+
+
+    Route::get('/categories', 'CategoryController@indexView');
+    Route::get('/comments', 'CommentController@indexView');
+    Route::get('/employees', 'EmployeeController@indexView');
+    Route::get('/messages', 'MessageController@indexView');
+    Route::get('/orders', 'OrderController@indexView');
+    Route::get('/paymentTypes', 'PaymentTypeController@indexView');
+    Route::get('/products', 'ProductController@indexView');
+    Route::get('/reservations', 'ReservationController@indexView');
+    Route::get('/users', 'UserController@indexView');
 });
-Route::post('deploy', 'DeployController@deploy');

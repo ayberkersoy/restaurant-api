@@ -1,4 +1,4 @@
-
+import Vue from 'vue'
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -18,16 +18,24 @@ window.Vue = require('vue');
  */
 
 // const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
+// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
+// import ExampleComponent from './components/ExampleComponent'
+import CampaignsIndex from './components/campaigns/CampaignsIndex.vue'
+import CreateCampaign from './components/campaigns/CreateCampaign.vue'
+import EditCampaign from './components/campaigns/EditCampaign.vue'
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
+// Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+// import ExampleComponent from  './components/ExampleComponent.vue';
+// import CampaignsIndex from  './components/campaigns/CampaignsIndex.vue';
+// import CampaignsCreate from  './components/campaigns/CampaignsCreate.vue';
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    components: { CampaignsIndex, CreateCampaign, EditCampaign }
 });
