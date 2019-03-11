@@ -25,7 +25,12 @@ class CommentController extends Controller
      */
     public function index()
     {
-        return response()->json(Comment::all());
+        return response()->json(Comment::with('product')->get());
+    }
+
+    public function indexView()
+    {
+        return view('admin.comments.index');
     }
 
     /**

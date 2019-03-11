@@ -14048,7 +14048,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(14);
-module.exports = __webpack_require__(59);
+module.exports = __webpack_require__(62);
 
 
 /***/ }),
@@ -14071,6 +14071,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_categories_CreateCategories_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_categories_CreateCategories_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_categories_EditCategories_vue__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_categories_EditCategories_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_categories_EditCategories_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_comments_IndexComments_vue__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_comments_IndexComments_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_comments_IndexComments_vue__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -14100,6 +14102,7 @@ window.Vue = __webpack_require__(4);
 
 
 
+
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
 // Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
@@ -14113,7 +14116,7 @@ window.Vue = __webpack_require__(4);
 // import CampaignsCreate from  './components/campaigns/CampaignsCreate.vue';
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#app',
-  components: { CampaignsIndex: __WEBPACK_IMPORTED_MODULE_1__components_campaigns_CampaignsIndex_vue___default.a, CreateCampaign: __WEBPACK_IMPORTED_MODULE_2__components_campaigns_CreateCampaign_vue___default.a, EditCampaign: __WEBPACK_IMPORTED_MODULE_3__components_campaigns_EditCampaign_vue___default.a, IndexCategories: __WEBPACK_IMPORTED_MODULE_4__components_categories_IndexCategories_vue___default.a, CreateCategories: __WEBPACK_IMPORTED_MODULE_5__components_categories_CreateCategories_vue___default.a, EditCategories: __WEBPACK_IMPORTED_MODULE_6__components_categories_EditCategories_vue___default.a }
+  components: { CampaignsIndex: __WEBPACK_IMPORTED_MODULE_1__components_campaigns_CampaignsIndex_vue___default.a, CreateCampaign: __WEBPACK_IMPORTED_MODULE_2__components_campaigns_CreateCampaign_vue___default.a, EditCampaign: __WEBPACK_IMPORTED_MODULE_3__components_campaigns_EditCampaign_vue___default.a, IndexCategories: __WEBPACK_IMPORTED_MODULE_4__components_categories_IndexCategories_vue___default.a, CreateCategories: __WEBPACK_IMPORTED_MODULE_5__components_categories_CreateCategories_vue___default.a, EditCategories: __WEBPACK_IMPORTED_MODULE_6__components_categories_EditCategories_vue___default.a, IndexComments: __WEBPACK_IMPORTED_MODULE_7__components_comments_IndexComments_vue___default.a }
 });
 
 /***/ }),
@@ -50199,6 +50202,214 @@ if (false) {
 
 /***/ }),
 /* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(60)
+/* template */
+var __vue_template__ = __webpack_require__(61)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/comments/IndexComments.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-76c8ae76", Component.options)
+  } else {
+    hotAPI.reload("data-v-76c8ae76", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "index-comments",
+    data: function data() {
+        return {
+            comments: [],
+            id: ''
+        };
+    },
+
+    mounted: function mounted() {
+        var _this = this;
+
+        axios.get('/api/comments').then(function (response) {
+            return _this.comments = response.data;
+        });
+        // .then(response => console.log(response.data));
+    },
+
+    methods: {
+        deleteEntry: function deleteEntry(id, index) {
+            if (confirm("Silmek istediğinize emin misiniz?")) {
+                var app = this;
+                axios.post('/api/comments/' + id + '/destroy').then(function (resp) {
+                    app.comments.splice(index, 1);
+                }).catch(function (resp) {
+                    alert("Could not delete company");
+                });
+            }
+        },
+        editPage: function editPage(id) {
+            window.location = '/comments/' + id + '/edit';
+        }
+    }
+});
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "box-body" }, [
+    _c(
+      "table",
+      {
+        staticClass:
+          "table table-bordered table-striped table-hover data-table",
+        attrs: { id: "categories_table" }
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "tbody",
+          _vm._l(_vm.comments, function(comment, index) {
+            return _c("tr", [
+              _c("td", [_vm._v(_vm._s(comment["id"]))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(comment["comment"]))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(comment.product.name))]),
+              _vm._v(" "),
+              _c("td", [
+                _c("i", { staticClass: "fa fa-star" }),
+                _vm._v(" " + _vm._s(comment.stars))
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-danger",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        return _vm.deleteEntry(comment.id, index)
+                      }
+                    }
+                  },
+                  [_c("i", { staticClass: "fa fa-trash-o" })]
+                )
+              ])
+            ])
+          }),
+          0
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Yorum")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Ürün")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Puan")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("İşlemler")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-76c8ae76", module.exports)
+  }
+}
+
+/***/ }),
+/* 62 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
