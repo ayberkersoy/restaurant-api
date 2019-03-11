@@ -20,8 +20,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/campaigns/create', 'CampaignController@createView');
     Route::get('/campaigns/{id}/edit', 'CampaignController@editView');
 
-
     Route::get('/categories', 'CategoryController@indexView');
+    Route::get('/categories/create', 'CategoryController@createView');
+    Route::get('/categories/{id}/edit', 'CategoryController@editView');
+
     Route::get('/comments', 'CommentController@indexView');
     Route::get('/employees', 'EmployeeController@indexView');
     Route::get('/messages', 'MessageController@indexView');

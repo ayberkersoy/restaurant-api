@@ -24,6 +24,9 @@ window.Vue = require('vue');
 import CampaignsIndex from './components/campaigns/CampaignsIndex.vue'
 import CreateCampaign from './components/campaigns/CreateCampaign.vue'
 import EditCampaign from './components/campaigns/EditCampaign.vue'
+import IndexCategories from './components/categories/IndexCategories.vue'
+import CreateCategories from './components/categories/CreateCategories.vue'
+import EditCategories from './components/categories/EditCategories.vue'
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
 // Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
@@ -37,5 +40,5 @@ import EditCampaign from './components/campaigns/EditCampaign.vue'
 // import CampaignsCreate from  './components/campaigns/CampaignsCreate.vue';
 const app = new Vue({
     el: '#app',
-    components: { CampaignsIndex, CreateCampaign, EditCampaign }
+    components: { CampaignsIndex, CreateCampaign, EditCampaign, IndexCategories, CreateCategories, EditCategories }
 });

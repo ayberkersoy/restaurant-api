@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Image;
+use Validator;
 use App\Category;
 use Illuminate\Http\Request;
 
@@ -24,6 +26,21 @@ class CategoryController extends Controller
     public function index()
     {
         return response()->json(Category::all());
+    }
+
+    public function indexView()
+    {
+        return view('admin.categories.index');
+    }
+
+    public function createView()
+    {
+        return view('admin.categories.create');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.categories.edit', compact('id'));
     }
 
     /**
@@ -97,8 +114,7 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         $validation = Validator::make($request->all(), [
-            'name' => 'required|max:255',
-            'image_url' => 'required'
+            'name' => 'required|max:255'
         ]);
 
         if ($validation->fails()) {
@@ -112,9 +128,10 @@ class CategoryController extends Controller
             $img->save(public_path($image));
         }
 
-        $categoryArr = $request->all();
-        $categoryArr['image_url'] = $image;
-
+        $categoryArr = $request->except('image_url');
+        if($request->hasFile('image_url')) {
+            $categoryArr['image_url'] = $image;
+        }
         $category->update($categoryArr);
 
         return response()->json($category);
