@@ -4,8 +4,9 @@
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Yorum</th>
+                    <th>Yorum Sahibi</th>
                     <th>Ürün</th>
+                    <th>Yorum</th>
                     <th>Puan</th>
                     <th>İşlemler</th>
                 </tr>
@@ -13,11 +14,12 @@
             <tbody>
                 <tr v-for="comment, index in comments">
                     <td>{{ comment['id'] }}</td>
-                    <td>{{ comment['comment'] }}</td>
+                    <td>{{ comment.user.name }} {{ comment.user.surname }}</td>
                     <td>{{ comment.product.name }}</td>
+                    <td>{{ comment['comment'] }}</td>
                     <td><i class="fa fa-star"></i> {{ comment.stars }}</td>
                     <td>
-                             <!--<a href="#" class="btn btn-info" v-on:click="editPage(category['id'])"><i class="fa fa-edit"></i></a>-->
+                            <!--<a href="#" class="btn btn-info" v-on:click="editPage(category['id'])"><i class="fa fa-edit"></i></a>-->
                             <!-- <a href="#" class="btn btn-xs btn-danger" v-on:click="handleSubmit(campaign.id, index)"><i class="fa fa-trash-o"></i></a> -->
                             <a href="#"
                                class="btn btn-danger"

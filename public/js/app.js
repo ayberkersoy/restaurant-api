@@ -50286,6 +50286,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "index-comments",
@@ -50347,9 +50349,15 @@ var render = function() {
             return _c("tr", [
               _c("td", [_vm._v(_vm._s(comment["id"]))]),
               _vm._v(" "),
-              _c("td", [_vm._v(_vm._s(comment["comment"]))]),
+              _c("td", [
+                _vm._v(
+                  _vm._s(comment.user.name) + " " + _vm._s(comment.user.surname)
+                )
+              ]),
               _vm._v(" "),
               _c("td", [_vm._v(_vm._s(comment.product.name))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(comment["comment"]))]),
               _vm._v(" "),
               _c("td", [
                 _c("i", { staticClass: "fa fa-star" }),
@@ -50388,9 +50396,11 @@ var staticRenderFns = [
       _c("tr", [
         _c("th", [_vm._v("#")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Yorum")]),
+        _c("th", [_vm._v("Yorum Sahibi")]),
         _vm._v(" "),
         _c("th", [_vm._v("Ürün")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Yorum")]),
         _vm._v(" "),
         _c("th", [_vm._v("Puan")]),
         _vm._v(" "),
