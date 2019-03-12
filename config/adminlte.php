@@ -135,7 +135,7 @@ return [
         ],
         [
             'text' => 'Siparişler',
-            'icon' => 'shopping-basket',
+            'icon' => 'shopping-cart',
             'url' => '/orders',
         ],
         [
@@ -145,7 +145,7 @@ return [
         ],
         [
             'text' => 'Ürünler',
-            'icon' => 'file',
+            'icon' => 'shopping-basket',
             'url' => '/products',
         ],
         [
