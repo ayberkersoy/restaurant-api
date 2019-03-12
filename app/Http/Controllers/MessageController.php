@@ -13,6 +13,16 @@ use Illuminate\Http\Request;
  */
 class MessageController extends Controller
 {
+    public function indexView()
+    {
+        return view('admin.messages.index');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.messages.edit', compact('id'));
+    }
+
     /**
      * Index all messages
      * @response {

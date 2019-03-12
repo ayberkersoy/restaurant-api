@@ -33,6 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/employees/{id}/edit', 'EmployeeController@editView');
 
     Route::get('/messages', 'MessageController@indexView');
+    Route::get('/messages/{id}/edit', 'MessageController@editView');
+
     Route::get('/orders', 'OrderController@indexView');
     Route::get('/paymentTypes', 'PaymentTypeController@indexView');
     Route::get('/products', 'ProductController@indexView');
