@@ -29,6 +29,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/comments/{id}/edit', 'CommentController@editView');
 
     Route::get('/employees', 'EmployeeController@indexView');
+    Route::get('/employees/create', 'EmployeeController@createView');
+    Route::get('/employees/{id}/edit', 'EmployeeController@editView');
+
     Route::get('/messages', 'MessageController@indexView');
     Route::get('/orders', 'OrderController@indexView');
     Route::get('/paymentTypes', 'PaymentTypeController@indexView');

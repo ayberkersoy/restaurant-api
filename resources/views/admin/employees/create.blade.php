@@ -7,7 +7,7 @@
 @endsection
 
 @section('content_header')
-    <h1>Kategoriler</h1>
+    <h1>Çalışanlar</h1>
 @stop
 
 @section('content')
@@ -15,13 +15,13 @@
         <!-- Default box -->
         <div class="box">
             <div class="box-header with-border">
-                <h3 class="box-title">Kategori Ekle</h3>
+                <h3 class="box-title">Çalışan Ekle</h3>
                 <div class="box-tools pull-right">
                     <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
                     <button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
                 </div>
             </div>
-            <create-categories></create-categories>
+            <create-employees></create-employees>
         </div><!-- /.box -->
     </div>
 @stop

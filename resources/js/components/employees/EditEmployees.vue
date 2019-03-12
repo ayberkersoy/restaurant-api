@@ -2,21 +2,27 @@
     <div class="box-body">
         <form enctype="multipart/form-data">
             <div class="form-group">
-                <label for="name">Kategori Adı:</label>
+                <label for="name">Çalışan Adı:</label>
                 <input type="text" class="form-control" id="name" name="name"
-                       required placeholder=" Kategori adını girin"
-                        v-model="category.name">
+                       required placeholder=" Çalışan adını girin"
+                        v-model="employee.name">
             </div>
             <div class="form-group">
-                <label for="description">Kategori Açıklaması:</label>
+                <label for="surname">Çalışan Soyadı:</label>
+                <input type="text" class="form-control" id="surname" name="surname"
+                       required placeholder=" Çalışan soyadını girin"
+                       v-model="employee.surname">
+            </div>
+            <div class="form-group">
+                <label for="description">Çalışan Açıklaması:</label>
                 <input type="text" class="form-control" id="description" name="description"
-                       required placeholder=" Kategori açıklamasını girin"
-                       v-model="category.description">
+                       required placeholder=" Çalışan açıklamasını girin"
+                       v-model="employee.description">
             </div>
             <div class="form-group">
-                <label for="image_url">Kategori Resmi:</label>
+                <label for="image_url">Çalışan Resmi:</label>
                 <input type="file" class="form-control" id="image_url" name="image_url"
-                       required v-on:change="onImageChange" placeholder=" Kategori resmini girin">
+                       required v-on:change="onImageChange" placeholder=" Çalışan resmini girin">
             </div>
 
             <button class="btn btn-success" @click.prevent="uploadImage()" id="add" name="add">
@@ -28,38 +34,40 @@
 
 <script>
     export default {
-        name: 'edit-categories',
+        name: 'edit-employees',
         props: ['id'],
         data: function() {
             return {
                 name: '',
+                surname: '',
                 description: '',
-                category: {}
+                employee: {}
             }
         },
 
         mounted() {
             // console.log(this.id);
-            axios.get('/api/categories/' + this.id)
-                .then(response => this.category = response.data);
+            axios.get('/api/employees/' + this.id)
+                .then(response => this.employee = response.data);
         },
 
         methods: {
             onImageChange(e) {
                 console.log(e.target.files[0]);
-                this.category.image = e.target.files[0];
+                this.employee.image = e.target.files[0];
             },
             uploadImage(){
                 const config = {
                     headers: { 'content-type': 'multipart/form-data' }
                 };
                 let formData = new FormData();
-                formData.append('name', this.category.name);
-                formData.append('description', this.category.description);
-                formData.append('image_url', this.category.image);
+                formData.append('name', this.employee.name);
+                formData.append('surname', this.employee.surname);
+                formData.append('description', this.employee.description);
+                formData.append('image_url', this.employee.image);
                 // console.log(formData);
-                axios.post('/api/categories/' + this.id, formData, config).then(response => {
-                    window.location = '/categories';
+                axios.post('/api/employees/' + this.id, formData, config).then(response => {
+                    window.location = '/employees';
                     // console.log(response);
                 });
             }

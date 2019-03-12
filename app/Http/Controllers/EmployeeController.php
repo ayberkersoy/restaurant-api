@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Image;
 use Validator;
 use App\Employee;
 use Illuminate\Http\Request;
@@ -13,6 +14,20 @@ use Illuminate\Http\Request;
  */
 class EmployeeController extends Controller
 {
+    public function indexView()
+    {
+        return view('admin.employees.index');
+    }
+
+    public function createView()
+    {
+        return view('admin.employees.create');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.employees.edit', compact('id'));
+    }
     /**
      * Index all employees
      * @response {
@@ -120,8 +135,10 @@ class EmployeeController extends Controller
             $img->save(public_path($image));
         }
 
-        $employeeArr = $request->all();
-        $employeeArr['image_url'] = $image;
+        $employeeArr = $request->except('image_url');
+        if($request->hasFile('image_url')){
+            $employeeArr['image_url'] = $image;
+        }
 
         $employee->update($employeeArr);
 

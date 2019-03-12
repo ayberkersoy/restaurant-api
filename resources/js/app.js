@@ -28,6 +28,9 @@ import IndexCategories from './components/categories/IndexCategories.vue'
 import CreateCategories from './components/categories/CreateCategories.vue'
 import EditCategories from './components/categories/EditCategories.vue'
 import IndexComments from './components/comments/IndexComments.vue'
+import CreateEmployees from './components/employees/CreateEmployees'
+import EditEmployees from './components/employees/EditEmployees'
+import IndexEmployees from './components/employees/IndexEmployees'
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
 // Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
@@ -41,5 +44,5 @@ import IndexComments from './components/comments/IndexComments.vue'
 // import CampaignsCreate from  './components/campaigns/CampaignsCreate.vue';
 const app = new Vue({
     el: '#app',
-    components: { CampaignsIndex, CreateCampaign, EditCampaign, IndexCategories, CreateCategories, EditCategories, IndexComments }
+    components: { CampaignsIndex, CreateCampaign, EditCampaign, IndexCategories, CreateCategories, EditCategories, IndexComments, CreateEmployees, EditEmployees, IndexEmployees }
 });
