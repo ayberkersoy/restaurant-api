@@ -135,12 +135,12 @@ return [
         ],
         [
             'text' => 'Siparişler',
-            'icon' => 'file',
+            'icon' => 'shopping-basket',
             'url' => '/orders',
         ],
         [
             'text' => 'Ödeme Tipleri',
-            'icon' => 'file',
+            'icon' => 'money',
             'url' => '/paymentTypes',
         ],
         [
@@ -150,7 +150,7 @@ return [
         ],
         [
             'text' => 'Rezervasyonlar',
-            'icon' => 'file',
+            'icon' => 'calendar',
             'url' => '/reservations',
         ],
         [
