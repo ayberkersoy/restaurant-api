@@ -15,6 +15,16 @@ use Illuminate\Http\Request;
  */
 class OrderController extends Controller
 {
+    public function indexView()
+    {
+        return view('admin.orders.index');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.orders.edit', compact('id'));
+    }
+
     /**
      * Index all orders
      * @response {
@@ -31,7 +41,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return response()->json(Order::all());
+        return response()->json(Order::with(['user', 'userContact'])->get());
     }
 
     /**
@@ -158,7 +168,7 @@ class OrderController extends Controller
     public function show(Order $order)
     {
         // $products = $order->baskets->toArray();
-        $order = $order->with('baskets')->with('userContact')->where('id', $order->id)->get();
+        $order = $order->with('baskets')->with('userContact')->with('user')->where('id', $order->id)->get();
         // $order = array_merge($order, $products);
         return response()->json($order);
     }

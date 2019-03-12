@@ -33,6 +33,8 @@ import EditEmployees from './components/employees/EditEmployees'
 import IndexEmployees from './components/employees/IndexEmployees'
 import EditMessages from './components/messages/EditMessages'
 import IndexMessages from './components/messages/IndexMessages'
+import EditOrders from './components/orders/EditOrders'
+import IndexOrders from './components/orders/IndexOrders'
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
 // Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
@@ -48,5 +50,5 @@ const app = new Vue({
     el: '#app',
     components: { CampaignsIndex, CreateCampaign, EditCampaign, IndexCategories,
         CreateCategories, EditCategories, IndexComments, CreateEmployees, EditEmployees,
-        IndexEmployees, EditMessages, IndexMessages }
+        IndexEmployees, EditMessages, IndexMessages, EditOrders, IndexOrders }
 });
