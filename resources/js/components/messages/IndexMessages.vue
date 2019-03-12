@@ -7,7 +7,7 @@
                     <th>Adı</th>
                     <th>Konu</th>
                     <th>Mesaj</th>
-                    <th>Telefon</th>
+                    <th>E-mail</th>
                     <th>İşlemler</th>
                 </tr>
             </thead>
