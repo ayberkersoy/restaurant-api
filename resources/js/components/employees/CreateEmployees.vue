@@ -2,19 +2,24 @@
     <div class="box-body">
         <form enctype="multipart/form-data">
             <div class="form-group">
-                <label for="name">Kategori Adı:</label>
+                <label for="name">Çalışan Adı:</label>
                 <input type="text" class="form-control" id="name" name="name"
-                       required v-model="name" placeholder=" Kategori adını girin">
+                       required v-model="name" placeholder=" Çalışan adını girin">
             </div>
             <div class="form-group">
-                <label for="description">Kategori Açıklaması:</label>
+                <label for="surname">Çalışan Soyadı:</label>
+                <input type="text" class="form-control" id="surname" name="surname"
+                       required v-model="surname" placeholder=" Çalışan soyadını girin">
+            </div>
+            <div class="form-group">
+                <label for="description">Çalışan Açıklaması:</label>
                 <input type="text" class="form-control" id="description" name="description"
-                       required v-model="description" placeholder=" Kategori açıklamasını girin">
+                       required v-model="description" placeholder=" Çalışan açıklamasını girin">
             </div>
             <div class="form-group">
-                <label for="image_url">Kategori Resmi:</label>
+                <label for="image_url">Çalışan Resmi:</label>
                 <input type="file" class="form-control" id="image_url" name="image_url"
-                       required v-on:change="onImageChange" placeholder=" Kategori resmini girin">
+                       required v-on:change="onImageChange" placeholder=" Çalışan resmini girin">
             </div>
 
             <button class="btn btn-success" @click.prevent="uploadImage()" id="add" name="add">
@@ -26,10 +31,11 @@
 
 <script>
     export default {
-        name: "create-categories",
+        name: "create-employees",
         data: function() {
             return {
                 name: '',
+                surname: '',
                 description: '',
                 image: ''
             }
@@ -45,10 +51,11 @@
                 };
                 let formData = new FormData();
                 formData.append('name', this.name);
+                formData.append('surname', this.surname);
                 formData.append('description', this.description);
                 formData.append('image_url', this.image);
-                axios.post('/api/categories', formData, config).then(response => {
-                    window.location = '/categories';
+                axios.post('/api/employees', formData, config).then(response => {
+                    window.location = '/employees';
                 });
             }
         }

@@ -50506,12 +50506,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "create-categories",
+    name: "create-employees",
     data: function data() {
         return {
             name: '',
+            surname: '',
             description: '',
             image: ''
         };
@@ -50527,10 +50533,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             };
             var formData = new FormData();
             formData.append('name', this.name);
+            formData.append('surname', this.surname);
             formData.append('description', this.description);
             formData.append('image_url', this.image);
-            axios.post('/api/categories', formData, config).then(function (response) {
-                window.location = '/categories';
+            axios.post('/api/employees', formData, config).then(function (response) {
+                window.location = '/employees';
             });
         }
     }
@@ -50547,7 +50554,7 @@ var render = function() {
   return _c("div", { staticClass: "box-body" }, [
     _c("form", { attrs: { enctype: "multipart/form-data" } }, [
       _c("div", { staticClass: "form-group" }, [
-        _c("label", { attrs: { for: "name" } }, [_vm._v("Kategori Adı:")]),
+        _c("label", { attrs: { for: "name" } }, [_vm._v("Çalışan Adı:")]),
         _vm._v(" "),
         _c("input", {
           directives: [
@@ -50564,7 +50571,7 @@ var render = function() {
             id: "name",
             name: "name",
             required: "",
-            placeholder: " Kategori adını girin"
+            placeholder: " Çalışan adını girin"
           },
           domProps: { value: _vm.name },
           on: {
@@ -50579,8 +50586,40 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "surname" } }, [_vm._v("Çalışan Soyadı:")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.surname,
+              expression: "surname"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            id: "surname",
+            name: "surname",
+            required: "",
+            placeholder: " Çalışan soyadını girin"
+          },
+          domProps: { value: _vm.surname },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.surname = $event.target.value
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
         _c("label", { attrs: { for: "description" } }, [
-          _vm._v("Kategori Açıklaması:")
+          _vm._v("Çalışan Açıklaması:")
         ]),
         _vm._v(" "),
         _c("input", {
@@ -50598,7 +50637,7 @@ var render = function() {
             id: "description",
             name: "description",
             required: "",
-            placeholder: " Kategori açıklamasını girin"
+            placeholder: " Çalışan açıklamasını girin"
           },
           domProps: { value: _vm.description },
           on: {
@@ -50614,7 +50653,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "form-group" }, [
         _c("label", { attrs: { for: "image_url" } }, [
-          _vm._v("Kategori Resmi:")
+          _vm._v("Çalışan Resmi:")
         ]),
         _vm._v(" "),
         _c("input", {
@@ -50624,7 +50663,7 @@ var render = function() {
             id: "image_url",
             name: "image_url",
             required: "",
-            placeholder: " Kategori resmini girin"
+            placeholder: " Çalışan resmini girin"
           },
           on: { change: _vm.onImageChange }
         })

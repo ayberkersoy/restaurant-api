@@ -77,8 +77,10 @@ class EmployeeController extends Controller
             $img->save(public_path($image));
         }
 
-        $employee = $request->all();
-        $employee['image_url'] = $image;
+        $employee = $request->except('image_url');
+        if($request->hasFile('image_url')){
+            $employee['image_url'] = $image;
+        }
         $employee = Employee::create($employee);
 
         return response()->json($employee);
