@@ -14048,7 +14048,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(14);
-module.exports = __webpack_require__(83);
+module.exports = __webpack_require__(92);
 
 
 /***/ }),
@@ -14087,6 +14087,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_orders_EditOrders___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_orders_EditOrders__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_orders_IndexOrders__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_orders_IndexOrders___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_orders_IndexOrders__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_paymentTypes_CreatePaymentTypes__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_paymentTypes_CreatePaymentTypes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_paymentTypes_CreatePaymentTypes__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_paymentTypes_EditPaymentTypes__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_paymentTypes_EditPaymentTypes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_paymentTypes_EditPaymentTypes__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_paymentTypes_IndexPaymentTypes__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_paymentTypes_IndexPaymentTypes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_paymentTypes_IndexPaymentTypes__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -14124,6 +14130,9 @@ window.Vue = __webpack_require__(4);
 
 
 
+
+
+
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
 // Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
@@ -14139,7 +14148,9 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#app',
   components: { CampaignsIndex: __WEBPACK_IMPORTED_MODULE_1__components_campaigns_CampaignsIndex_vue___default.a, CreateCampaign: __WEBPACK_IMPORTED_MODULE_2__components_campaigns_CreateCampaign_vue___default.a, EditCampaign: __WEBPACK_IMPORTED_MODULE_3__components_campaigns_EditCampaign_vue___default.a, IndexCategories: __WEBPACK_IMPORTED_MODULE_4__components_categories_IndexCategories_vue___default.a,
     CreateCategories: __WEBPACK_IMPORTED_MODULE_5__components_categories_CreateCategories_vue___default.a, EditCategories: __WEBPACK_IMPORTED_MODULE_6__components_categories_EditCategories_vue___default.a, IndexComments: __WEBPACK_IMPORTED_MODULE_7__components_comments_IndexComments_vue___default.a, CreateEmployees: __WEBPACK_IMPORTED_MODULE_8__components_employees_CreateEmployees___default.a, EditEmployees: __WEBPACK_IMPORTED_MODULE_9__components_employees_EditEmployees___default.a,
-    IndexEmployees: __WEBPACK_IMPORTED_MODULE_10__components_employees_IndexEmployees___default.a, EditMessages: __WEBPACK_IMPORTED_MODULE_11__components_messages_EditMessages___default.a, IndexMessages: __WEBPACK_IMPORTED_MODULE_12__components_messages_IndexMessages___default.a, EditOrders: __WEBPACK_IMPORTED_MODULE_13__components_orders_EditOrders___default.a, IndexOrders: __WEBPACK_IMPORTED_MODULE_14__components_orders_IndexOrders___default.a }
+    IndexEmployees: __WEBPACK_IMPORTED_MODULE_10__components_employees_IndexEmployees___default.a, EditMessages: __WEBPACK_IMPORTED_MODULE_11__components_messages_EditMessages___default.a, IndexMessages: __WEBPACK_IMPORTED_MODULE_12__components_messages_IndexMessages___default.a, EditOrders: __WEBPACK_IMPORTED_MODULE_13__components_orders_EditOrders___default.a, IndexOrders: __WEBPACK_IMPORTED_MODULE_14__components_orders_IndexOrders___default.a, CreatePaymentTypes: __WEBPACK_IMPORTED_MODULE_15__components_paymentTypes_CreatePaymentTypes___default.a,
+    EditPaymentTypes: __WEBPACK_IMPORTED_MODULE_16__components_paymentTypes_EditPaymentTypes___default.a, IndexPaymentTypes: __WEBPACK_IMPORTED_MODULE_17__components_paymentTypes_IndexPaymentTypes___default.a
+  }
 });
 
 /***/ }),
@@ -52206,6 +52217,553 @@ if (false) {
 
 /***/ }),
 /* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(84)
+/* template */
+var __vue_template__ = __webpack_require__(85)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/paymentTypes/CreatePaymentTypes.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7a461fd0", Component.options)
+  } else {
+    hotAPI.reload("data-v-7a461fd0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 84 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "create-payment-types",
+    data: function data() {
+        return {
+            name: ''
+        };
+    },
+    methods: {
+        uploadImage: function uploadImage() {
+            var config = {
+                headers: { 'content-type': 'multipart/form-data' }
+            };
+            var formData = new FormData();
+            formData.append('name', this.name);
+            axios.post('/api/paymentTypes', formData, config).then(function (response) {
+                window.location = '/paymentTypes';
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "box-body" }, [
+    _c("form", { attrs: { enctype: "multipart/form-data" } }, [
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "name" } }, [_vm._v("Ödeme Tipi Adı:")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.name,
+              expression: "name"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            id: "name",
+            name: "name",
+            required: "",
+            placeholder: " Kampanya adını girin"
+          },
+          domProps: { value: _vm.name },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.name = $event.target.value
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          attrs: { id: "add", name: "add" },
+          on: {
+            click: function($event) {
+              $event.preventDefault()
+              return _vm.uploadImage()
+            }
+          }
+        },
+        [
+          _c("span", { staticClass: "glyphicon glyphicon-plus" }),
+          _vm._v(" Ekle\n        ")
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7a461fd0", module.exports)
+  }
+}
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(87)
+/* template */
+var __vue_template__ = __webpack_require__(88)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/paymentTypes/EditPaymentTypes.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-c0eb41c4", Component.options)
+  } else {
+    hotAPI.reload("data-v-c0eb41c4", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'edit-payment-types',
+    props: ['id'],
+    data: function data() {
+        return {
+            paymentType: {}
+        };
+    },
+
+    mounted: function mounted() {
+        var _this = this;
+
+        // console.log(this.id);
+        axios.get('/api/paymentTypes/' + this.id).then(function (response) {
+            return _this.paymentType = response.data;
+        });
+    },
+
+
+    methods: {
+        uploadImage: function uploadImage() {
+            var config = {
+                headers: { 'content-type': 'multipart/form-data' }
+            };
+            var formData = new FormData();
+            formData.append('name', this.paymentType.name);
+            // console.log(formData);
+            axios.post('/api/paymentTypes/' + this.id, formData, config).then(function (response) {
+                window.location = '/paymentTypes';
+                // console.log(response);
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "box-body" }, [
+    _c("form", { attrs: { enctype: "multipart/form-data" } }, [
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "name" } }, [_vm._v("Ödeme Tipi Adı:")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.paymentType.name,
+              expression: "paymentType.name"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            id: "name",
+            name: "name",
+            required: "",
+            placeholder: " Kampanya adını girin"
+          },
+          domProps: { value: _vm.paymentType.name },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.paymentType, "name", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          attrs: { id: "add", name: "add" },
+          on: {
+            click: function($event) {
+              $event.preventDefault()
+              return _vm.uploadImage()
+            }
+          }
+        },
+        [
+          _c("span", { staticClass: "glyphicon glyphicon-edit" }),
+          _vm._v(" Düzenle\n        ")
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-c0eb41c4", module.exports)
+  }
+}
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(90)
+/* template */
+var __vue_template__ = __webpack_require__(91)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/paymentTypes/IndexPaymentTypes.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-76a43774", Component.options)
+  } else {
+    hotAPI.reload("data-v-76a43774", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 90 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "index-payment-types",
+    data: function data() {
+        return {
+            paymentTypes: [],
+            id: ''
+        };
+    },
+
+    mounted: function mounted() {
+        var _this = this;
+
+        axios.get('/api/paymentTypes').then(function (response) {
+            return _this.paymentTypes = response.data;
+        });
+    },
+
+    methods: {
+        deleteEntry: function deleteEntry(id, index) {
+            if (confirm("Silmek istediğinize emin misiniz?")) {
+                var app = this;
+                axios.post('/api/paymentTypes/' + id + '/destroy').then(function (resp) {
+                    app.paymentTypes.splice(index, 1);
+                }).catch(function (resp) {
+                    alert("Could not delete company");
+                });
+            }
+        },
+        editPage: function editPage(id) {
+            window.location = '/paymentTypes/' + id + '/edit';
+        }
+    }
+});
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "box-body" }, [
+    _c(
+      "table",
+      {
+        staticClass:
+          "table table-bordered table-striped table-hover data-table",
+        attrs: { id: "campaigns_table" }
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "tbody",
+          _vm._l(_vm.paymentTypes, function(paymentType, index) {
+            return _c("tr", [
+              _c("td", [_vm._v(_vm._s(paymentType["id"]))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(paymentType["name"]))]),
+              _vm._v(" "),
+              _c("td", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-info",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        return _vm.editPage(paymentType["id"])
+                      }
+                    }
+                  },
+                  [_c("i", { staticClass: "fa fa-edit" })]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-danger",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        return _vm.deleteEntry(paymentType.id, index)
+                      }
+                    }
+                  },
+                  [_c("i", { staticClass: "fa fa-trash-o" })]
+                )
+              ])
+            ])
+          }),
+          0
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("#")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Ödeme Tipi Adı")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("İşlemler")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-76a43774", module.exports)
+  }
+}
+
+/***/ }),
+/* 92 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

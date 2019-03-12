@@ -40,6 +40,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/orders/{id}/show', 'OrderController@editView');
 
     Route::get('/paymentTypes', 'PaymentTypeController@indexView');
+    Route::get('/paymentTypes/create', 'PaymentTypeController@createView');
+    Route::get('/paymentTypes/{id}/edit', 'PaymentTypeController@editView');
+
     Route::get('/products', 'ProductController@indexView');
     Route::get('/reservations', 'ReservationController@indexView');
     Route::get('/users', 'UserController@indexView');

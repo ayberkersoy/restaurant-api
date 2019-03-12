@@ -13,6 +13,21 @@ use Illuminate\Http\Request;
  */
 class PaymentTypeController extends Controller
 {
+    public function indexView()
+    {
+        return view('admin.paymentTypes.index');
+    }
+
+    public function createView()
+    {
+        return view('admin.paymentTypes.create');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.paymentTypes.edit', compact('id'));
+    }
+
     /**
      * Index all payment types
      * @response {
