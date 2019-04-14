@@ -18,8 +18,7 @@
             <h3 class="box-title">Çalışanlar</h3>
             <div class="box-tools pull-right">
                 <a class="btn btn-success" title="Yeni" href="/employees/create"><i class="fa fa-plus"></i> Yeni Ekle</a>
-                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
-                <button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+
             </div>
         </div>
         <index-employees></index-employees>
