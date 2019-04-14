@@ -18,7 +18,7 @@
             <h3 class="box-title">Kampanyalar</h3>
             <div class="box-tools pull-right">
                 <a class="btn btn-success" title="Yeni" href="/campaigns/create"><i class="fa fa-plus"></i> Yeni Ekle</a>
-                
+
             </div>
         </div>
         <campaigns-index></campaigns-index>
