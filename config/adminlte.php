@@ -158,6 +158,11 @@ return [
             'icon' => 'users',
             'url' => '/users',
         ],
+        [
+            'text' => 'Ödeme Bilgilerimiz',
+            'icon' => 'money',
+            'url' => '/payment',
+        ],
 //        [
 //            'text' => 'Pages',
 //            'icon' => 'file',
