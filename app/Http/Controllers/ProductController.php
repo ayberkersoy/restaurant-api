@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use DB;
 use Auth;
+use Image;
 use Validator;
 use App\Product;
 use App\Category;
@@ -17,6 +18,20 @@ use App\Favourite;
  */
 class ProductController extends Controller
 {
+    public function indexView()
+    {
+        return view('admin.products.index');
+    }
+
+    public function createView()
+    {
+        return view('admin.products.create');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.products.edit', compact('id'));
+    }
     /**
      * Index all products
      * @response {
@@ -74,7 +89,8 @@ class ProductController extends Controller
         }
 
         $product = $request->all();
-        $product['logo'] = $image;
+        $product['image_url'] = $image;
+        $product['currency'] = 'TL';
 
         $product = Product::create($product);
 
@@ -163,7 +179,7 @@ class ProductController extends Controller
         }
 
         $productArr = $request->all();
-        $productArr['logo'] = $image;
+        $productArr['image_url'] = $image;
 
         $product->update($productArr);
 
