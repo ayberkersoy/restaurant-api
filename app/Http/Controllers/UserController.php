@@ -20,6 +20,20 @@ class UserController extends Controller
 {
     public $successStatus = 200;
 
+    public function indexView()
+    {
+        return view('admin.users.index');
+    }
+
+    public function createView()
+    {
+        return view('admin.users.create');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.users.edit', compact('id'));
+    }
     /**
      * Index all users
      * @response {
@@ -70,7 +84,7 @@ class UserController extends Controller
 
         $user = User::create(
             array_merge(
-                array_except($request->all(), ['password']),
+                array_except($request->all(), ['password', 'avatar']),
                 [
                     'password' => bcrypt($request->password),
                     'avatar' => 'https://api.maycreator.com/img/user-default.png'
