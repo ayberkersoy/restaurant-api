@@ -1,20 +1,3 @@
-<!--<template>-->
-<!--    <div class="box-body">-->
-<!--        <form enctype="multipart/form-data">-->
-<!--            <div class="form-group">-->
-<!--                <label for="name">Ödeme Tipi Adı:</label>-->
-<!--                <input type="text" class="form-control" id="name" name="name"-->
-<!--                       required placeholder=" Kampanya adını girin"-->
-<!--                        v-model="paymentType.name">-->
-<!--            </div>-->
-
-<!--            <button class="btn btn-success" @click.prevent="uploadImage()" id="add" name="add">-->
-<!--                <span class="glyphicon glyphicon-edit"></span> Düzenle-->
-<!--            </button>-->
-<!--        </form>-->
-<!--    </div>&lt;!&ndash; /.box-body &ndash;&gt;-->
-<!--</template>-->
-
 <template>
     <div class="box-body">
         <form enctype="multipart/form-data">

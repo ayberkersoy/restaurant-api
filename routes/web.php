@@ -48,5 +48,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/products/{id}/edit', 'ProductController@editView');
 
     Route::get('/reservations', 'ReservationController@indexView');
+    Route::get('/reservations/{id}/edit', 'ReservationController@editView');
+
     Route::get('/users', 'UserController@indexView');
 });

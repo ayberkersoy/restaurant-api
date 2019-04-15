@@ -41,6 +41,8 @@ import IndexPaymentTypes from './components/paymentTypes/IndexPaymentTypes'
 import CreateProducts from './components/products/CreateProducts'
 import EditProducts from './components/products/EditProducts'
 import IndexProducts from './components/products/IndexProducts'
+import EditReservations from './components/reservations/EditReservations'
+import IndexReservations from './components/reservations/IndexReservations'
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
 // Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
@@ -57,6 +59,7 @@ const app = new Vue({
     components: { CampaignsIndex, CreateCampaign, EditCampaign, IndexCategories,
         CreateCategories, EditCategories, IndexComments, CreateEmployees, EditEmployees,
         IndexEmployees, EditMessages, IndexMessages, EditOrders, IndexOrders, CreatePaymentTypes,
-        EditPaymentTypes, IndexPaymentTypes, CreateProducts, EditProducts, IndexProducts
+        EditPaymentTypes, IndexPaymentTypes, CreateProducts, EditProducts, IndexProducts,
+        EditReservations, IndexReservations
     }
 });

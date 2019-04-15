@@ -13,6 +13,15 @@ use Illuminate\Http\Request;
  */
 class ReservationController extends Controller
 {
+    public function indexView()
+    {
+        return view('admin.reservations.index');
+    }
+
+    public function editView($id)
+    {
+        return view('admin.reservations.edit', compact('id'));
+    }
     /**
      * Index all reservations
      * @response {

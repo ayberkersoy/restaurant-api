@@ -29,9 +29,9 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>MAY</b> Creator',
 
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => '<b>MAY</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ return [
     |
     */
 
-    'skin' => 'blue',
+    'skin' => 'red',
 
     /*
     |--------------------------------------------------------------------------
@@ -107,7 +107,7 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
+        'MENÜ',
         [
             'text' => 'Kampanyalar',
             'icon' => 'gift',
@@ -158,106 +158,106 @@ return [
             'icon' => 'users',
             'url' => '/users',
         ],
+//        [
+//            'text' => 'Pages',
+//            'icon' => 'file',
+//            'submenu' => [
+//                [
+//                    'text' => 'Level One',
+//                    'url' => '#',
+//                ],
+//                [
+//                    'text' => 'Level One',
+//                    'url' => '#',
+//                    'submenu' => [
+//                        [
+//                            'text' => 'Level Two',
+//                            'url' => '#',
+//                        ],
+//                        [
+//                            'text' => 'Level Two',
+//                            'url' => '#',
+//                            'submenu' => [
+//                                [
+//                                    'text' => 'Level Three',
+//                                    'url' => '#',
+//                                ],
+//                                [
+//                                    'text' => 'Level Three',
+//                                    'url' => '#',
+//                                ],
+//                            ],
+//                        ],
+//                    ],
+//                ],
+//                [
+//                    'text' => 'Level One',
+//                    'url' => '#',
+//                ],
+//            ],
+//        ],
+//        'ACCOUNT SETTINGS',
+//        [
+//            'text' => 'Profile',
+//            'url' => '/settings',
+//            'icon' => 'user',
+//        ],
+//        [
+//            'text' => 'Change Password',
+//            'url' => '/settings',
+//            'icon' => 'lock',
+//        ],
+//        [
+//            'text' => 'Multilevel',
+//            'icon' => 'share',
+//            'submenu' => [
+//                [
+//                    'text' => 'Level One',
+//                    'url' => '#',
+//                ],
+//                [
+//                    'text' => 'Level One',
+//                    'url' => '#',
+//                    'submenu' => [
+//                        [
+//                            'text' => 'Level Two',
+//                            'url' => '#',
+//                        ],
+//                        [
+//                            'text' => 'Level Two',
+//                            'url' => '#',
+//                            'submenu' => [
+//                                [
+//                                    'text' => 'Level Three',
+//                                    'url' => '#',
+//                                ],
+//                                [
+//                                    'text' => 'Level Three',
+//                                    'url' => '#',
+//                                ],
+//                            ],
+//                        ],
+//                    ],
+//                ],
+//                [
+//                    'text' => 'Level One',
+//                    'url' => '#',
+//                ],
+//            ],
+//        ],
+        'Bildirimler',
         [
-            'text' => 'Pages',
-            'icon' => 'file',
-            'submenu' => [
-                [
-                    'text' => 'Level One',
-                    'url' => '#',
-                ],
-                [
-                    'text' => 'Level One',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Level Two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Level Two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Level One',
-                    'url' => '#',
-                ],
-            ],
-        ],
-        'ACCOUNT SETTINGS',
-        [
-            'text' => 'Profile',
-            'url' => '/settings',
-            'icon' => 'user',
-        ],
-        [
-            'text' => 'Change Password',
-            'url' => '/settings',
-            'icon' => 'lock',
-        ],
-        [
-            'text' => 'Multilevel',
-            'icon' => 'share',
-            'submenu' => [
-                [
-                    'text' => 'Level One',
-                    'url' => '#',
-                ],
-                [
-                    'text' => 'Level One',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Level Two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'Level Two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Level One',
-                    'url' => '#',
-                ],
-            ],
-        ],
-        'LABELS',
-        [
-            'text' => 'Important',
+            'text' => 'Kalan deneme süresi: 3 gün',
             'icon_color' => 'red',
         ],
-        [
-            'text' => 'Warning',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text' => 'Information',
-            'icon_color' => 'aqua',
-        ],
+//        [
+//            'text' => 'Warning',
+//            'icon_color' => 'yellow',
+//        ],
+//        [
+//            'text' => 'Information',
+//            'icon_color' => 'aqua',
+//        ],
     ],
 
     /*
