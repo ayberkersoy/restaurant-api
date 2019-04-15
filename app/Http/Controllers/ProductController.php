@@ -180,6 +180,7 @@ class ProductController extends Controller
 
         $productArr = $request->all();
         $productArr['image_url'] = $image;
+        $productArr['currency'] = 'TL';
 
         $product->update($productArr);
 
