@@ -174,6 +174,11 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
+        $user->comments()->delete();
+        $user->contacts()->delete();
+        $user->favourites()->delete();
+        $user->orders()->delete();
+        $user->reservations()->delete();
         return response()->json(['status' => true]);
     }
 
