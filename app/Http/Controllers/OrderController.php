@@ -114,7 +114,7 @@ class OrderController extends Controller
         Mail::send('emails.order_created', $request->toArray(), function($message) {
             $user = User::where('id', request('user_id'))->first();
             $message->to($user->email, $user->name . ' ' . $user->surname)->subject
-            ('Kaydınız oluşturuldu');
+            ('Siparişiniz oluşturuldu');
             $message->from('info@maycreator.com', env('APP_NAME'));
         });
 
