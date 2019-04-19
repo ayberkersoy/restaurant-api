@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
+use Auth;
 use Mail;
 use Validator;
 use App\Order;
@@ -107,8 +109,11 @@ class OrderController extends Controller
             ]);
         }
 
+
+
         Mail::send('emails.order_created', $request->toArray(), function($message) {
-            $message->to(auth()->email, auth()->name . ' ' . auth()->surname)->subject
+            $user = User::where('id', request('user_id'))->first();
+            $message->to($user->email, $user->name . ' ' . $user->surname)->subject
             ('Kaydınız oluşturuldu');
             $message->from('info@maycreator.com', env('APP_NAME'));
         });
@@ -117,7 +122,7 @@ class OrderController extends Controller
             return response()->json(['status' => false], 401);
         }
 
-        return response()->json($order, $this->successStatus);
+        return response()->json($order, 200);
     }
 
     /**

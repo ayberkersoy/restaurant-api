@@ -310,8 +310,8 @@
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
-                                        <p>Merhaba {{ $name }},</p>
-                                        <p>{{ env('APP_NAME') }} uygulamasına kaydınız başarıyla oluşturuldu. Uygulamamızı kullanarak sipariş verebilir, rezervasyonlarınızı yönetebilirsiniz.</p>
+                                        <p>Merhaba,</p>
+                                        <p>{{ env('APP_NAME') }} uygulaması üzerinden oluşturduğunuz sipariş tarafımıza iletildi. Siparişiniz ile ilgili güncellemeleri size iletiyor olacağız.</p>
                                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                                             <tbody>
                                             {{--                                            <tr>--}}
@@ -327,7 +327,7 @@
                                             {{--                                            </tr>--}}
                                             </tbody>
                                         </table>
-                                        <p>Geri dönüşlerinizi bekliyoruz.</p>
+                                        <p>Siparişiniz için teşekkür ederiz.</p>
                                         <p>Keyifli günler!</p>
                                     </td>
                                 </tr>
