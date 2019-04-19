@@ -74,7 +74,7 @@ class UserController extends Controller
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'surname' => 'required|max:255',
-            'email' => 'required|email|max:255',
+            'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|max:255|confirmed'
         ]);
 
@@ -92,7 +92,17 @@ class UserController extends Controller
             )
         );
 
-        return response()->json($user);
+        Mail::send('emails.first_register', $request->toArray(), function($message) {
+            $message->to(request('email'), request('name') . ' ' . request('surname'))->subject
+                ('Kaydınız oluşturuldu');
+            $message->from('info@maycreator.com', env('APP_NAME'));
+        });
+
+        if (Mail::failures()) {
+            return response()->json(['status' => false], 401);
+        }
+
+        return response()->json($user, $this->successStatus);
     }
 
     /**

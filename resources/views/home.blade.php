@@ -1,9 +1,7 @@
 @extends('adminlte::page')
 
-@section('title', 'AdminLTE')
-
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Anasayfa</h1>
 @stop
 
 @section('content')

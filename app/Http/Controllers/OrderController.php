@@ -106,7 +106,17 @@ class OrderController extends Controller
             ]);
         }
 
-        return response()->json($order);
+        Mail::send('emails.order_created', $request->toArray(), function($message) {
+            $message->to(auth()->email, auth()->name . ' ' . auth()->surname)->subject
+            ('Kaydınız oluşturuldu');
+            $message->from('info@maycreator.com', env('APP_NAME'));
+        });
+
+        if (Mail::failures()) {
+            return response()->json(['status' => false], 401);
+        }
+
+        return response()->json($order, $this->successStatus);
     }
 
     /**

@@ -109,14 +109,46 @@ return [
     'menu' => [
         'MENÜ',
         [
+            'text' => 'Siparişler',
+            'icon' => 'shopping-cart',
+            'url' => '/orders',
+        ],
+        [
+            'text' => 'Rezervasyonlar',
+            'icon' => 'calendar',
+            'url' => '/reservations',
+        ],
+        [
             'text' => 'Kampanyalar',
             'icon' => 'gift',
             'url' => '/campaigns',
         ],
         [
+            'text' => 'Kullanıcılar',
+            'icon' => 'users',
+            'url' => '/users',
+        ],
+        [
+            'text' => 'Mesajlar',
+            'icon' => 'comments',
+            'url' => '/messages',
+        ],
+        [
             'text' => 'Kategoriler',
             'icon' => 'file',
             'url' => '/categories',
+        ],
+        [
+            'text' => 'Ürünler',
+            'icon' => 'shopping-basket',
+            'url' => '/products',
+        ],
+
+
+        [
+            'text' => 'Ödeme Tipleri',
+            'icon' => 'money',
+            'url' => '/paymentTypes',
         ],
         [
             'text' => 'Yorumlar',
@@ -127,36 +159,6 @@ return [
             'text' => 'Çalışanlar',
             'icon' => 'user',
             'url' => '/employees',
-        ],
-        [
-            'text' => 'Mesajlar',
-            'icon' => 'comments',
-            'url' => '/messages',
-        ],
-        [
-            'text' => 'Siparişler',
-            'icon' => 'shopping-cart',
-            'url' => '/orders',
-        ],
-        [
-            'text' => 'Ödeme Tipleri',
-            'icon' => 'money',
-            'url' => '/paymentTypes',
-        ],
-        [
-            'text' => 'Ürünler',
-            'icon' => 'shopping-basket',
-            'url' => '/products',
-        ],
-        [
-            'text' => 'Rezervasyonlar',
-            'icon' => 'calendar',
-            'url' => '/reservations',
-        ],
-        [
-            'text' => 'Kullanıcılar',
-            'icon' => 'users',
-            'url' => '/users',
         ],
         [
             'text' => 'Ödeme Bilgilerimiz',
@@ -254,6 +256,7 @@ return [
         [
             'text' => 'Kalan deneme süresi: 3 gün',
             'icon_color' => 'red',
+            'url' => '/payment',
         ],
 //        [
 //            'text' => 'Warning',
