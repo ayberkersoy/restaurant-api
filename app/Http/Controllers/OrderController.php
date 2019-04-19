@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Mail;
 use Validator;
 use App\Order;
 use App\Product;
