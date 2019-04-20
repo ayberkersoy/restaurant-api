@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Mail;
 use Validator;
+use App\User;
 use App\Reservation;
 use Illuminate\Http\Request;
 
@@ -151,6 +153,45 @@ class ReservationController extends Controller
         $reservation->update($request->all());
 
         return response()->json($reservation);
+    }
+
+    public function reservationUpdated(Request $request, Reservation $reservation)
+    {
+        $reservation->status = $request->status;
+        $reservation->save();
+
+        $data = [];
+        if($request->status == 1) {
+            $data['status'] = 'Onaylandı.';
+        } elseif ($request->status == 0) {
+            $data['status'] = 'İptal Edildi.';
+        } elseif ($request->status == 2) {
+            $data['status'] = 'Bekliyor.';
+        }
+
+        if($reservation->user_id == 0) {
+            return response()->json(['status' => true]);
+        } else {
+            $user = User::where('id', $reservation->user_id)->first();
+        }
+
+        $userData = [
+            'name' => $user->name,
+            'surname' => $user->surname,
+            'email' => $user->email
+        ];
+
+        Mail::send('emails.reservation_updated', $data, function($message) use ($userData) {
+            $message->to($userData['email'], $userData['name'] . ' ' . $userData['surname'])->subject
+            ('Rezervasyon durumu');
+            $message->from('info@maycreator.com', env('APP_NAME'));
+        });
+
+        if (Mail::failures()) {
+            return response()->json(['status' => false], 401);
+        }
+
+        return response()->json(['status' => true]);
     }
 
     /**

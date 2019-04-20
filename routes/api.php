@@ -88,6 +88,7 @@ Route::get('reservations', 'ReservationController@index');
 Route::get('reservations/{reservation}', 'ReservationController@show');
 Route::post('reservations', 'ReservationController@store');
 Route::post('reservations/{reservation}', 'ReservationController@update');
+Route::post('reservations/{reservation}/updated', 'ReservationController@reservationUpdated');
 Route::post('reservations/{reservation}/destroy', 'ReservationController@destroy');
 
 Route::get('paymentTypes', 'PaymentTypeController@index');

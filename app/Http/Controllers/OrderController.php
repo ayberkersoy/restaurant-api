@@ -247,13 +247,13 @@ class OrderController extends Controller
         } elseif ($request->status == 1) {
             $data['status'] = 'Bekliyor.';
         } elseif ($request->status == 2) {
-            $data['status'] = 'Bekliyor.';
+            $data['status'] = 'Onaylandı.';
         } elseif ($request->status == 3) {
             $data['status'] = 'Gönderildi.';
         }
 
         $user = User::where('id', $order->user_id)->first();
-        
+
         $userData = [
             'name' => $user->name,
             'surname' => $user->surname,
