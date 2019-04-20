@@ -81,6 +81,7 @@ Route::get('orders', 'OrderController@index');
 Route::get('orders/{order}', 'OrderController@show');
 Route::post('orders', 'OrderController@store');
 Route::post('orders/{order}', 'OrderController@update');
+Route::post('orders/{order}/updated', 'OrderController@orderUpdated');
 Route::post('orders/{order}/destroy', 'OrderController@destroy');
 
 Route::get('reservations', 'ReservationController@index');

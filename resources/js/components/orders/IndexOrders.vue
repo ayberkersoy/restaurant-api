@@ -7,6 +7,7 @@
                     <th>Sipariş Tarihi</th>
                     <th>Sipariş Sahibi</th>
                     <th>Sipariş Tutarı</th>
+                    <th>Sipariş Durumu</th>
                     <th>Sipariş Notu</th>
                     <th>İşlemler</th>
                 </tr>
@@ -17,6 +18,12 @@
                     <td>{{ order.date_ordered }}</td>
                     <td>{{ order.user.name }} {{ order.user.surname }}</td>
                     <td>{{ order.price }}</td>
+                    <td>
+                        <span v-if="order.status === 0" class="danger">İptal Edildi</span>
+                        <span v-if="order.status === 1" class="danger">Bekliyor</span>
+                        <span v-if="order.status === 2" class="danger">Onaylandı</span>
+                        <span v-if="order.status === 3" class="danger">Gönderildi</span>
+                    </td>
                     <td>{{ order.note }}</td>
                     <td>
                              <a href="#" class="btn btn-info" v-on:click="editPage(order['id'])"><i class="fa fa-eye"></i></a>

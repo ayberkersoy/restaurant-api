@@ -6,7 +6,7 @@
                 <tr>
                     <td>
                         Adı & Soyadı: {{ ord.user.name }} {{ ord.user.surname }} <br>
-                        E-mail: {{ ord.user.email }} {{ ord.user.email }}
+                        E-mail: {{ ord.user.email }}
                     </td>
                 </tr>
             </tr>
@@ -40,6 +40,35 @@
             <tr>
                 <td><b>Toplam Tutar:</b> {{ ord.price }} {{ ord.currency }}</td>
             </tr>
+            <tr>
+                <td><b>Sipariş Durumu:</b>
+                    <span v-if="ord.status === 0" class="danger">İptal Edildi</span>
+                    <span v-if="ord.status === 1" class="danger">Bekliyor</span>
+                    <span v-if="ord.status === 2" class="danger">Onaylandı</span>
+                    <span v-if="ord.status === 3" class="danger">Gönderildi</span>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Sipariş Durumu Güncelle</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="status" class="form-control" v-model="status" style="max-width:20%;">
+                        <option value="" disabled>Seçiniz</option>
+                        <option value="0">İptal Edildi</option>
+                        <option value="1">Bekliyor</option>
+                        <option value="2">Onaylandı</option>
+                        <option value="3">Gönderildi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-success" @click.prevent="orderUpdated()" id="edit" name="edit">
+                        <span class="glyphicon glyphicon-edit"></span> Güncelle
+                    </button>
+                </td>
+            </tr>
         </table>
     </div><!-- /.box-body -->
 </template>
@@ -50,13 +79,26 @@
         props: ['id'],
         data: function() {
             return {
-                order: {}
+                order: {},
+                status: ''
             }
         },
 
         mounted() {
             axios.get('/api/orders/' + this.id)
                 .then(response => this.order = response.data);
+        },
+        methods: {
+            orderUpdated(){
+                const config = {
+                    headers: { 'content-type': 'multipart/form-data' }
+                };
+                let formData = new FormData();
+                formData.append('status', this.status);
+                axios.post('/api/orders/' + this.id + '/updated', formData, config).then(response => {
+                    window.location = '/orders/' + this.id + '/show';
+                });
+            }
         }
     }
 </script>

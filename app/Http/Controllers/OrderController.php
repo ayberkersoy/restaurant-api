@@ -235,6 +235,43 @@ class OrderController extends Controller
         return response()->json($order);
     }
 
+
+    public function orderUpdated(Request $request, Order $order)
+    {
+        $order->status = $request->status;
+        $order->save();
+
+        $data = [];
+        if($request->status == 0) {
+            $data['status'] = 'İptal Edildi.';
+        } elseif ($request->status == 1) {
+            $data['status'] = 'Bekliyor.';
+        } elseif ($request->status == 2) {
+            $data['status'] = 'Bekliyor.';
+        } elseif ($request->status == 3) {
+            $data['status'] = 'Gönderildi.';
+        }
+
+        $user = User::where('id', $order->user_id)->first();
+        
+        $userData = [
+            'name' => $user->name,
+            'surname' => $user->surname,
+            'email' => $user->email
+        ];
+
+        Mail::send('emails.order_updated', $data, function($message) use ($userData) {
+            $message->to($userData['email'], $userData['name'] . ' ' . $userData['surname'])->subject
+            ('Sipariş durumu');
+            $message->from('info@maycreator.com', env('APP_NAME'));
+        });
+
+        if (Mail::failures()) {
+            return response()->json(['status' => false], 401);
+        }
+
+        return response()->json(['status' => true]);
+    }
     /**
      * Delete specific order
      *
