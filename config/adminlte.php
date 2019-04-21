@@ -109,6 +109,11 @@ return [
     'menu' => [
         'MENÜ',
         [
+            'text' => 'Anasayfa',
+            'icon' => 'home',
+            'url' => '/',
+        ],
+        [
             'text' => 'Siparişler',
             'icon' => 'shopping-cart',
             'url' => '/orders',
