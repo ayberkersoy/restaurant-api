@@ -47,6 +47,11 @@ class OrderController extends Controller
         return response()->json(Order::with(['user', 'userContact'])->get());
     }
 
+    public function lastOrders()
+    {
+        return response()->json(Order::with(['user', 'userContact'])->orderBy('id', 'desc')->take(10)->get());
+    }
+
     /**
      * Create a new order
      *

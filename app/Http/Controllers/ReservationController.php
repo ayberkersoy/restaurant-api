@@ -43,6 +43,11 @@ class ReservationController extends Controller
         return response()->json(Reservation::all());
     }
 
+    public function lastReservations()
+    {
+        return response()->json(Reservation::orderBy('id', 'desc')->take(10)->get());
+    }
+
     /**
      * Create a new reservation
      *
