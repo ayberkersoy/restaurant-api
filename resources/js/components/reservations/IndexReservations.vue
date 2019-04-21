@@ -7,6 +7,7 @@
                     <th>Rezervasyon Sahibi</th>
                     <th>Rezervasyon Tarihi</th>
                     <th>Rezervasyon Saati</th>
+                    <th>Rezervasyon Durumu</th>
                     <th>İşlemler</th>
                 </tr>
             </thead>
@@ -16,6 +17,11 @@
                     <td>{{ reservation.name }} {{ reservation.surname }}</td>
                     <td>{{ reservation.reservation_date }}</td>
                     <td>{{ reservation.reservation_hour }}</td>
+                    <td>
+                        <span v-if="reservation.status === 0">İptal Edildi</span>
+                        <span v-if="reservation.status === 1">Onaylandı</span>
+                        <span v-if="reservation.status === 2">Bekliyor</span>
+                    </td>
                     <td>
                              <a href="#" class="btn btn-info" v-on:click="editPage(reservation['id'])"><i class="fa fa-eye"></i></a>
                             <!-- <a href="#" class="btn btn-xs btn-danger" v-on:click="handleSubmit(campaign.id, index)"><i class="fa fa-trash-o"></i></a> -->
