@@ -84,7 +84,29 @@ class ReservationController extends Controller
 
         $reservation = Reservation::create($request->all());
 
-        return response()->json($reservation);
+        if($request->user_id == 0) {
+            return response()->json(['status' => true]);
+        } else {
+            $user = User::where('id', $request->user_id)->first();
+        }
+
+        $userData = [
+            'name' => $user->name,
+            'surname' => $user->surname,
+            'email' => $user->email
+        ];
+
+        Mail::send('emails.reservation_created', [], function($message) use ($userData) {
+            $message->to($userData['email'], $userData['name'] . ' ' . $userData['surname'])->subject
+            ('Rezervasyon oluşturuldu');
+            $message->from('info@maycreator.com', env('APP_NAME'));
+        });
+
+        if (Mail::failures()) {
+            return response()->json(['status' => false], 401);
+        }
+
+        return response()->json($reservation, 200);
     }
 
     /**
