@@ -23,7 +23,7 @@
                     <p>Rezervasyon</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-stats-bars"></i>
+                    <i class="ion ion-calendar"></i>
                 </div>
                 <a href="/reservations" class="small-box-footer">Tümü <i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -51,7 +51,7 @@
                     <p>Ürün</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-pie-graph"></i>
+                    <i class="ion ion-pizza"></i>
                 </div>
                 <a href="/products" class="small-box-footer">Tümü <i class="fa fa-arrow-circle-right"></i></a>
             </div>
