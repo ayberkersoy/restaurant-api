@@ -72,7 +72,7 @@ class ProductController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
-            'image_url' => 'required',
+            'image_url' => 'required|max:8192',
             'category_id' => 'required',
             'price' => 'required'
         ]);

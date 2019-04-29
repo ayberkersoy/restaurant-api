@@ -63,7 +63,7 @@ class EmployeeController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
-            'surname' => 'required|max:255'
+            'surname' => 'required|max:255|max:8192'
         ]);
 
         if ($validation->fails()) {
