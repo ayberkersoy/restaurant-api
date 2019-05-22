@@ -15,8 +15,7 @@
         <!-- Default box -->
         <div class="box">
             <div class="box-header with-border">
-                <h3 class="box-title">Sipariş Detayı</h3>
-
+                <h3 class="box-title">Sipariş Detayı <a href="#" onclick="window.print();"><i class="fa fa-print"></i></a></h3>
             </div>
             <edit-orders v-bind:id={{ $id }}></edit-orders>
         </div><!-- /.box -->
