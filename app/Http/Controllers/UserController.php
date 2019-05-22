@@ -207,6 +207,7 @@ class UserController extends Controller
 
         Mail::send(['text' => 'emails.password'], ['token' => $token], function (Message $message) use ($user) {
             $message->subject(config('app.name') . ' Password Reset Link');
+            $message->from('info@maycreator.com', env('APP_NAME'));
             $message->to($user->email);
         });
 
