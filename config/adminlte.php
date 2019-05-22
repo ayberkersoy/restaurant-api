@@ -166,6 +166,11 @@ return [
             'url' => '/employees',
         ],
         [
+            'text' => 'Genel Ayarlar',
+            'icon' => 'cog',
+            'url' => '/settings',
+        ],
+        [
             'text' => 'Ödeme Bilgilerimiz',
             'icon' => 'money',
             'url' => '/payment',

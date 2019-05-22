@@ -54,4 +54,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/users', 'UserController@indexView');
     Route::get('/users/create', 'UserController@createView');
     Route::get('/users/{id}/edit', 'UserController@editView');
+
+    Route::get('settings', 'HomeController@settingsView');
 });

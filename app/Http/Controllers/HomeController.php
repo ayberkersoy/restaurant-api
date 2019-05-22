@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('admin.partials.payment');
     }
+
+    public function settingsView()
+    {
+        return view('admin.partials.settings');
+    }
 }

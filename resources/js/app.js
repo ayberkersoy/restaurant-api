@@ -47,6 +47,7 @@ import CreateUsers from './components/users/CreateUsers'
 import EditUsers from './components/users/EditUsers'
 import IndexUsers from './components/users/IndexUsers'
 import HomeComponent from './components/partials/HomeComponent'
+import EditSettings from './components/partials/EditSettings'
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
 // Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
@@ -64,6 +65,7 @@ const app = new Vue({
         CreateCategories, EditCategories, IndexComments, CreateEmployees, EditEmployees,
         IndexEmployees, EditMessages, IndexMessages, EditOrders, IndexOrders, CreatePaymentTypes,
         EditPaymentTypes, IndexPaymentTypes, CreateProducts, EditProducts, IndexProducts,
-        EditReservations, IndexReservations, CreateUsers, EditUsers, IndexUsers, HomeComponent
+        EditReservations, IndexReservations, CreateUsers, EditUsers, IndexUsers, HomeComponent,
+        EditSettings
     }
 });

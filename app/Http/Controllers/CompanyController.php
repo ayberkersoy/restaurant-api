@@ -175,15 +175,15 @@ class CompanyController extends Controller
             return response()->json($validation->errors()->all());
         }
 
+        $companyArr = $request->all();
+
         if($request->hasFile('logo')) {
             $image = $request->image_url->store('img/companies');
             $img = Image::make(public_path($image));
             $img->fit(1280, 720);
             $img->save(public_path($image));
+            $companyArr['logo'] = $image;
         }
-
-        $companyArr = $request->all();
-        $companyArr['logo'] = $image;
 
         $company->update(
             array_merge($companyArr, [
