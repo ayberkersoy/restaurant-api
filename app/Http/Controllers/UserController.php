@@ -205,8 +205,8 @@ class UserController extends Controller
         $user = User::where('email', $request->email)->first();
         $token = Password::getRepository()->create($user);
 
-        Mail::send(['text' => 'emails.password'], ['token' => $token], function (Message $message) use ($user) {
-            $message->subject(config('app.name') . ' Password Reset Link');
+        Mail::send('emails.password', ['token' => $token], function (Message $message) use ($user) {
+            $message->subject(config('app.name') . ' Şifre Yenileme');
             $message->from('info@maycreator.com', env('APP_NAME'));
             $message->to($user->email);
         });
