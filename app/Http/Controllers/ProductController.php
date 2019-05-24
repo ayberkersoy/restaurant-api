@@ -171,15 +171,20 @@ class ProductController extends Controller
             return response()->json($validation->errors()->all());
         }
 
+        $productArr = $request->except(['image_url', 'category_id']);
+
         if($request->hasFile('image_url')) {
             $image = $request->image_url->store('img/products');
             $img = Image::make(public_path($image));
             $img->fit(1280, 720);
             $img->save(public_path($image));
+            $productArr['image_url'] = $image;
         }
 
-        $productArr = $request->all();
-        $productArr['image_url'] = $image;
+        if($request->category_id != 0) {
+            $productArr['category_id'] = $request->category_id;
+        }
+
         $productArr['currency'] = 'TL';
 
         $product->update($productArr);

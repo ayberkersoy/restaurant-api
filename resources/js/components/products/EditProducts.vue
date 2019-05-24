@@ -37,6 +37,7 @@
                 <label for="image_url">Ürün Resmi:</label>
                 <input type="file" class="form-control" id="image_url" name="image_url"
                        required v-on:change="onImageChange" placeholder=" Ürün resmini girin">
+                <img :src="product.image_url" alt="" width="200">
             </div>
 
             <button class="btn btn-success" @click.prevent="uploadImage()" id="add" name="add">
