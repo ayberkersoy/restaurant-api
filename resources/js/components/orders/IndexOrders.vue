@@ -17,12 +17,12 @@
                     <td>{{ order.id }}</td>
                     <td>{{ order.date_ordered }}</td>
                     <td>{{ order.user.name }} {{ order.user.surname }}</td>
-                    <td>{{ order.price }}</td>
+                    <td>{{ order.price }} {{ order.currency }}</td>
                     <td>
-                        <span v-if="order.status === 0" class="danger">İptal Edildi</span>
-                        <span v-if="order.status === 1" class="danger">Bekliyor</span>
-                        <span v-if="order.status === 2" class="danger">Onaylandı</span>
-                        <span v-if="order.status === 3" class="danger">Gönderildi</span>
+                        <span v-if="order.status === 0" class="label label-danger">İptal Edildi</span>
+                        <span v-if="order.status === 1" class="label label-warning">Bekliyor</span>
+                        <span v-if="order.status === 2" class="label label-primary">Onaylandı</span>
+                        <span v-if="order.status === 3" class="label label-success">Gönderildi</span>
                     </td>
                     <td>{{ order.note }}</td>
                     <td>

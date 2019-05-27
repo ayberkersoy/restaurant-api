@@ -18,9 +18,9 @@
                     <td>{{ reservation.reservation_date }}</td>
                     <td>{{ reservation.reservation_hour }}</td>
                     <td>
-                        <span v-if="reservation.status === 0">İptal Edildi</span>
-                        <span v-if="reservation.status === 1">Onaylandı</span>
-                        <span v-if="reservation.status === 2">Bekliyor</span>
+                        <span v-if="reservation.status === 0" class="label label-danger">İptal Edildi</span>
+                        <span v-if="reservation.status === 1" class="label label-warning">Onaylandı</span>
+                        <span v-if="reservation.status === 2" class="label label-success">Bekliyor</span>
                     </td>
                     <td>
                              <a href="#" class="btn btn-info" v-on:click="editPage(reservation['id'])"><i class="fa fa-eye"></i></a>

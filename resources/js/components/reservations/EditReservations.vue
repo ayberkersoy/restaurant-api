@@ -38,7 +38,7 @@
             </tr>
             <tr>
                 <td>
-                    <select name="status" class="form-control" v-model="status" style="max-width:20%;">
+                    <select name="status" class="form-control" v-model="status" style="max-width:50%;">
                         <option value="" disabled>Seçiniz</option>
                         <option value="1">Onaylandı</option>
                         <option value="0">İptal Edildi</option>

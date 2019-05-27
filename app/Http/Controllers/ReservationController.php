@@ -40,7 +40,7 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        return response()->json(Reservation::all());
+        return response()->json(Reservation::latest()->get());
     }
 
     public function lastReservations()

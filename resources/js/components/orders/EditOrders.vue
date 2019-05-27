@@ -96,7 +96,7 @@
                 let formData = new FormData();
                 formData.append('status', this.status);
                 axios.post('/api/orders/' + this.id + '/updated', formData, config).then(response => {
-                    window.location = '/orders/' + this.id + '/show';
+                    window.location = '/orders';
                 });
             }
         }

@@ -44,7 +44,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return response()->json(Order::with(['user', 'userContact'])->get());
+        return response()->json(Order::with(['user', 'userContact'])->latest()->get());
     }
 
     public function lastOrders()
