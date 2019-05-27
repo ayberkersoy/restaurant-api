@@ -14,13 +14,6 @@
 <div id="app">
     <!-- Default box -->
     <div class="box">
-        <div class="box-header with-border">
-            <h3 class="box-title">Siparişler</h3>
-            <div class="box-tools pull-right">
-                <a class="btn btn-success" title="Yeni" href="/campaigns/create"><i class="fa fa-plus"></i> Yeni Ekle</a>
-
-            </div>
-        </div>
         <index-orders></index-orders>
     </div><!-- /.box -->
 </div>

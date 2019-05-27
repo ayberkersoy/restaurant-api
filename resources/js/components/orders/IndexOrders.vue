@@ -11,10 +11,13 @@
                     <th>Sipariş Durumu</th>
                     <th>Sipariş Notu</th>
                     <th>İşlemler</th>
+                    <th>
+                        <input type="text" placeholder="Arama" v-model="search" class="form-control">
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="order, index in orders">
+                <tr v-for="order, index in filteredOrders">
                     <td>{{ order.id }}</td>
                     <td>{{ order.date_ordered }}</td>
                     <td>{{ order.user.name }} {{ order.user.surname }}</td>
@@ -40,7 +43,7 @@
                         </a>
                     </td>
                     <td>{{ order.note }}</td>
-                    <td>
+                    <td colspan="2">
                              <a href="#" class="btn btn-info" v-on:click="editPage(order['id'])"><i class="fa fa-eye"></i></a>
                             <!-- <a href="#" class="btn btn-xs btn-danger" v-on:click="handleSubmit(campaign.id, index)"><i class="fa fa-trash-o"></i></a> -->
                             <a href="#"
@@ -62,7 +65,8 @@
             return {
                 orders: [],
                 id: '',
-                status: ''
+                status: '',
+                search: ''
             }
         },
 
@@ -96,6 +100,14 @@
                 axios.post('/api/orders/' + id + '/updated', formData, config).then(response => {
                     window.location = '/orders';
                 });
+            }
+        },
+
+        computed: {
+            filteredOrders: function() {
+                return this.orders.filter((order) => {
+                    return order.user.name.toLowerCase().match(this.search.toLowerCase());
+                })
             }
         }
     }
