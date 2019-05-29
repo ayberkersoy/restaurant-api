@@ -78,6 +78,10 @@ Route::post('messages/{message}', 'MessageController@update');
 Route::post('messages/{message}/destroy', 'MessageController@destroy');
 
 Route::get('orders', 'OrderController@index');
+Route::get('orders/approved', 'OrderController@approved');
+Route::get('orders/waiting', 'OrderController@waiting');
+Route::get('orders/sent', 'OrderController@sent');
+Route::get('orders/canceled', 'OrderController@canceled');
 Route::get('lastOrders', 'OrderController@lastOrders');
 Route::get('orders/{order}', 'OrderController@show');
 Route::post('orders', 'OrderController@store');

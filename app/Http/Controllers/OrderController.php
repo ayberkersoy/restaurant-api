@@ -23,6 +23,26 @@ class OrderController extends Controller
         return view('admin.orders.index');
     }
 
+    public function approvedView()
+    {
+        return view('admin.orders.approved');
+    }
+
+    public function waitingView()
+    {
+        return view('admin.orders.waiting');
+    }
+
+    public function sentView()
+    {
+        return view('admin.orders.sent');
+    }
+
+    public function canceledView()
+    {
+        return view('admin.orders.canceled');
+    }
+
     public function editView($id)
     {
         return view('admin.orders.edit', compact('id'));
@@ -45,6 +65,26 @@ class OrderController extends Controller
     public function index()
     {
         return response()->json(Order::with(['user', 'userContact'])->latest()->get());
+    }
+
+    public function approved()
+    {
+        return response()->json(Order::where('status', 2)->with(['user', 'userContact'])->latest()->get());
+    }
+
+    public function waiting()
+    {
+        return response()->json(Order::where('status', 1)->with(['user', 'userContact'])->latest()->get());
+    }
+
+    public function canceled()
+    {
+        return response()->json(Order::where('status', 0)->with(['user', 'userContact'])->latest()->get());
+    }
+
+    public function sent()
+    {
+        return response()->json(Order::where('status', 3)->with(['user', 'userContact'])->latest()->get());
     }
 
     public function lastOrders()

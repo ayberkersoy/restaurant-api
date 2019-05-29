@@ -35,6 +35,10 @@ import EditMessages from './components/messages/EditMessages'
 import IndexMessages from './components/messages/IndexMessages'
 import EditOrders from './components/orders/EditOrders'
 import IndexOrders from './components/orders/IndexOrders'
+import ApprovedOrders from './components/orders/ApprovedOrders'
+import WaitingOrders from './components/orders/WaitingOrders'
+import SentOrders from './components/orders/SentOrders'
+import CanceledOrders from './components/orders/CanceledOrders'
 import CreatePaymentTypes from './components/paymentTypes/CreatePaymentTypes'
 import EditPaymentTypes from './components/paymentTypes/EditPaymentTypes'
 import IndexPaymentTypes from './components/paymentTypes/IndexPaymentTypes'
@@ -66,6 +70,6 @@ const app = new Vue({
         IndexEmployees, EditMessages, IndexMessages, EditOrders, IndexOrders, CreatePaymentTypes,
         EditPaymentTypes, IndexPaymentTypes, CreateProducts, EditProducts, IndexProducts,
         EditReservations, IndexReservations, CreateUsers, EditUsers, IndexUsers, HomeComponent,
-        EditSettings
+        EditSettings, ApprovedOrders, WaitingOrders, SentOrders, CanceledOrders
     }
 });

@@ -37,6 +37,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/messages/{id}/edit', 'MessageController@editView');
 
     Route::get('/orders', 'OrderController@indexView');
+    Route::get('/orders/approved', 'OrderController@approvedView');
+    Route::get('/orders/waiting', 'OrderController@waitingView');
+    Route::get('/orders/sent', 'OrderController@sentView');
+    Route::get('/orders/canceled', 'OrderController@canceledView');
     Route::get('/orders/create', 'OrderController@createView');
     Route::get('/orders/{id}/show', 'OrderController@editView');
 

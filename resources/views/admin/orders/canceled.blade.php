@@ -7,14 +7,14 @@
 @endsection
 
 @section('content_header')
-    <h1>Siparişler</h1>
+    <h1>İptan Edilen Siparişler</h1>
 @stop
 
 @section('content')
     <div id="app">
         <!-- Default box -->
         <div class="box">
-            <index-orders></index-orders>
+            <canceled-orders></canceled-orders>
         </div><!-- /.box -->
     </div>
 @stop

@@ -44,7 +44,7 @@ return [
     |
     */
 
-    'skin' => 'blue',
+    'skin' => 'red',
 
     /*
     |--------------------------------------------------------------------------
@@ -116,7 +116,28 @@ return [
         [
             'text' => 'Siparişler',
             'icon' => 'shopping-cart',
-            'url' => '/orders',
+            'submenu' => [
+                [
+                    'text' => 'Tüm Siparişler',
+                    'url' => '/orders'
+                ],
+                [
+                    'text' => 'Bekleyen Siparişler',
+                    'url' => '/orders/waiting'
+                ],
+                [
+                    'text' => 'Onaylanan Siparişler',
+                    'url' => '/orders/approved'
+                ],
+                [
+                    'text' => 'Gönderilen Siparişler',
+                    'url' => '/orders/sent'
+                ],
+                [
+                    'text' => 'İptal Edilen Siparişler',
+                    'url' => '/orders/canceled'
+                ]
+            ]
         ],
         [
             'text' => 'Rezervasyonlar',
