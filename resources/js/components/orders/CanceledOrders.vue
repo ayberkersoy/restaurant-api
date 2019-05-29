@@ -4,7 +4,12 @@
             <h3 class="box-title">İptal Edilen Siparişler</h3>
             <div class="box-tools pull-right">
                 <!--                <a class="btn btn-success" title="Yeni" href="/employees/create"><i class="fa fa-plus"></i> Yeni Ekle</a>-->
-                <input type="text" placeholder="Arama" v-model="search" class="form-control">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label for="search">Arama: </label>
+                        <input type="text" placeholder="Arama" v-model="search" class="form-control" id="search">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="box-body">
