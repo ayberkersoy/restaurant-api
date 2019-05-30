@@ -75,10 +75,16 @@ class ProductController extends Controller
             'image_url' => 'required|max:8192',
             'category_id' => 'required',
             'price' => 'required'
+        ], [
+            'name.required' => 'Ürün adı alanı boş geçilemez.',
+            'image_url.required' => 'Ürün resmi alanı boş geçilemez.',
+            'image_url.max' => 'Ürün resmi en fazla 8 MB boyutunda olabilir.',
+            'category_id.required' => 'Ürün kategorisi alanı boş geçilemez.',
+            'price.required' => 'Ürün fiyatı alanı boş geçilemez.',
         ]);
 
         if ($validation->fails()) {
-            return response()->json($validation->errors()->all());
+            return response()->json($validation->errors()->all(), 422);
         }
 
         $product = $request->all();
@@ -164,11 +170,17 @@ class ProductController extends Controller
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'category_id' => 'required',
-            'price' => 'required'
+            'price' => 'required',
+            'image_url' => 'sometimes|max:8192'
+        ], [
+            'name.required' => 'Ürün adı alanı boş geçilemez.',
+            'image_url.max' => 'Ürün resmi en fazla 8 MB boyutunda olabilir.',
+            'category_id.required' => 'Ürün kategorisi alanı boş geçilemez.',
+            'price.required' => 'Ürün fiyatı alanı boş geçilemez.',
         ]);
 
         if ($validation->fails()) {
-            return response()->json($validation->errors()->all());
+            return response()->json($validation->errors()->all(), 422);
         }
 
         $productArr = $request->except(['image_url', 'category_id']);

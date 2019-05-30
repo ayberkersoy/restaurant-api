@@ -54,10 +54,12 @@ class PaymentTypeController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255'
+        ], [
+            'name.required' => 'Ödeme tipi adı alanı boş geçilemez.'
         ]);
 
         if ($validation->fails()) {
-            return response()->json(['error' => $validator->errors()]);
+            return response()->json($validation->errors()->all(), 422);
         }
 
         $paymentType = PaymentType::create($request->all());
@@ -96,10 +98,12 @@ class PaymentTypeController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255'
+        ], [
+            'name.required' => 'Ödeme tipi adı alanı boş geçilemez.'
         ]);
 
         if ($validation->fails()) {
-            return response()->json(['error' => $validator->errors()]);
+            return response()->json($validation->errors()->all(), 422);
         }
 
         $paymentType->update($request->all());

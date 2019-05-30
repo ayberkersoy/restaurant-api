@@ -1,5 +1,6 @@
 <template>
     <div class="box-body">
+        <validation-errors :errors="validationErrors" v-if="validationErrors"></validation-errors>
         <form enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Ürün Adı:</label>
@@ -57,7 +58,8 @@
                 price: '',
                 isFeatured: '',
                 image: '',
-                categories: []
+                categories: [],
+                validationErrors: ''
             }
         },
         mounted() {
@@ -84,6 +86,10 @@
                 axios.post('/api/products', formData, config).then(response => {
                     // console.log(response.data)
                     window.location = '/products';
+                }).catch(error => {
+                    if (error.response.status === 422){
+                        this.validationErrors = error.response.data;
+                    }
                 });
             }
         }

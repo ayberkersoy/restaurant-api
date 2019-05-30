@@ -55,6 +55,26 @@ import EditSettings from './components/partials/EditSettings'
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Vue.component('campaigns-index', require('./components/campaigns/CampaignsIndex.vue').default);
 // Vue.component('create-campaign', require('./components/campaigns/CreateCampaign.vue').default);
+Vue.component('validation-errors', {
+    data(){
+        return {
+
+        }
+    },
+    props: ['errors'],
+    template: `<div v-if="validationErrors" class="alert alert-danger">
+                        <ul>
+                            <li v-for="(value, key, index) in validationErrors">{{ value }}</li>
+                        </ul>
+                    </div>`,
+    computed: {
+        validationErrors(){
+            let errors = Object.values(this.errors);
+            errors = errors.flat();
+            return errors;
+        }
+    }
+})
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

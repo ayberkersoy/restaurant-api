@@ -1,5 +1,6 @@
 <template>
     <div class="box-body">
+        <validation-errors :errors="validationErrors" v-if="validationErrors"></validation-errors>
         <form enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Çalışan Adı:</label>
@@ -41,7 +42,8 @@
                 name: '',
                 surname: '',
                 description: '',
-                employee: {}
+                employee: {},
+                validationErrors: ''
             }
         },
 
@@ -69,6 +71,10 @@
                 axios.post('/api/employees/' + this.id, formData, config).then(response => {
                     window.location = '/employees';
                     // console.log(response);
+                }).catch(error => {
+                    if (error.response.status === 422){
+                        this.validationErrors = error.response.data;
+                    }
                 });
             }
         }

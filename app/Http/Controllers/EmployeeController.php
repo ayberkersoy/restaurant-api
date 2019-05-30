@@ -63,11 +63,16 @@ class EmployeeController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
-            'surname' => 'required|max:255|max:8192'
+            'surname' => 'required|max:255',
+            'image_url' => 'sometimes|max:8192'
+        ], [
+            'name.required' => 'Çalışan adı alanı boş geçilemez.',
+            'surname.required' => 'Çalışan soyadı alanı boş geçilemez',
+            'image_url.max' => 'Çalışan resmi en fazla 8 MB boyutunda olabilir.'
         ]);
 
         if ($validation->fails()) {
-            return response()->json($validation->errors()->all());
+            return response()->json($validation->errors()->all(), 422);
         }
 
         if($request->hasFile('image_url')) {
@@ -79,7 +84,7 @@ class EmployeeController extends Controller
 
         $employee = $request->except('image_url');
         if($request->hasFile('image_url')){
-            $employee['image_url'] = $image;
+            $employee['image_url'] = env('APP_URL'). '/' .$image;
         }
         $employee = Employee::create($employee);
 
@@ -123,11 +128,16 @@ class EmployeeController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
-            'surname' => 'required|max:255'
+            'surname' => 'required|max:255',
+            'image_url' => 'sometimes|max:8192'
+        ]. [
+            'name.required' => 'Çalışan adı alanı boş geçilemez.',
+            'surname.required' => 'Çalışan soyadı alanı boş geçilemez',
+            'image_url.max' => 'Çalışan resmi en fazla 8 MB boyutunda olabilir.'
         ]);
 
         if ($validation->fails()) {
-            return response()->json($validation->errors()->all());
+            return response()->json($validation->errors()->all(), 422);
         }
 
         if($request->hasFile('image_url')) {
@@ -139,7 +149,7 @@ class EmployeeController extends Controller
 
         $employeeArr = $request->except('image_url');
         if($request->hasFile('image_url')){
-            $employeeArr['image_url'] = $image;
+            $employeeArr['image_url'] = env('APP_URL'). '/' .$image;
         }
 
         $employee->update($employeeArr);

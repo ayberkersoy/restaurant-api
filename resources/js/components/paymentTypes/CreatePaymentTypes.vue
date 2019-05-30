@@ -1,5 +1,6 @@
 <template>
     <div class="box-body">
+        <validation-errors :errors="validationErrors" v-if="validationErrors"></validation-errors>
         <form enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Ödeme Tipi Adı:</label>
@@ -19,7 +20,8 @@
         name: "create-payment-types",
         data: function() {
             return {
-                name: ''
+                name: '',
+                validationErrors: ''
             }
         },
         methods: {
@@ -31,6 +33,10 @@
                 formData.append('name', this.name);
                 axios.post('/api/paymentTypes', formData, config).then(response => {
                     window.location = '/paymentTypes';
+                }).catch(error => {
+                    if (error.response.status === 422){
+                        this.validationErrors = error.response.data;
+                    }
                 });
             }
         }

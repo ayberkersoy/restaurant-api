@@ -62,10 +62,14 @@ class CategoryController extends Controller
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'image_url' => 'required|max:8192'
+        ], [
+            'name.required' => 'Kategori adı alanı boş geçilemez.',
+            'image_url.required' => 'Kategori resmi alanı boş geçilemez.',
+            'image_url.max' => 'Kategori resmi en fazla 8 MB boyutunda olabilir.'
         ]);
 
         if ($validation->fails()) {
-            return response()->json($validation->errors()->all());
+            return response()->json($validation->errors()->all(), 422);
         }
 
         $category = $request->all();
@@ -116,10 +120,12 @@ class CategoryController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required|max:255'
+        ], [
+            'name.required' => 'Kategori adı alanı boş geçilemez.'
         ]);
 
         if ($validation->fails()) {
-            return response()->json($validation->errors()->all());
+            return response()->json($validation->errors()->all(), 422);
         }
 
         $categoryArr = $request->except('image_url');

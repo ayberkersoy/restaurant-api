@@ -75,11 +75,22 @@ class UserController extends Controller
             'name' => 'required|max:255',
             'surname' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|max:255|confirmed'
+            'password' => 'required|min:6|max:255|confirmed',
+            'avatar' => 'sometimes|max:8192'
+        ], [
+            'name.required' => 'Adı alanı boş geçilemez.',
+            'surname.required' => 'Soyadı alanı boş geçilemez.',
+            'email.required' => 'Email alanı boş geçilemez.',
+            'email.email' => 'Email alanı email formatında olmalıdır.',
+            'email.unique' => 'Bu email adresi daha önce kullanılmış.',
+            'password.required' => 'Şifre alanı boş geçilemez.',
+            'password.min' => 'Şifre alanı en az 6 karakter olmalıdır.',
+            'password.confirmed' => 'Şifre doğrulama alanları uyuşmuyor.',
+            'avatar.max' => 'Kullanıcı resmi en fazla 8 MB boyutunda olabilir'
         ]);
 
         if ($validation->fails()) {
-            return response()->json($validation->errors()->all());
+            return response()->json($validation->errors()->all(), 422);
         }
 
         $user = User::create(
@@ -148,11 +159,21 @@ class UserController extends Controller
             'name' => 'required|max:255',
             'surname' => 'required|max:255',
             'email' => 'required|email|max:255',
-            'password' => 'sometimes|required|min:6|max:255|confirmed'
+            'password' => 'sometimes|required|min:6|max:255|confirmed|unique:users',
+            'avatar' => 'sometimes|max:8192'
+        ], [
+            'name.required' => 'Adı alanı boş geçilemez.',
+            'surname.required' => 'Soyadı alanı boş geçilemez.',
+            'email.required' => 'Email alanı boş geçilemez.',
+            'email.unique' => 'Bu email adresi daha önce kullanılmış.',
+            'email.email' => 'Email alanı email formatında olmalıdır.',
+            'password.min' => 'Şifre alanı en az 6 karakter olmalıdır.',
+            'password.confirmed' => 'Şifre doğrulama alanları uyuşmuyor.',
+            'avatar.max' => 'Kullanıcı resmi en fazla 8 MB boyutunda olabilir'
         ]);
 
         if ($validation->fails()) {
-            return response()->json($validation->errors()->all());
+            return response()->json($validation->errors()->all(), 422);
         }
 
         if ($request->hasFile('avatar')) {
