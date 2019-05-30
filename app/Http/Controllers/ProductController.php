@@ -81,15 +81,15 @@ class ProductController extends Controller
             return response()->json($validation->errors()->all());
         }
 
+        $product = $request->all();
         if($request->hasFile('image_url')) {
             $image = $request->image_url->store('img/products');
             $img = Image::make(public_path($image));
             $img->fit(1280, 720);
             $img->save(public_path($image));
+            $product['image_url'] = env('APP_URL'). '/' .$image;
         }
 
-        $product = $request->all();
-        $product['image_url'] = $image;
         $product['currency'] = 'TL';
 
         $product = Product::create($product);
@@ -178,7 +178,7 @@ class ProductController extends Controller
             $img = Image::make(public_path($image));
             $img->fit(1280, 720);
             $img->save(public_path($image));
-            $productArr['image_url'] = $image;
+            $productArr['image_url'] = env('APP_URL'). '/' .$image;
         }
 
         if($request->category_id != 0) {
