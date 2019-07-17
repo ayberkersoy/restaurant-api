@@ -54,7 +54,7 @@
                 let FileSize = e.target.files[0].size / 1024 / 1024; // in MB
                 if (FileSize > 4) {
                     alert('En fazla 4 MB boyutunda resim yükleyebilirsiniz.');
-                    // $(file).val(''); //for clearing with Jquery
+                    // $(file).val('');
                 }
             },
             uploadImage(){

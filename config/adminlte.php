@@ -283,12 +283,12 @@ return [
 //                ],
 //            ],
 //        ],
-        'Bildirimler',
-        [
-            'text' => 'Kalan deneme süresi: 3 gün',
-            'icon_color' => 'red',
-            'url' => '/payment',
-        ],
+//        'Bildirimler',
+//        [
+//            'text' => 'Kalan deneme süresi: 3 gün',
+//            'icon_color' => 'red',
+//            'url' => '/payment',
+//        ],
 //        [
 //            'text' => 'Warning',
 //            'icon_color' => 'yellow',
