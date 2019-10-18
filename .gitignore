@@ -13,3 +13,5 @@ yarn-error.log
 \.idea/
 
 public/img/campaigns/
+
+.DS_Store

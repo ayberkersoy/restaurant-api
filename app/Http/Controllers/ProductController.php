@@ -87,6 +87,7 @@ class ProductController extends Controller
             return response()->json($validation->errors()->all(), 422);
         }
 
+        $isFeatured = $request->isFeatured ? 1 : 0;
         $product = $request->all();
         if($request->hasFile('image_url')) {
             $image = $request->image_url->store('img/products');
@@ -97,6 +98,7 @@ class ProductController extends Controller
         }
 
         $product['currency'] = 'TL';
+        $product['isFeatured'] = $isFeatured;
 
         $product = Product::create($product);
 
