@@ -296,7 +296,7 @@ class ProductController extends Controller
             'products.*',
             DB::raw('avg(comments.stars) AS stars')
         )
-            ->join('comments', 'comments.product_id', '=', 'products.id')
+            ->leftjoin('comments', 'comments.product_id', '=', 'products.id')
             ->groupBy('comments.product_id')
             ->get();
         return response()->json($products);
