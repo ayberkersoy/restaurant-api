@@ -139,12 +139,12 @@ class ProductController extends Controller
             DB::raw('avg(comments.stars) AS stars')
         )
             ->where('products.id', $product->id)
-            ->leftjoin('comments', 'comments.product_id', '=', 'products.id')
+            ->join('comments', 'comments.product_id', '=', 'products.id')
             ->groupBy('comments.product_id')
             ->first();
-        if($product->stars == null) {
-            $product->stars = 5;
-        }
+//        if($product->stars == null) {
+//            $product->stars = 5;
+//        }
         $product = array_merge($product->toArray(), ['favourite' => $favourite]);
         return response()->json($product);
     }
