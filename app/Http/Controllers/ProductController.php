@@ -97,7 +97,7 @@ class ProductController extends Controller
             $product['image_url'] = env('APP_URL'). '/' .$image;
         }
 
-        $product['currency'] = 'TL';
+        $product['currency'] = '€';
         $product['isFeatured'] = $isFeatured;
 
         $product = Product::create($product);
@@ -202,7 +202,7 @@ class ProductController extends Controller
             $productArr['category_id'] = $request->category_id;
         }
 
-        $productArr['currency'] = 'TL';
+        $productArr['currency'] = '€';
 
         $product->update($productArr);
 
